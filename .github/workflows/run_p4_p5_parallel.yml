@@ -17,7 +17,7 @@ permissions:
 
 jobs:
   plan-batches:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       matrix: ${{ steps.plan.outputs.matrix }}
     steps:
@@ -36,7 +36,7 @@ jobs:
 
   scrape-shards:
     needs: plan-batches
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 360
     strategy:
       fail-fast: false
@@ -124,7 +124,7 @@ jobs:
       contents: write
     env:
       P4_P5_BATCH_MANIFEST: .p4_p5_batches/manifest.json
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout repository
