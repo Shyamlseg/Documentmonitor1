@@ -1,18 +1,18 @@
 {
   "heal": {
     "browser_required": true,
-    "checked_at": 1795059877.8726323,
+    "checked_at": 1795144890.4882379,
     "html_fingerprint": ""
   },
   "http://en.wynnmacaulimited.com/announcements-and-circulars": {
-    "browser_required": false,
-    "checked_at": 1794972275.170115,
-    "html_fingerprint": "cf438ab1da1fcc3227bd9a429a3d63f209f70cf245c48b5bd3b0fcf5e9aa3ffd"
+    "browser_required": true,
+    "checked_at": 1795141157.9948442,
+    "html_fingerprint": ""
   },
   "http://investor.clearwayenergy.com/": {
-    "browser_required": true,
-    "checked_at": 1795054401.6737847,
-    "html_fingerprint": ""
+    "browser_required": false,
+    "checked_at": 1795138626.3098285,
+    "html_fingerprint": "9a3a1293aa1076aac9dc0addcaea56ca1123c27ecd367731a5bf08681cf24068"
   },
   "http://investor.urbn.com/governance": {
     "browser_required": false,
@@ -21,62 +21,67 @@
   },
   "http://investors.gates.com/about-gates/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795057529.819094,
-    "html_fingerprint": "5073ab24041e0324588863777b4d1748640d42a23ed45f89cb09c4f1d78a79d2"
+    "checked_at": 1795142116.8047335,
+    "html_fingerprint": ""
   },
   "http://investors.tutorperini.com/corporate-governance/highlights/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795055440.0513315,
+    "checked_at": 1795139743.271468,
+    "html_fingerprint": ""
+  },
+  "http://malibuboatsinc.com/governance/governance-documents/default.aspx": {
+    "browser_required": true,
+    "checked_at": 1795144859.9413803,
     "html_fingerprint": ""
   },
   "http://oge.com/governance": {
     "browser_required": true,
-    "checked_at": 1795058233.7714484,
-    "html_fingerprint": "4a519558acaa4439a3fe046a5483ad2a9bde8365eef79fe3f25ee375ad96e1ef"
+    "checked_at": 1795142696.176724,
+    "html_fingerprint": "9d5652ddb80c2357dbc090077ccbdb4c0d959ebd074c449c01381968a7818daa"
   },
   "http://www.compugates.com/EN/investor-relations/documents/policy": {
     "browser_required": true,
-    "checked_at": 1795058278.6218612,
-    "html_fingerprint": "69780dbd2fd6a9d07ac417be34186f60cfac5296bf771379eaade2afbec1f866"
+    "checked_at": 1795142767.992773,
+    "html_fingerprint": "68700c846d3a0c41b56541dd9815a8d7f2622e51de0ad06853b63362ead1b5fa"
   },
   "http://www.ecmlibra.com/Investor_Relations_bctrp.asp": {
     "browser_required": true,
-    "checked_at": 1795054327.7410748,
-    "html_fingerprint": "92f743564cbac6be37b352d9a15a44a7410331304e5be8d55d457546250e4bd7"
+    "checked_at": 1795138773.0929325,
+    "html_fingerprint": "35004322084848460b05d84c2166f77f326290caf78a73e8f2364855aa4e172a"
   },
   "http://www.excocorp.com/investors/financial-reports-public-filings/annual-reports/": {
     "browser_required": true,
-    "checked_at": 1795054314.6412666,
+    "checked_at": 1795138761.087452,
     "html_fingerprint": ""
   },
   "http://www.kag.com.my/csr.php": {
     "browser_required": true,
-    "checked_at": 1795059919.3560956,
+    "checked_at": 1795144790.8937945,
     "html_fingerprint": "55ed88187b527aa4432b0945c79220c5390407c29f43b9e8bdc0ad168f54e944"
   },
   "http://www.kag.com.my/privacy_policy.php": {
     "browser_required": true,
-    "checked_at": 1795055455.1480913,
+    "checked_at": 1795139766.8842793,
     "html_fingerprint": "bf29d6d8fe78b04dfa850c5d96055b362785eb53685f5a217dc121acff1aaef4"
   },
   "http://www.primefocus.com/who-we-are/about-us": {
     "browser_required": true,
-    "checked_at": 1795056443.000222,
-    "html_fingerprint": "649d12649dc5eab30a2f28582fe7d057eea8837b0c77f77950652093b9e4c0f6"
+    "checked_at": 1795141157.2603433,
+    "html_fingerprint": "2568c8277e7685ecf68f09b77ee48aff911841c5a7bee791779b0d9935cfed96"
   },
   "http://www.steppecement.com/investors/rns-announcements/": {
     "browser_required": true,
-    "checked_at": 1795054444.7532315,
+    "checked_at": 1795138668.5657759,
     "html_fingerprint": "be0f14267370abda2f7324c9f3cb1d6cf5e2e4bd5508ecb5317fffcd1fc5b721"
   },
   "https://aferian.com/2021-reports/2017-reports/": {
     "browser_required": true,
-    "checked_at": 1795055600.3785794,
+    "checked_at": 1795140138.6572194,
     "html_fingerprint": ""
   },
   "https://aferian.com/2021-reports/2019-reports/": {
     "browser_required": true,
-    "checked_at": 1795058778.2082214,
+    "checked_at": 1795143719.8743534,
     "html_fingerprint": ""
   },
   "https://akfengyo.com.tr/en/investor-relations/reports/annual-reports/": {
@@ -86,38 +91,38 @@
   },
   "https://amtel.com.my/corporate-governance/terms-of-reference-of-nomination-committee/": {
     "browser_required": true,
-    "checked_at": 1795059755.1784077,
-    "html_fingerprint": "8e439b65807c3b3c43c639d8d520b0bec707032b14c733c38511bbfabaf40369"
+    "checked_at": 1795144785.2820625,
+    "html_fingerprint": "97354c62c222109ec040126c9ae59836b520fa0b640b3867dd2f60a0bbb93160"
   },
   "https://amtel.com.my/corporate-governance/terms-of-reference-of-remuneration-committee/": {
     "browser_required": true,
-    "checked_at": 1795057513.861081,
-    "html_fingerprint": "8e439b65807c3b3c43c639d8d520b0bec707032b14c733c38511bbfabaf40369"
+    "checked_at": 1795142095.693265,
+    "html_fingerprint": "97354c62c222109ec040126c9ae59836b520fa0b640b3867dd2f60a0bbb93160"
   },
   "https://annualreport2026.cairnhomes.com/": {
     "browser_required": true,
-    "checked_at": 1795059880.2838519,
+    "checked_at": 1795144891.810142,
     "html_fingerprint": ""
   },
   "https://ao.dk/investor-relations/corporate-governance/articles-of-association": {
     "browser_required": true,
-    "checked_at": 1795059979.3953204,
-    "html_fingerprint": "0c78c1cf3f8fa27ccb5eab861f3bec4048f5dbae65d568a0a7d9b16b10f4731a"
+    "checked_at": 1795144850.912589,
+    "html_fingerprint": "7ab5aa21b6728c41b06df32637ac8339ce16db38faa1846b6704c4c6864a381a"
   },
   "https://ao.dk/investor-relations/corporate-governance/corporate-governance-reports": {
     "browser_required": true,
-    "checked_at": 1795059881.6689682,
-    "html_fingerprint": "0c78c1cf3f8fa27ccb5eab861f3bec4048f5dbae65d568a0a7d9b16b10f4731a"
+    "checked_at": 1795144891.1298032,
+    "html_fingerprint": "358e72333eb0848efc13bf35c75714c6de5bfb7158d974bfce9c2fd8903c7182"
   },
   "https://ao.dk/investor-relations/corporate-governance/policies": {
     "browser_required": true,
-    "checked_at": 1795059366.24051,
-    "html_fingerprint": "6960c13f7646200ae3cea4a6a168120ca0fa62e4a884dc7d79b84224a4cce7e9"
+    "checked_at": 1795144123.01211,
+    "html_fingerprint": "5e76d91e38ddeab6b9bce435f7fc60e5fb0474d285d5bd4aa3f2fbdede2738fa"
   },
   "https://ao.dk/investor-relations/corporate-governance/remuneration": {
     "browser_required": true,
-    "checked_at": 1795058884.8596904,
-    "html_fingerprint": "260fafaa350af311207cf2a1f9d7a2599fbffb5b20d22f002008428cc8c6bf7c"
+    "checked_at": 1795143833.1789088,
+    "html_fingerprint": "6960c13f7646200ae3cea4a6a168120ca0fa62e4a884dc7d79b84224a4cce7e9"
   },
   "https://astralasia.com/whistleblowing-policy/": {
     "browser_required": false,
@@ -126,123 +131,123 @@
   },
   "https://aubn.q4ir.com/corporate-overview/documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795054352.945833,
+    "checked_at": 1795138800.248459,
     "html_fingerprint": ""
   },
   "https://bankofmaharashtra.in/about-us": {
     "browser_required": true,
-    "checked_at": 1795054474.0216742,
+    "checked_at": 1795138874.556724,
     "html_fingerprint": ""
   },
   "https://bankofmaharashtra.in/brsr-disclosure": {
     "browser_required": true,
-    "checked_at": 1795055391.9649658,
+    "checked_at": 1795139688.522653,
     "html_fingerprint": ""
   },
   "https://barloworld.com/corporate-citizenship/policies-and-disclosures/": {
     "browser_required": true,
-    "checked_at": 1795058275.5000389,
+    "checked_at": 1795142764.747853,
     "html_fingerprint": ""
   },
   "https://barloworld.com/investors/cdp/": {
     "browser_required": true,
-    "checked_at": 1795059877.2103631,
+    "checked_at": 1795144889.9501123,
     "html_fingerprint": ""
   },
   "https://bbgi.com/investor-presentation-april-2023/": {
     "browser_required": true,
-    "checked_at": 1795054222.9112003,
+    "checked_at": 1795138671.1831052,
     "html_fingerprint": ""
   },
   "https://bbgi.com/investor-presentation-april-2026/": {
     "browser_required": true,
-    "checked_at": 1795057562.8826988,
+    "checked_at": 1795142148.7326357,
     "html_fingerprint": ""
   },
   "https://brookdaleinvestors.com/governance/charters-and-guidelines/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795057540.6205318,
-    "html_fingerprint": "36d6f1d14b30652d9acc5d4114e0349e26ac05357a29194f888061257e07f966"
+    "checked_at": 1795142128.568648,
+    "html_fingerprint": ""
   },
   "https://budimex.pl/en/about-us/corporate-governance/": {
     "browser_required": true,
-    "checked_at": 1795057054.7765872,
-    "html_fingerprint": "a33be62252afa7f815c203261285c3755c41df3536638e912ebd72b32f8cb2b3"
+    "checked_at": 1795141988.996573,
+    "html_fingerprint": "23b213b029a81b049ccd4cf1063da1c564cd8a19963d5d57b127b6ab93e526a0"
   },
   "https://camres.com.my/camres/board-charter/": {
     "browser_required": true,
-    "checked_at": 1795057760.5765345,
-    "html_fingerprint": "11877dff1413a897cf325861015fc46a421cdff7224238ef541ec59867383ba5"
+    "checked_at": 1795142485.2291503,
+    "html_fingerprint": "12cfeb839db73359597f8ecb9f3132d89850229d1b5bc3804d5cf311bd4c8a32"
   },
   "https://careplus.com/our-products/latex-exam-gloves/": {
     "browser_required": true,
-    "checked_at": 1795055844.4108074,
-    "html_fingerprint": "8221b0472b94c9db41febb2ac988012c9e64affa317e6812c752d969112bab90"
+    "checked_at": 1795140644.5912106,
+    "html_fingerprint": "b522d4b546ff42ad7d8db6736e41d3c1a423276d44748b7060c4af6715a5ab02"
   },
   "https://corporate.convergeict.com/investor-relations/": {
     "browser_required": true,
-    "checked_at": 1795056524.9201083,
-    "html_fingerprint": "2e94979fe919960a7934d3c37692cc515324eaef0e115ab0294b99864aafa6e0"
+    "checked_at": 1795141228.5632713,
+    "html_fingerprint": "0577f92135f02e5f8facf0629f7ce8306fe74d788d2b469bca41a50603f8ba5b"
   },
   "https://corporate.convergeict.com/sustainability/": {
     "browser_required": true,
-    "checked_at": 1795057429.061012,
-    "html_fingerprint": "e7f0ebd1cc1962e09abf03b490cd369e893ecf9276fb068d8f17e5c6993f3712"
+    "checked_at": 1795142007.8010929,
+    "html_fingerprint": "3fff3e477cf098c183f1e5d4a964e209c2b9f8b78d6cbed6d9fdab302848c703"
   },
   "https://corporate.e-jumbo.gr/en/investor-relations/corporate-governance/politiki-apodochon/": {
     "browser_required": true,
-    "checked_at": 1795055548.02903,
+    "checked_at": 1795140074.2068868,
     "html_fingerprint": ""
   },
   "https://cph.ch": {
     "browser_required": true,
-    "checked_at": 1795056545.7199464,
+    "checked_at": 1795141080.787971,
     "html_fingerprint": "7afc6cef471b07265cbf38aca834aae9278596da94e7d8f03adfe39f80938034"
   },
   "https://cpipg.com/en/for-investors/": {
     "browser_required": true,
-    "checked_at": 1795058776.3761842,
-    "html_fingerprint": "89452597e43a0a428183615854d59b439afd50225cec4758e6be73bf15bf0633"
+    "checked_at": 1795143718.1861546,
+    "html_fingerprint": "2a88ffc0b6dea0318194c09a056bad1f8fe8670b0728ac633ffdef9ff4d5864d"
   },
   "https://ctosdigital.com/corporate-governance/": {
     "browser_required": true,
-    "checked_at": 1795058520.4269104,
+    "checked_at": 1795143462.8324,
     "html_fingerprint": ""
   },
   "https://ctosdigital.com/sustainability/": {
     "browser_required": true,
-    "checked_at": 1795059214.2536793,
+    "checked_at": 1795143973.8841143,
     "html_fingerprint": ""
   },
   "https://docs.blueowl.com/thErlj6TS7G": {
     "browser_required": true,
-    "checked_at": 1795059982.5092456,
-    "html_fingerprint": "32164f496be30735c878c5beb3598c98a2caa9b4f15918b5cd16f5cd7dc61e4d"
+    "checked_at": 1795144857.0038686,
+    "html_fingerprint": "ef8f1acbbd6ce88bc5cedb909c2cadad8b572ec7b7eedae4ee29efe9c5ce5104"
   },
   "https://eclerx.com/about-eclerx/": {
     "browser_required": true,
-    "checked_at": 1795057784.0383172,
+    "checked_at": 1795142318.8968313,
     "html_fingerprint": ""
   },
   "https://eclerx.com/investor-relations/corporate-governance-policies/": {
     "browser_required": true,
-    "checked_at": 1795055843.8396528,
+    "checked_at": 1795140614.579728,
     "html_fingerprint": ""
   },
   "https://eezy.fi/en/investors/financials/reports-and-presentations/": {
     "browser_required": true,
-    "checked_at": 1795059911.0405445,
-    "html_fingerprint": "6a36159723f74018aed558183241c9934928e53a96c032a351182a75d4cc0ccd"
+    "checked_at": 1795144787.0113719,
+    "html_fingerprint": "10520f2058f0c1280af6d6cdf4f5e969d141c40f1a454f3083f2394d618277bf"
   },
   "https://en.bouvet.no/investor": {
     "browser_required": true,
-    "checked_at": 1795057048.6209877,
-    "html_fingerprint": "da7a5987d759c30e73945fd9884611f446e65ec489b486ff74b95e1804a9be0f"
+    "checked_at": 1795141958.9745848,
+    "html_fingerprint": "4c493453925a7babfff5226d82c74a16125e906728d60296eb0820e938e3074e"
   },
   "https://eng.gruppohera.it/group_eng/corporate-governance/governance-system": {
     "browser_required": true,
-    "checked_at": 1795054455.390326,
-    "html_fingerprint": ""
+    "checked_at": 1795138901.3579497,
+    "html_fingerprint": "242e1be9aad737e87cde33c26e77bbaa1256e9cfa55d0adc333e0bae687f8528"
   },
   "https://eng.gruppohera.it/group_eng/investor-relations/results-and-presentations/y2026": {
     "browser_required": true,
@@ -250,154 +255,159 @@
     "html_fingerprint": ""
   },
   "https://ethics.gxo.com/": {
-    "browser_required": true,
-    "checked_at": 1795054387.7695973,
-    "html_fingerprint": "54c2b9a9626a199478d6efd376de1259d560f1919f909eb551c009fdccded770"
+    "browser_required": false,
+    "checked_at": 1795138816.618525,
+    "html_fingerprint": "beb1155a3d688e7e9715d7e6540affad46a2ec5dd3c4dcd2c768bd4abd09c302"
   },
   "https://expworldholdings.com/financials/sec-filings/": {
     "browser_required": true,
-    "checked_at": 1795054443.7457662,
-    "html_fingerprint": "2f2fefc1412ac710ab9f663ffcf05114f95c79d76c3fdd94473cf3bb99310c28"
+    "checked_at": 1795138877.227537,
+    "html_fingerprint": "012b3c178252c5aabaefd671bb4ec4a94ba1ab30cda1fd1aa83cb18fb6c5d0ba"
   },
   "https://expworldholdings.com/governance/#governance-documents": {
     "browser_required": true,
-    "checked_at": 1795058332.2623315,
-    "html_fingerprint": "1ee9ef5311c29928f740f542f1fc26efc8d1a4f551193d47d346df439a30712f"
+    "checked_at": 1795142824.535012,
+    "html_fingerprint": "b13e0eea78d267bd26495fede736cf5f9489b0ada7bfb8a32b13a432af6efd2b"
   },
   "https://foresight.group/shareholders/regulatory-news/": {
     "browser_required": true,
-    "checked_at": 1795060290.3044891,
-    "html_fingerprint": "e4826b2a816c94cb79b2f266132a4006ba7585554f307d7a5fa4d539763a2b37"
+    "checked_at": 1795145183.5787606,
+    "html_fingerprint": "0ceef0c316c91e7d094157e3f1b4514addefff4e84de1ab45e748a2c1bb428f9"
   },
   "https://genelenergy.com/privacy-policy/": {
     "browser_required": true,
-    "checked_at": 1795054488.3061368,
-    "html_fingerprint": "56742b040de040f9ae7e8e2aa365b5d3e005abc9a86270c472eef3058332addb"
+    "checked_at": 1795138946.6877806,
+    "html_fingerprint": "bbf6029fb16d9f7dbce4b954c581eeb70d13c3152198a1ba71e1bb5fc4d39b5d"
   },
   "https://ghcl.co.in/corporate-governance-reports": {
     "browser_required": true,
-    "checked_at": 1795059937.523536,
+    "checked_at": 1795144811.8368611,
     "html_fingerprint": ""
   },
   "https://ghcl.co.in/financial-performance": {
     "browser_required": true,
-    "checked_at": 1795057745.7878482,
+    "checked_at": 1795142280.7104552,
     "html_fingerprint": ""
   },
   "https://hanza.com/investor/corporate-governance/": {
     "browser_required": true,
-    "checked_at": 1795054969.6753604,
-    "html_fingerprint": "be712a4de950e2cfa6d09e1b17085290c99c37e58d1651b95dde3f9a45a1911b"
+    "checked_at": 1795139536.8218846,
+    "html_fingerprint": "e21190ffda3c82bb6188de60d944d8f06b542a7f8eff5eb07869db5f3433dc28"
   },
   "https://hbtf.com/en/annual-reports": {
     "browser_required": true,
-    "checked_at": 1795058580.4463365,
+    "checked_at": 1795143522.8666914,
     "html_fingerprint": ""
   },
   "https://heritagecommercecorp.com/esg/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795054444.9621682,
+    "checked_at": 1795138864.0549066,
     "html_fingerprint": ""
   },
   "https://htgrp.com.my/about-us/": {
     "browser_required": true,
-    "checked_at": 1795057784.1026077,
-    "html_fingerprint": "39397396ada1f34a6592f1840b74e16915f28358655f466985914cb94632af31"
+    "checked_at": 1795142466.5543756,
+    "html_fingerprint": "4248e927d1df92d8eb428f7014ff14fe34f81d88cf80c9f3f934d08f85757d1b"
   },
   "https://imperialmetals.com/our-company/company-overview": {
     "browser_required": true,
-    "checked_at": 1795056492.1176386,
-    "html_fingerprint": "7e8363fc04db54a9e46225cee2c9cb3d7f5840f4b4da7801b011d89451841177"
+    "checked_at": 1795141202.8242695,
+    "html_fingerprint": "8fdac5f7c9cf53ad55484ad1349342ef4ad9940af1b0274796a552a7c24fcbf0"
   },
   "https://intica-systems.com/en/investor-relations/press-releases": {
     "browser_required": true,
-    "checked_at": 1795057790.586949,
+    "checked_at": 1795142496.5645018,
     "html_fingerprint": "68ba318aaf8da278c489efc2dcc355a4e430892dffb55dfb145216fef5961afd"
   },
   "https://intica-systems.com/en/investor-relations/publications": {
     "browser_required": true,
-    "checked_at": 1795054255.6763694,
+    "checked_at": 1795138704.3688524,
     "html_fingerprint": "2d7bfad1fe108bde9af2f87f28131105df640d4d0ffc88f7047438dfba8cfcc1"
   },
   "https://investing.macerich.com/corporate-governance/committee-charters": {
     "browser_required": true,
-    "checked_at": 1794217350.9295242,
+    "checked_at": 1795141922.6416943,
     "html_fingerprint": ""
   },
   "https://investing.macerich.com/corporate-governance/documents-charters": {
     "browser_required": true,
-    "checked_at": 1795059333.103211,
+    "checked_at": 1795144087.9208815,
     "html_fingerprint": ""
   },
   "https://investor.aac-clyde.space/en/corporate-governance/corporate-governance-reports/": {
     "browser_required": true,
-    "checked_at": 1795056461.323222,
-    "html_fingerprint": "a7e5f86e6acfc2f9520ca3b00e3d28a3c0f862cccf4cf3de30a30da8b920fa06"
+    "checked_at": 1795141161.461953,
+    "html_fingerprint": "4d1b968530723e4753221cc4ee315a44707124628d8787a8e936a010ad6733df"
   },
   "https://investor.are.com/corporate-governance/disclosure/default.aspx?iid=111908": {
     "browser_required": true,
-    "checked_at": 1795058539.2825706,
+    "checked_at": 1795143465.3397164,
+    "html_fingerprint": "3e2b12ba6b6b42cd08734799ed6944ba181851b5522c1dd5e237942d5d292f8d"
+  },
+  "https://investor.bostonomaha.com/": {
+    "browser_required": true,
+    "checked_at": 1795138849.356076,
     "html_fingerprint": ""
   },
   "https://investor.bostonomaha.com/financials/annual-reports/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795055560.8018923,
+    "checked_at": 1795140101.902557,
     "html_fingerprint": ""
   },
   "https://investor.caretrustreit.com/governance/governance-documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795054263.4171937,
+    "checked_at": 1795138712.2851608,
     "html_fingerprint": ""
   },
   "https://investor.caretrustreit.com:443/Corporate-Responsibility/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795059945.365971,
+    "checked_at": 1795144820.0979857,
     "html_fingerprint": ""
   },
   "https://investor.chegg.com/Corporate-Governance/Governance-Documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795058217.6570165,
-    "html_fingerprint": ""
+    "checked_at": 1795142704.7128344,
+    "html_fingerprint": "acc0809a0f0ee877d3e478d9fbbff53842923e93e95f2114bfbe3a110f8c11ef"
   },
   "https://investor.chegg.com/esg/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795055888.652265,
+    "checked_at": 1795140671.4050095,
     "html_fingerprint": ""
   },
   "https://investor.clearchannel.com/": {
     "browser_required": true,
-    "checked_at": 1795058786.8095546,
+    "checked_at": 1795143728.614655,
     "html_fingerprint": ""
   },
   "https://investor.clearchannel.com/corporate-governance/governance-documents": {
     "browser_required": true,
-    "checked_at": 1795055440.2431858,
+    "checked_at": 1795139746.6656837,
     "html_fingerprint": ""
   },
   "https://investor.consensus.com/board-esg/governance-documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795054325.9537272,
+    "checked_at": 1795138771.4970374,
     "html_fingerprint": ""
   },
   "https://investor.horizonbank.com/corporate-information/corporate-governance/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795059895.3839724,
+    "checked_at": 1795144772.4299893,
     "html_fingerprint": ""
   },
   "https://investor.horizonbank.com/corporate-information/corporate-profile/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795058629.3262508,
-    "html_fingerprint": ""
+    "checked_at": 1795143555.3870792,
+    "html_fingerprint": "8c0a9f92aaf866f2264e7aac6c30ad9b5dc6d58807fc205ac27d5b8a10134bee"
   },
   "https://investor.lineagecell.com/corporate-governance/highlights": {
-    "browser_required": false,
-    "checked_at": 1794972411.9249492,
-    "html_fingerprint": "10214b83201f2fabe156fd7a64321058a9b7effe6188118d1190baa2e2a16e61"
+    "browser_required": true,
+    "checked_at": 1795141975.3615491,
+    "html_fingerprint": ""
   },
   "https://investor.marinemax.com/": {
     "browser_required": true,
-    "checked_at": 1795058610.458306,
-    "html_fingerprint": ""
+    "checked_at": 1795143552.9044056,
+    "html_fingerprint": "2801fe6adcae274661c3c6f8a0ba18aff1515b8a205b07de4499458207ad1848"
   },
   "https://investor.mscdirect.com/corporate-governance": {
     "browser_required": true,
@@ -406,37 +416,37 @@
   },
   "https://investor.nrplp.com/Investor-relations/financial-information/annual-reports/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795060182.8083632,
-    "html_fingerprint": ""
+    "checked_at": 1795145296.16889,
+    "html_fingerprint": "a3f1058adc4543a0037ac11caa67c184303ac63539caa8ba5bfef929321fd8cd"
   },
   "https://investor.piedmontreit.com/news-and-events/press-releases?_correlationId=207&page=0": {
     "browser_required": true,
-    "checked_at": 1795058852.353665,
+    "checked_at": 1795143800.605697,
     "html_fingerprint": ""
   },
   "https://investor.popular.com/eng/annual-reports/default.aspx": {
-    "browser_required": true,
-    "checked_at": 1795054497.9704762,
-    "html_fingerprint": ""
+    "browser_required": false,
+    "checked_at": 1795138943.9891834,
+    "html_fingerprint": "a5dd8c197cd9485cc144c6ed9f3f401521a24a84878c3ee5a8c10745bda3706e"
   },
   "https://investor.postalrealtytrust.com/Investors/corporate-governance/governance-documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795055880.65615,
+    "checked_at": 1795140662.0387554,
     "html_fingerprint": ""
   },
   "https://investor.postalrealtytrust.com/overview/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795059270.4550323,
-    "html_fingerprint": "170805ec45c484fa8590649d6efc37d515a664c81b5a37e613e829a791a97768"
+    "checked_at": 1795144017.133028,
+    "html_fingerprint": ""
   },
   "https://investor.qua.com.tr/general-assembly": {
     "browser_required": true,
-    "checked_at": 1795059266.2370102,
+    "checked_at": 1795144018.873479,
     "html_fingerprint": ""
   },
   "https://investor.senergy.com.my/corporate_governance.html": {
     "browser_required": true,
-    "checked_at": 1795057061.3720117,
+    "checked_at": 1795141999.665345,
     "html_fingerprint": ""
   },
   "https://investor.sonoco.com/corporate-governance/documents-charters": {
@@ -450,39 +460,39 @@
     "html_fingerprint": ""
   },
   "https://investorrelations.fsbwa.com/corporate/documents/default.aspx": {
-    "browser_required": true,
-    "checked_at": 1795054497.1592915,
-    "html_fingerprint": ""
+    "browser_required": false,
+    "checked_at": 1795138943.2939997,
+    "html_fingerprint": "9c2e6a27086310ee6eedf03c5b071000174f52221181b116f42c1dad69090716"
   },
   "https://investors.blackdiamondtherapeutics.com/sec-filings": {
     "browser_required": true,
-    "checked_at": 1795059332.3452032,
+    "checked_at": 1795144086.2710803,
     "html_fingerprint": ""
   },
   "https://investors.brinker.com/financial-information/annual-reports": {
     "browser_required": true,
-    "checked_at": 1795058587.4512627,
+    "checked_at": 1795142864.709222,
     "html_fingerprint": ""
   },
   "https://investors.brinker.com/governance/governance-documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795055634.720083,
+    "checked_at": 1795140172.874257,
     "html_fingerprint": ""
   },
   "https://investors.carmax.com/governance/board-of-directors/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795058245.4901454,
-    "html_fingerprint": ""
+    "checked_at": 1795142734.7346606,
+    "html_fingerprint": "d417400cb155cac1f6406b51dde2a9dd0a90a0f8fb7752b833e4df9c5637d2ca"
   },
   "https://investors.doximity.com/financials/quarterly-results/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795055389.6358893,
+    "checked_at": 1795139684.0986872,
     "html_fingerprint": ""
   },
   "https://investors.doximity.com/governance/governance-documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795054451.242771,
-    "html_fingerprint": "4d4e78ff8312b43c6574d9a5059400890c1bb222018106e5a91ed3fa50c4f195"
+    "checked_at": 1795138863.9335518,
+    "html_fingerprint": ""
   },
   "https://investors.ducommun.com/": {
     "browser_required": false,
@@ -491,202 +501,207 @@
   },
   "https://investors.ducommun.com/financial-information/annual-reports": {
     "browser_required": true,
-    "checked_at": 1795056528.8734362,
+    "checked_at": 1795141073.315347,
     "html_fingerprint": ""
   },
   "https://investors.enochianbio.com/governance/governance-documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795054903.9286745,
+    "checked_at": 1795139435.1904511,
     "html_fingerprint": ""
   },
   "https://investors.esabcorporation.com/financials/annual-reports-and-proxy-statements/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795057752.019172,
+    "checked_at": 1795142287.3141117,
+    "html_fingerprint": ""
+  },
+  "https://investors.esabcorporation.com/governance/governance-documents/default.aspx": {
+    "browser_required": true,
+    "checked_at": 1795138854.651744,
     "html_fingerprint": ""
   },
   "https://investors.firstbankonline.com/corporate-profile": {
     "browser_required": true,
-    "checked_at": 1795054345.6408987,
+    "checked_at": 1795138793.9901385,
     "html_fingerprint": ""
   },
   "https://investors.galeratx.com/corporate-governance/governance-overview": {
     "browser_required": true,
-    "checked_at": 1795058857.3369243,
+    "checked_at": 1795143809.1918576,
     "html_fingerprint": ""
   },
   "https://investors.gates.com/governance/governance-documents/Translations-Code-of-BCE/": {
     "browser_required": true,
-    "checked_at": 1795060163.3120003,
-    "html_fingerprint": ""
+    "checked_at": 1795145282.5240426,
+    "html_fingerprint": "680561452cdf45d404b164dc753a2b630fcb383570d37e32eb1779967dbebe33"
   },
   "https://investors.graphicpkg.com/financial-information/financial-results#annual": {
     "browser_required": true,
-    "checked_at": 1795054903.2814376,
+    "checked_at": 1795139434.3565652,
     "html_fingerprint": "fcd3adbecbdc229a662a03d52511bff42354a071aabb07af27ac36c5619348bd"
   },
   "https://investors.graphicpkg.com/financial-information/financial-results#sec": {
     "browser_required": true,
-    "checked_at": 1795059811.654745,
+    "checked_at": 1795144815.2959073,
     "html_fingerprint": "fcd3adbecbdc229a662a03d52511bff42354a071aabb07af27ac36c5619348bd"
   },
   "https://investors.greatsouthernbank.com/annual-reports/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795054909.6476183,
-    "html_fingerprint": ""
+    "checked_at": 1795139439.6979353,
+    "html_fingerprint": "3db1c5437d0c7abbf39e8d477ba6ddd6afbeea4376c6176cef724478519ade83"
   },
   "https://investors.greatsouthernbank.com/corporate-profile/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795054450.6731057,
-    "html_fingerprint": "0023d9ecd70e532ff67c818417e06928d8fe32c8dfe3ecf5e1ca6e11561d34a8"
+    "checked_at": 1795138871.34736,
+    "html_fingerprint": ""
   },
   "https://investors.informatica.com/governance/governance-documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795054420.6615934,
+    "checked_at": 1795138824.3714437,
     "html_fingerprint": ""
   },
   "https://investors.investarbank.com/websites/investar-bank/English/0/investors-_-investar-holding-corporation.html": {
     "browser_required": true,
-    "checked_at": 1795058270.1618195,
+    "checked_at": 1795142756.308095,
     "html_fingerprint": "79ac482affb668d3bdcb6fb65bf58b1cb44408c1c0a79d34b671b35dc8d3bd68"
   },
   "https://investors.irtliving.com/corporate-governance/": {
     "browser_required": true,
-    "checked_at": 1795057004.216579,
-    "html_fingerprint": ""
+    "checked_at": 1795141928.9272115,
+    "html_fingerprint": "1f95a88a2c415179bc4b830ea5ada1b5a75254f523f476c1d71985314dec4657"
   },
   "https://investors.irtliving.com/corporate-governance/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795054469.0182514,
+    "checked_at": 1795138693.7243695,
     "html_fingerprint": ""
   },
   "https://investors.irtliving.com/sustainability/#ESGReport": {
     "browser_required": true,
-    "checked_at": 1795057685.76732,
+    "checked_at": 1795142220.6897638,
     "html_fingerprint": ""
   },
   "https://investors.kemper.com/corporate-governance/documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795059946.499752,
+    "checked_at": 1795144820.8544655,
     "html_fingerprint": ""
   },
   "https://investors.nerdwallet.com/corporate-governance/governance-overview": {
     "browser_required": true,
-    "checked_at": 1795058841.6682222,
+    "checked_at": 1795143783.8803937,
     "html_fingerprint": ""
   },
   "https://investors.nlight.net/ESG/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795058782.124204,
+    "checked_at": 1795143724.37151,
     "html_fingerprint": ""
   },
   "https://investors.nlight.net/governance/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795057836.7195342,
+    "checked_at": 1795142347.899977,
     "html_fingerprint": ""
   },
   "https://investors.on24.com/governance/governance-documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795058280.6200123,
+    "checked_at": 1795142771.6854765,
     "html_fingerprint": ""
   },
   "https://investors.rategain.com/governance/#governance-reports": {
     "browser_required": true,
-    "checked_at": 1795054939.2744887,
+    "checked_at": 1795139506.8054025,
     "html_fingerprint": "d6dc6180c59cb7edbf0dfd90c1d700a00dc614c2711431c32e5f40b854eb5272"
   },
   "https://investors.scholarrock.com/investors-media/corporate-governance": {
-    "browser_required": false,
-    "checked_at": 1794972409.3133116,
-    "html_fingerprint": "6f5bad7486a12c9c69d8f5ab39da48f30cc9c6537115422bf9e3465e45400347"
+    "browser_required": true,
+    "checked_at": 1795141970.761547,
+    "html_fingerprint": ""
   },
   "https://investors.scibase.se/en/404": {
     "browser_required": true,
-    "checked_at": 1795055406.165489,
+    "checked_at": 1795139727.0655386,
     "html_fingerprint": "ff59cf604c87fcad869565f7e0901d7a10a0cab4702062bdaab2a205cdd136b6"
   },
   "https://investors.scibase.se/en/results-reports": {
     "browser_required": true,
-    "checked_at": 1795059907.5121715,
-    "html_fingerprint": "a1f052eec59c926d1b59e543c1092d8c963ac748452db8c66eb02817ad58f9ff"
+    "checked_at": 1795144781.8279068,
+    "html_fingerprint": "235aca82989ec5dfa2159b6ed2e4859041a9f4015a0a9b405f86c73bc7f8fbda"
   },
   "https://investors.sezzle.com/esg/": {
     "browser_required": true,
-    "checked_at": 1795054483.6976466,
+    "checked_at": 1795138724.8253593,
     "html_fingerprint": "996016a4781473d99363df1626c1d7891569ee3b7414c72c0a64692c24494462"
   },
   "https://investors.sonos.com/investors/": {
     "browser_required": true,
-    "checked_at": 1795057558.3154173,
-    "html_fingerprint": "e1561750d7cb48992c19a432d8e234a37b7365ca6d780cfa046a5a6f3dfa4d7f"
+    "checked_at": 1795142142.5425625,
+    "html_fingerprint": ""
   },
   "https://investors.southside.com/corporate-overview/documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795060218.6096206,
-    "html_fingerprint": ""
+    "checked_at": 1795145336.148215,
+    "html_fingerprint": "2d5cae2264e5a5de22203c7078a2a36ed2f7c3538fd52b56d7060d694e048464"
   },
   "https://investors.sylvamo.com/financials/annual-reports/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795057754.0934353,
+    "checked_at": 1795142435.2170553,
     "html_fingerprint": ""
   },
   "https://investors.sylvamo.com/governance/governance-documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795054471.6207614,
+    "checked_at": 1795138703.125059,
     "html_fingerprint": ""
   },
   "https://investors.teleflex.com/governance/governance-documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795055568.3416326,
+    "checked_at": 1795140108.505065,
     "html_fingerprint": ""
   },
   "https://investors.tutorperini.com/corporate-governance/overview/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795056457.2294903,
-    "html_fingerprint": ""
+    "checked_at": 1795141171.8722646,
+    "html_fingerprint": "28f463d5668512008e2b0a4d5e20eb14885c824f3c4211cdfe47c6c850fdd805"
   },
   "https://investors.vimeo.com/": {
     "browser_required": true,
-    "checked_at": 1795054929.8229287,
-    "html_fingerprint": "0dd6287bec01792cd593d80f82da9143fa32e4ef551b4d1c59445ecc18561f4a"
+    "checked_at": 1795139501.7691736,
+    "html_fingerprint": "2522f1257a3a250435ca1fbf03a0eacc0ca9d833f9b7594aae399cc7989188aa"
   },
   "https://investors.vimeo.com/esg": {
     "browser_required": true,
-    "checked_at": 1795058211.9867282,
-    "html_fingerprint": "1dbeede1bbf68c842099de250b1ad6d7e30f95f6ed3bd4ae1f788ef14edce2e2"
+    "checked_at": 1795142719.2583408,
+    "html_fingerprint": "6168baaf50167465e1d94cbe29572c3fedd633cce552890fcb7a81e936ac2a1d"
   },
   "https://inwestor.asseco.com/en/about-asseco/corporate-governance/egm/2026/": {
     "browser_required": true,
-    "checked_at": 1795057900.9862528,
+    "checked_at": 1795142413.6717825,
     "html_fingerprint": ""
   },
   "https://inwestor.asseco.com/en/reports/financial-reports/2025/": {
     "browser_required": true,
-    "checked_at": 1795058361.6739376,
-    "html_fingerprint": ""
+    "checked_at": 1795142848.1778085,
+    "html_fingerprint": "a4673c4cffe05cdf27a6900b6305724426fd5dc7dcfc298338b52cdc484010bf"
   },
   "https://inwestor.asseco.com/en/reports/financial-reports/2026/": {
     "browser_required": true,
-    "checked_at": 1795057855.4400778,
+    "checked_at": 1795142560.5401683,
     "html_fingerprint": ""
   },
   "https://ir.bactiguard.com/reports-and-presentations/": {
     "browser_required": true,
-    "checked_at": 1795059851.6539817,
-    "html_fingerprint": "fb182af69d86861ded8bb4a83ab8eb2e5f7305edf4c97386b2bbec781a24b9af"
+    "checked_at": 1795144856.2026498,
+    "html_fingerprint": "5d8f0bcfef41c33b8b999fb1e78afb8dc6abf92c60f80f42d27accbd334886f9"
   },
   "https://ir.bruker.com/corporate-governance/Supplier-Code-of-Conduct/": {
     "browser_required": true,
-    "checked_at": 1795058786.6792471,
+    "checked_at": 1795143728.5007176,
     "html_fingerprint": ""
   },
   "https://ir.bruker.com/corporate-governance/committee-composition/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795058302.2518857,
-    "html_fingerprint": ""
+    "checked_at": 1795142794.5185134,
+    "html_fingerprint": "5c7598a0818491ef17a20bcdb78a40ab3c22a4dff794653b1ac6288833e6b2a2"
   },
   "https://ir.car-mart.com/ESG/ESG-reports/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795060134.9191763,
+    "checked_at": 1795145056.6394184,
     "html_fingerprint": ""
   },
   "https://ir.car-mart.com/corporate-responsability/default.aspx": {
@@ -696,43 +711,48 @@
   },
   "https://ir.car-mart.com/overview/committee-composition/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795058856.713815,
+    "checked_at": 1795143799.9560974,
     "html_fingerprint": ""
   },
   "https://ir.clearwaterpaper.com/investors/governance/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795057439.27947,
-    "html_fingerprint": "e7389421e6ca740e08ebfe7887777da757ceac1797a3d177102b0af70e92f707"
+    "checked_at": 1795142018.4548526,
+    "html_fingerprint": ""
   },
   "https://ir.concentrix.com/financials/annual-reports": {
     "browser_required": true,
-    "checked_at": 1795057825.4255166,
+    "checked_at": 1795142530.5202224,
     "html_fingerprint": ""
   },
   "https://ir.concentrix.com/governance/governance-documents-and-charters": {
     "browser_required": true,
-    "checked_at": 1795059264.0866253,
-    "html_fingerprint": "f84d59a654d9115a24c6639d81bfe6ef98f601fcf294a6af2c62692427932dce"
+    "checked_at": 1795144019.4982479,
+    "html_fingerprint": ""
   },
   "https://ir.corporate.openlane.com/investor-relations/governance/code-of-conduct-and-ethics/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795055624.717499,
+    "checked_at": 1795140164.6620219,
     "html_fingerprint": ""
   },
   "https://ir.corporate.openlane.com/investor-relations/governance/governance-guidelines/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795057758.474883,
+    "checked_at": 1795142455.2152119,
+    "html_fingerprint": ""
+  },
+  "https://ir.douglasemmett.com/management/documents/default.aspx": {
+    "browser_required": true,
+    "checked_at": 1795138818.6566,
     "html_fingerprint": ""
   },
   "https://ir.enovix.com/corporate-governance/governance-highlights/": {
-    "browser_required": true,
-    "checked_at": 1795058552.2567296,
-    "html_fingerprint": ""
+    "browser_required": false,
+    "checked_at": 1795142833.2790055,
+    "html_fingerprint": "e24b6e96b6d4bd92198ad16837ad631b3b9b4ca56bc198153230c84a52e78896"
   },
   "https://ir.gentex.com/corporate-governance/documents-and-charters": {
-    "browser_required": false,
-    "checked_at": 1794970295.1436343,
-    "html_fingerprint": "5be6a773397425a4537422f077810a830d65b47ad779ef4a526321a1af5c5a7b"
+    "browser_required": true,
+    "checked_at": 1795139685.3030274,
+    "html_fingerprint": ""
   },
   "https://ir.gentex.com/investor-relations": {
     "browser_required": false,
@@ -741,38 +761,38 @@
   },
   "https://ir.graftech.com/investors/default.aspx#governance": {
     "browser_required": true,
-    "checked_at": 1795060261.4320323,
+    "checked_at": 1795145178.1274788,
     "html_fingerprint": ""
   },
   "https://ir.graftech.com/sustainability/default.aspx#workforce": {
     "browser_required": true,
-    "checked_at": 1795059226.354883,
-    "html_fingerprint": "f4af41006cf36b1c89e8fae1c7eabc03b27838c05149f647acaadcf66316a1d2"
+    "checked_at": 1795143983.5382717,
+    "html_fingerprint": ""
   },
   "https://ir.healthequity.com/corporate-governance": {
     "browser_required": true,
-    "checked_at": 1795058509.2716672,
+    "checked_at": 1795143435.3161187,
     "html_fingerprint": ""
   },
   "https://ir.healthequity.com/corporate-governance%0A": {
     "browser_required": true,
-    "checked_at": 1795057051.3033974,
+    "checked_at": 1795141974.5085003,
     "html_fingerprint": ""
   },
   "https://ir.hellofreshgroup.com/websites/hellofresh/English/4000/corporate-governance.html": {
     "browser_required": true,
-    "checked_at": 1795054312.957679,
+    "checked_at": 1795138760.259202,
     "html_fingerprint": "7a1d1837495a56227baf42a8041f3855621d4c93412877d87b0dca85a3800e23"
   },
   "https://ir.homestreet.com/governance/documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795054931.9672022,
-    "html_fingerprint": ""
+    "checked_at": 1795139503.1040645,
+    "html_fingerprint": "ea6ae13f4ba742edeed36e7359a7ec47fa4086c54e8a62ae8717d7ac9477168e"
   },
   "https://ir.independentbank.com/corporate-profile/default.aspx": {
-    "browser_required": false,
-    "checked_at": 1794970377.8386965,
-    "html_fingerprint": "a0c0fe4e7ceae262f4ae6d220b6bd4f6263f8a827c8a0aa2de143a7a7a29395c"
+    "browser_required": true,
+    "checked_at": 1795139747.338661,
+    "html_fingerprint": ""
   },
   "https://ir.interdigital.com/esg/governance/documents/default.aspx": {
     "browser_required": true,
@@ -781,42 +801,42 @@
   },
   "https://ir.interdigital.com/esg/overview/": {
     "browser_required": true,
-    "checked_at": 1795055436.1781182,
+    "checked_at": 1795139751.4896057,
     "html_fingerprint": ""
   },
   "https://ir.kezarlifesciences.com/financials-filings/sec-filings": {
     "browser_required": true,
-    "checked_at": 1795058278.6822953,
+    "checked_at": 1795142768.3408425,
     "html_fingerprint": ""
   },
   "https://ir.laddercapital.com/governance-library/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795054453.9355304,
+    "checked_at": 1795138683.2987072,
     "html_fingerprint": ""
   },
   "https://ir.lensar.com/overview/default.aspx": {
     "browser_required": true,
-    "checked_at": 1794216592.2946272,
+    "checked_at": 1795141204.2767892,
     "html_fingerprint": ""
   },
   "https://ir.manitowoc.com/financials/annual-reports/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795055911.6750548,
+    "checked_at": 1795140701.4221416,
     "html_fingerprint": ""
   },
   "https://ir.naturalhealthtrendscorp.com/annual-reports": {
     "browser_required": true,
-    "checked_at": 1795058569.2923727,
+    "checked_at": 1795143495.3528705,
     "html_fingerprint": "dd1c43a4c7b87bda9864fd137a0b0763cd2e1ead4f9bc0cea37b276fa59d454e"
   },
   "https://ir.olaplex.com/financial-information/annual-reports-proxy-statements": {
     "browser_required": true,
-    "checked_at": 1795059330.2913153,
-    "html_fingerprint": "54e74c050e8a67787dc5eb582c8d6b08b3497effb6c5aee859f292b6336985b7"
+    "checked_at": 1795144070.2563758,
+    "html_fingerprint": "f60613ece0f02db1cac8813b8b006c9172b9ab426ae49b5115ff755312212c2c"
   },
   "https://ir.portagebiotech.com/corporate-governance/governance-overview": {
     "browser_required": true,
-    "checked_at": 1795058820.3107553,
+    "checked_at": 1795143764.1220317,
     "html_fingerprint": ""
   },
   "https://ir.quantumscape.com/corporate-governance/documents-charters": {
@@ -826,22 +846,22 @@
   },
   "https://ir.quantumscape.com/governance/leadership/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795058778.8806374,
+    "checked_at": 1795143720.5255911,
     "html_fingerprint": ""
   },
   "https://ir.rayonier.com/corporate-governance#governanceDocuments": {
     "browser_required": true,
-    "checked_at": 1795056514.6336246,
-    "html_fingerprint": "b98cf41ba9768954d61732332c86c215e0af931b30a67fdc6d42d49a21408ed5"
+    "checked_at": 1795141049.693351,
+    "html_fingerprint": "d0efc124a8de714744f98361baa2e04d893fec9cb35404f7b903ee0d5b738fe2"
   },
   "https://ir.rockwellmed.com/financials/annual-reports/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795055630.3874223,
+    "checked_at": 1795140168.6721945,
     "html_fingerprint": ""
   },
   "https://ir.sonimtech.com/sec-filings/annual-reports": {
     "browser_required": true,
-    "checked_at": 1795057795.4649122,
+    "checked_at": 1795142325.6940222,
     "html_fingerprint": "7710ca714224055c688bba82adaa5e4c707fb1b928b778eaba94e7d1fb142ce2"
   },
   "https://ir.te.eg/en/CorporateNews/GeneralAssembly": {
@@ -851,18 +871,23 @@
   },
   "https://ir.teladochealth.com/corporate-governance/governance-documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795058557.4381597,
+    "checked_at": 1795142840.0212,
+    "html_fingerprint": ""
+  },
+  "https://ir.titan-intl.com/governance/committee-composition/nominating-committee/default.aspx": {
+    "browser_required": true,
+    "checked_at": 1795138814.7824225,
     "html_fingerprint": ""
   },
   "https://ir.titan-intl.com/governance/governance-documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795057800.106645,
+    "checked_at": 1795142505.258079,
     "html_fingerprint": ""
   },
   "https://ir.tripadvisor.com/corporate-governance/corporate-governance": {
-    "browser_required": false,
-    "checked_at": 1794976413.2646444,
-    "html_fingerprint": "9b8ed8e2d07244408b9c00edec2557824dc10269b37c4f760dd979abfd6192a3"
+    "browser_required": true,
+    "checked_at": 1795145336.9018888,
+    "html_fingerprint": ""
   },
   "https://ir.tscan.com/": {
     "browser_required": false,
@@ -870,14 +895,14 @@
     "html_fingerprint": "7746737bfb0dc8168ce9f96e46b63d16458faa8622e2f39986aae7e5df7c06d3"
   },
   "https://ir.tscan.com/corporate-governance/committee-composition": {
-    "browser_required": true,
-    "checked_at": 1795054485.6802495,
-    "html_fingerprint": ""
+    "browser_required": false,
+    "checked_at": 1795138725.5009034,
+    "html_fingerprint": "39cf9aacf997460cd361c5e83ed5b75aa797979b29c5541f915606ec556579ff"
   },
   "https://ir.valmore.com/en/bod-minutes-and-general-assembly": {
     "browser_required": true,
-    "checked_at": 1795058362.2764792,
-    "html_fingerprint": "2082bcf51eb15c783ce1ef7ff11927fbdee66643add0fa8db42ee225c59a32e5"
+    "checked_at": 1795142826.3826816,
+    "html_fingerprint": ""
   },
   "https://ir.valmore.com/en/presentations-and-publications": {
     "browser_required": false,
@@ -886,47 +911,52 @@
   },
   "https://ir.veritexbank.com/corporate-governance/highlights": {
     "browser_required": true,
-    "checked_at": 1795056509.779482,
+    "checked_at": 1795141044.6238747,
     "html_fingerprint": ""
   },
   "https://ir.whitestonereit.com/overview/documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795055425.368842,
+    "checked_at": 1795139729.473289,
     "html_fingerprint": ""
   },
   "https://itmg.co.id/governance/policy-and-documentation/published-policy": {
     "browser_required": true,
-    "checked_at": 1795056523.6671722,
-    "html_fingerprint": "f1a2477f03329394713d96363c45a0c71a348a800f100ac7da0367ac6dc56e66"
+    "checked_at": 1795141067.670168,
+    "html_fingerprint": "7d1532c9d30b3ff7cc4d23b2b4c737521a9676e01a4352c1379d8dbc4a7dfcdb"
   },
   "https://itmg.co.id/governance/policy-and-documentation/published-policy?page=2": {
     "browser_required": true,
-    "checked_at": 1795057516.2790585,
-    "html_fingerprint": "7fe5d0868cbd943efd9790cef744dd431fb0baa436ead799211a1494702d6695"
+    "checked_at": 1795142101.9427443,
+    "html_fingerprint": "e652fecb59dd36a5291c0195a5d547951ac47f219a571c54fc33bee20292fe29"
+  },
+  "https://kenholdings.com.my/annual-reports/": {
+    "browser_required": true,
+    "checked_at": 1795138809.313458,
+    "html_fingerprint": ""
   },
   "https://kenholdings.com.my/corporate-governance/": {
     "browser_required": true,
-    "checked_at": 1795057795.41476,
+    "checked_at": 1795142500.508709,
     "html_fingerprint": ""
   },
   "https://kimpur.com/en/our-policy/": {
     "browser_required": true,
-    "checked_at": 1795054436.7302942,
-    "html_fingerprint": "71daa24cbe52b9007c0982d83e6f6e8b90329b4a6d1c7d528e90b79b661c5de9"
+    "checked_at": 1795138821.1322577,
+    "html_fingerprint": "b5b3cd76eca471a9373a148dcc4ad5675d72e66bac0ff45a6007eea9e6b679f7"
   },
   "https://kimteckcheong.com/investor-relations/": {
     "browser_required": true,
-    "checked_at": 1795055549.8025656,
+    "checked_at": 1795140076.4498088,
     "html_fingerprint": ""
   },
   "https://kimteckcheong.com/our-heritage/": {
     "browser_required": true,
-    "checked_at": 1795060186.5380437,
+    "checked_at": 1795145299.6755369,
     "html_fingerprint": ""
   },
   "https://lsbindustries.com/sustainability/": {
     "browser_required": true,
-    "checked_at": 1795054383.7202113,
+    "checked_at": 1795138777.8330405,
     "html_fingerprint": "e44822b9a3b740c289bf63d76d21a48c7702de9d4b12c03952e46d43131ee3d0"
   },
   "https://ltg.com.ph/annual-reports/": {
@@ -934,189 +964,209 @@
     "checked_at": 1793941178.5093045,
     "html_fingerprint": "ada257ecff439ff3c503861037215439ee9a41f84b4c8b3691aa7f63991c3399"
   },
+  "https://malibuboatsinc.com/investor-information/annual-reports/default.aspx": {
+    "browser_required": true,
+    "checked_at": 1795138805.926419,
+    "html_fingerprint": ""
+  },
   "https://marco-groups.com/sustainability/": {
     "browser_required": true,
-    "checked_at": 1795056499.0083852,
-    "html_fingerprint": "58c023811e93823a9da8c9572bb50418cbcf95a97511e922dc71ae6a94c3f86b"
+    "checked_at": 1795141039.537969,
+    "html_fingerprint": "344e555c624a15bc1f1efb789439025bf1758ff1c9179095f4a5c8bc652b6afd"
   },
   "https://mtaggroup.com/investor-relations/corporate-governance/": {
-    "browser_required": true,
-    "checked_at": 1795059781.6421666,
-    "html_fingerprint": ""
+    "browser_required": false,
+    "checked_at": 1795144762.544781,
+    "html_fingerprint": "31d543cc42a25744e8cbba8e8b4e402fc3a91d6c140ceb06cf11470a4690115c"
   },
   "https://muiproperties.com.my/code-of-business-ethics/": {
     "browser_required": true,
-    "checked_at": 1795055361.6804101,
-    "html_fingerprint": "632e9f699401f5a51889b7749e12db94c2ac53d043125480e1ba5e1754df43ff"
+    "checked_at": 1795139686.5826168,
+    "html_fingerprint": "8bf337a3fc280b03cde8f79beca58a45022e838550e666a49c6eaa3df7475a92"
   },
   "https://nalcoindia.com/company/policies-docs/": {
     "browser_required": true,
-    "checked_at": 1795058596.7779434,
+    "checked_at": 1795142875.9477983,
     "html_fingerprint": ""
   },
   "https://navitassemi.com/sustainability-and-gan/%20:%20https:/ir.navitassemi.com/corporate-governance/documents-charters": {
     "browser_required": true,
-    "checked_at": 1795058699.0935094,
+    "checked_at": 1795143657.9483724,
     "html_fingerprint": "734ebe0fb2edc65da2c8d8a5355f4968fe894965595a0318cdbda3fd718bc630"
   },
   "https://navitassemi.com/sustainability-report-2021/": {
     "browser_required": true,
-    "checked_at": 1795056436.3055496,
+    "checked_at": 1795141150.0614412,
     "html_fingerprint": "734ebe0fb2edc65da2c8d8a5355f4968fe894965595a0318cdbda3fd718bc630"
   },
   "https://ninetyone.com/en/investor-relations/corporate-governance/board-committees?lc=Board+committees": {
     "browser_required": true,
-    "checked_at": 1795059979.5578353,
+    "checked_at": 1795144853.9038143,
     "html_fingerprint": ""
   },
   "https://ninetyone.com/en/investor-relations/corporate-governance/governance-documents-and-policies": {
-    "browser_required": false,
-    "checked_at": 1795059880.0369868,
-    "html_fingerprint": "741a1b2d05213ed7de2e717a066b5dfbbac45168cb0d389d427c12e83c11c7c1"
+    "browser_required": true,
+    "checked_at": 1795144893.3593757,
+    "html_fingerprint": ""
   },
   "https://novagold.com/investors/financials-reports/": {
     "browser_required": true,
-    "checked_at": 1795054392.9033139,
+    "checked_at": 1795138802.7505386,
     "html_fingerprint": ""
+  },
+  "https://nuclearelectrica.ro/ir/en/2025/12/29/12-02-2026-2/": {
+    "browser_required": true,
+    "checked_at": 1795138866.8222356,
+    "html_fingerprint": "9ed62a79855b1cb5e7640aeae8501bd2a3c02fc45d47e3b5476ec6d0892fcfae"
   },
   "https://online.fibi.co.il/wps/portal/FibiMenu/MarketingEN/AnInformation/AnInvestorRelations/AnEthics": {
     "browser_required": true,
-    "checked_at": 1795057562.0217614,
-    "html_fingerprint": "65db0008c48fe051535f82c0f3ba6121c06fb00cfbb729c235de543a55beb698"
+    "checked_at": 1795142147.8265183,
+    "html_fingerprint": "e5879cce42e113c436ae9159a93ba696b4f3c1dee675763badfbca965a73f728"
   },
   "https://online.fibi.co.il/wps/portal/FibiMenu/MarketingEN/AnInformation/AnInvestorRelations/AnFinancialStatements/An2026": {
     "browser_required": true,
-    "checked_at": 1795054953.5066175,
-    "html_fingerprint": "61f42eac5d7a4ac11d8ecdf4bc82ec56e40fbb50c79b052549c87e97edfbd6cf"
+    "checked_at": 1795139515.9986362,
+    "html_fingerprint": "5cc33f42e4101084ea49b5e53194a9ac69f8e7a062408d4daf4fbcb32bb69528"
   },
   "https://online.fibi.co.il/wps/portal/FibiMenu/MarketingEN/AnInformation/AnInvestorRelations/AnImmediateReports/An2024": {
     "browser_required": true,
-    "checked_at": 1795054475.6686313,
-    "html_fingerprint": "9405c576c3622f12aa24887872d557f9ddd20b596e1d1fb7a3f63c020c1cc378"
+    "checked_at": 1795138707.6811514,
+    "html_fingerprint": "84a465da59a524b443e6564831f71f333b8f5ea84c1227eafa4a7d8fa3e49c80"
   },
   "https://online.fibi.co.il/wps/portal/FibiMenu/MarketingEN/AnInformation/AnInvestorRelations/AnImmediateReports/An2025": {
     "browser_required": true,
-    "checked_at": 1795054949.7597225,
-    "html_fingerprint": "364748443568556d9dbd0f0a7bb02a760fc40b74bd1f4234fe6422a859327e17"
+    "checked_at": 1795139512.202588,
+    "html_fingerprint": "85353bf9ad60f3ccadbac4e05b1fe250ad4d38bdf1b6ef10682540da053beabe"
   },
   "https://online.fibi.co.il/wps/portal/FibiMenu/MarketingEN/AnInformation/AnInvestorRelations/AnImmediateReports/An2026": {
     "browser_required": true,
-    "checked_at": 1795055446.9220958,
-    "html_fingerprint": "778161a12a822089d32fd32f1ab5ba8b304c19f8b9ca7a06569299d476816f9c"
+    "checked_at": 1795139757.9880657,
+    "html_fingerprint": "26b418950cf51ecbf5ccfac92ae813c36d15dd34ae6a96f7dbf4b23db51ff317"
   },
   "https://pieib.com.my/2024/05/17/elementor-9804/": {
     "browser_required": true,
-    "checked_at": 1795055913.6787224,
-    "html_fingerprint": "e4bba2d1bff007dcf4596fa90eb83aa8a8644b3226cf06fd89eda4e83085a705"
+    "checked_at": 1795140731.4310684,
+    "html_fingerprint": "6d1ae9983049276ee378b4b156c5db444983989d35672e7f26b749df8569f6c3"
   },
   "https://pnnt.pennantpark.com/corporate-governance/governance-documents": {
     "browser_required": true,
-    "checked_at": 1795059264.9940095,
+    "checked_at": 1795144017.8352592,
     "html_fingerprint": ""
   },
   "https://qcrh.com/governance/governance-documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795056529.1157713,
-    "html_fingerprint": ""
+    "checked_at": 1795141232.783776,
+    "html_fingerprint": "daa259bd29b0d3682c721deee31401d9a7a21275656fb523c4e918467d64adf5"
   },
   "https://qcrh.q4ir.com/esg/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795058589.095547,
+    "checked_at": 1795142867.2652502,
+    "html_fingerprint": ""
+  },
+  "https://qcrh.q4ir.com/governance/governance-documents/default.aspx": {
+    "browser_required": true,
+    "checked_at": 1795144766.165336,
     "html_fingerprint": ""
   },
   "https://rategain.com/": {
     "browser_required": true,
-    "checked_at": 1795059257.269626,
-    "html_fingerprint": "b90d84d43a2e89050ee19e81a0325c801c4546e6f5d49ccac262d0b6a98a5cd4"
+    "checked_at": 1795144014.3524876,
+    "html_fingerprint": "ccafe23bb9ef1ca43a18320c64b5bb12b184a16f24054a8e639b6fb8251d35cb"
   },
   "https://rategain.com/about-us/governance/": {
     "browser_required": true,
-    "checked_at": 1795054925.790826,
-    "html_fingerprint": "efab061bb55f4b876cca26a9318beab352f7f107275c1c914c4f92040f136901"
+    "checked_at": 1795139499.7735262,
+    "html_fingerprint": "b06d6d305cb6249bb09e784f965ad836a9223801a54491d4a108b0c0b9fdb5ad"
   },
   "https://reports.zueblin.ch/22-23/ar/en/": {
     "browser_required": true,
-    "checked_at": 1795060140.256238,
-    "html_fingerprint": "a4558e18f79184c768208ea45389ef71426f9c78c2757e12de5f5610c7960ec7"
+    "checked_at": 1795145057.33443,
+    "html_fingerprint": "e516c953e9691bb270dbeacb839d9e6731e50e70b2062674dc8d434efec84ec9"
   },
   "https://sandersondesign.group/about-us/strategy-and-sustainability/": {
     "browser_required": true,
-    "checked_at": 1795054369.65218,
+    "checked_at": 1795138594.9624321,
     "html_fingerprint": "21b4d2224bc317ce04845761962b7e916b1f3ac3d24ca83698846d626885fec2"
   },
   "https://sei.strategiceducation.com/about/corporate-governance/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795054431.6813512,
+    "checked_at": 1795138656.3191526,
     "html_fingerprint": ""
   },
   "https://sei.strategiceducation.com/about/corporate-responsibility/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795060230.2849557,
+    "checked_at": 1795145123.55768,
     "html_fingerprint": ""
   },
   "https://sensirion.com/company/investor-relations/sustainability": {
     "browser_required": true,
-    "checked_at": 1795058518.6515858,
-    "html_fingerprint": "e99934f40defb6bb5aece94e15bb0cb3628df27e9e47e357a55422e8af606845"
+    "checked_at": 1795143460.6595588,
+    "html_fingerprint": "41de4732b2ff945fb1f2b50fa58913055d4cc6ef1c9c3230169a9c7a67714d59"
   },
   "https://sobeyssbreport.com/sustainable-business-report/environmental-management/": {
     "browser_required": true,
-    "checked_at": 1795058271.6360528,
+    "checked_at": 1795142758.1246994,
     "html_fingerprint": ""
   },
   "https://sobeyssbreport.com/sustainable-business-report/esg-data-policies/": {
     "browser_required": true,
-    "checked_at": 1795056996.7812033,
+    "checked_at": 1795141920.6467204,
     "html_fingerprint": ""
   },
   "https://stockyardsbancorp.q4ir.com/governance/governance-documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795055849.3941286,
+    "checked_at": 1795140621.0112936,
     "html_fingerprint": ""
   },
   "https://stockyardsbancorp.q4ir.com/resources/esg-doc/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795059374.6172009,
-    "html_fingerprint": "9e7918249233ef22a2f4ecf72c15109d73318f9f5d34b21f7bd5eee7c855cbc7"
+    "checked_at": 1795144126.8215992,
+    "html_fingerprint": ""
   },
   "https://syntheticmr.com/investors/press-releases/": {
     "browser_required": true,
-    "checked_at": 1795057585.079265,
+    "checked_at": 1795142172.5576637,
     "html_fingerprint": "66a571744419daaf724ecc87e1336e96cd0c5bcf18f04506a2622493e6e53414"
+  },
+  "https://tower-reit.com/sustainability": {
+    "browser_required": true,
+    "checked_at": 1795144727.5609431,
+    "html_fingerprint": ""
   },
   "https://wegmans.com.my/corporate-governance/": {
     "browser_required": true,
-    "checked_at": 1795060166.248279,
-    "html_fingerprint": "3f2f2a1e355fc3a760cf8fbbca74ee0f5b96db8058d5244815bb57db88cac9fe"
+    "checked_at": 1795145059.3994493,
+    "html_fingerprint": "371935d41482e1737d110210c6d79e94aa2495981e7611bb696f604b70212a78"
   },
   "https://wtkholdings.com/human-rights/": {
     "browser_required": true,
-    "checked_at": 1795055666.7802503,
+    "checked_at": 1795140205.6383877,
     "html_fingerprint": ""
   },
   "https://www.abmfujiya.com.my/invest6.htm": {
     "browser_required": true,
-    "checked_at": 1795060201.4076464,
-    "html_fingerprint": "366cc7404d02bf06c3551eef3f11bd8c1c40671400fa44809a5abb4da7d0d50b"
+    "checked_at": 1795145093.5453248,
+    "html_fingerprint": "f43a5d5b1e0d38d6c3e75a0e3ae188f5c7aed33107a25f8503ecdff31f21de3f"
   },
   "https://www.acclimited.com/#collapse2": {
     "browser_required": true,
-    "checked_at": 1795058821.1710439,
-    "html_fingerprint": "9b3430dcf7903e302592480f3514888e0e2e53bce0dbbaeb4c122c54215d5813"
+    "checked_at": 1795143777.9971976,
+    "html_fingerprint": "ee9ba67e4eb9c698a85a31c6829d3e6ff5aac028c811b1523d587b5800bf262b"
   },
   "https://www.acclimited.com/investors/policies": {
     "browser_required": true,
-    "checked_at": 1795056547.4418325,
-    "html_fingerprint": "a48194736e7a534ded77d00db5f0d962b8c4daa172ea5f267d5fede1abeea89c"
+    "checked_at": 1795141253.2015774,
+    "html_fingerprint": "1088d66389dd0382625b4b9416e096e24176cbacf79aaa936b7c80a396e69319"
   },
   "https://www.advantageog.com/investors/financial-reports": {
     "browser_required": true,
-    "checked_at": 1795058599.3135047,
-    "html_fingerprint": "25b55f0db3bf735255795891e92c20a6fbb024c1f5e7c571068afd4f56f9f8b8"
+    "checked_at": 1795143525.3700871,
+    "html_fingerprint": "84b9f9f272f761a8a31f3892c2f7562830caa225539d86ada05d9e8aa594d94a"
   },
   "https://www.agf.com/corporate/corporate-responsibility/corporate-governance/index.jsp#cPanel1": {
     "browser_required": true,
-    "checked_at": 1795060216.5491807,
+    "checked_at": 1795145329.6900969,
     "html_fingerprint": "2b0443a104a524fcb867cb210c005447417b65a068e78536df267383ff33601a"
   },
   "https://www.agf.com/corporate/corporate-responsibility/corporate-governance/index.jsp#panel4": {
@@ -1131,108 +1181,108 @@
   },
   "https://www.akvagroup.com/investors/financial-info/annual-reports/": {
     "browser_required": true,
-    "checked_at": 1795054485.231715,
-    "html_fingerprint": "d3bfadbf7b27fdd272036fb300d7dcdd10befb80eb0aa2bb7b982b1d701c319f"
+    "checked_at": 1795138888.4821858,
+    "html_fingerprint": "4615a88c425963c118901a051a291e488a8da5cdc5360ec15c40dd997973e20f"
   },
   "https://www.alijarah.com/en/annual-report/": {
     "browser_required": true,
-    "checked_at": 1795055663.9250164,
-    "html_fingerprint": "87460c96dd8a41ce1486b362476da55bcf3d576b5b34475f88b7fbe9dd70ef16"
+    "checked_at": 1795140202.8881543,
+    "html_fingerprint": "e745a9a64196e40413458572b803e35cb89d70f0abd1d978ac9013c1ce2701f3"
   },
   "https://www.allcargogroup.in/esg/": {
     "browser_required": true,
-    "checked_at": 1795057801.3743613,
+    "checked_at": 1795142506.5602686,
     "html_fingerprint": ""
   },
   "https://www.allcargologistics.com/investors/investorservices/announcements": {
     "browser_required": true,
-    "checked_at": 1795055397.536636,
+    "checked_at": 1795139718.934902,
     "html_fingerprint": "8849ff909f8fb13b238dbd226ed92d6548247222b6d692c0261f5d08ed51484f"
   },
   "https://www.alokind.com/shareholder.html": {
     "browser_required": true,
-    "checked_at": 1795054429.6737761,
+    "checked_at": 1795138654.6254246,
     "html_fingerprint": "88fd3d786422387b3bd43d4c81b1af79e93bd4f11aabfeeaf04b41c37a8381b9"
   },
   "https://www.alrosa.ru/en/about/corporate-governance/#objectives-and-structure": {
     "browser_required": true,
-    "checked_at": 1795054461.6891654,
-    "html_fingerprint": ""
+    "checked_at": 1795138686.3334491,
+    "html_fingerprint": "c98aa559399ffa90b2ae59814a0b9e0f7d1bc7aed9ed5c1cfb96f1973a3bb68e"
   },
   "https://www.alrosa.ru/en/investors/results-reports/esg-reports/2026/": {
     "browser_required": true,
-    "checked_at": 1795057874.4616537,
-    "html_fingerprint": ""
+    "checked_at": 1795142399.0195098,
+    "html_fingerprint": "9aa1cebffc44ba1da9681edd7ac5d58937bab05b04cbeae52fff21ce60dcacee"
   },
   "https://www.alrosa.ru/en/investors/results-reports/finance/2025/": {
     "browser_required": true,
-    "checked_at": 1795057835.7172418,
-    "html_fingerprint": ""
+    "checked_at": 1795142540.242181,
+    "html_fingerprint": "d64dc83a22b9fc616685819a9e5867aa095bfc7487bdd9ebb91d5059ea907ed3"
   },
   "https://www.ancomlogistics.com.my/corporate_governance.php": {
     "browser_required": true,
-    "checked_at": 1795054417.4114041,
+    "checked_at": 1795138820.0087602,
     "html_fingerprint": "8952aea9d44fee0016533acb3211ec20b2efeb69655094b938335ad4fe1d454d"
   },
   "https://www.arabpotash.com/EN/ListDetails/Shareholder_Announcement/1052/23": {
     "browser_required": true,
-    "checked_at": 1795054474.9826715,
-    "html_fingerprint": "053df50406bbebd0c7c30e4317f6f9feed4ff01f852a3d98fe38fda69843ffad"
+    "checked_at": 1795138894.0648415,
+    "html_fingerprint": "f0ae5f2809c289980df27690baca6ee5be891b645c8e72a39afb65f9e354852e"
   },
   "https://www.arabpotash.com/En/List/Sustainability_Reports": {
     "browser_required": true,
-    "checked_at": 1795057013.835088,
-    "html_fingerprint": "750d2f26d5a2a913c7b36925b82456811e70b9c583405fe92e3219eea6c2d515"
+    "checked_at": 1795141919.6342895,
+    "html_fingerprint": "7471d7af49d41415e6aacdbe5169fb1baf15175548050774f7c7a2243d23461b"
   },
   "https://www.arcelikglobal.com/en/company/reports-presentations/materiality-reports/": {
     "browser_required": true,
-    "checked_at": 1795054400.5143063,
-    "html_fingerprint": "a5f7c1cf96380ef1ac494632e782c38b2b291b8ad773dceaa02463c8003c94e9"
+    "checked_at": 1795138625.013418,
+    "html_fingerprint": "04cfdcb4dcf5b40c72d3f79c23397407b677e0354e309059327bf3a7039889b6"
   },
   "https://www.ardaghmetalpackaging.com/about-us/media-centre": {
     "browser_required": true,
-    "checked_at": 1795054471.672283,
-    "html_fingerprint": "22f5407f3f10ef421ecaaeb4f4c7ee960aa4ada3095aa34239dbc0c7a3b78285"
+    "checked_at": 1795138898.4314282,
+    "html_fingerprint": "0e09949ce6755f5bfd49075f74e7a93aea3cb1519d69f99cdaa40815e94bad34"
   },
   "https://www.ardaghmetalpackaging.com/esg/governance#risk-management": {
     "browser_required": true,
-    "checked_at": 1795057555.0644248,
-    "html_fingerprint": "9a780d9dc279e8c95e6c198b14f7664db7807aec03322a9a3804792ce050a402"
+    "checked_at": 1795142143.7072408,
+    "html_fingerprint": "bb4e8b03cd3707643b21ae25afb1ae97162920e04b70c33d6588015cda68a62a"
   },
   "https://www.aristongroup.com/en/sustainability/our-esg-history": {
     "browser_required": true,
-    "checked_at": 1795058729.1083117,
+    "checked_at": 1795143687.957693,
     "html_fingerprint": "77e549de59f0cd15aa9a23cbe171893df71b76f8d55a2fd71766c785113e5fbc"
   },
   "https://www.atlantasanad.ma/apropos-atlantasanad/notre-politique-capital-humain": {
     "browser_required": true,
-    "checked_at": 1795057063.7690852,
+    "checked_at": 1795142001.202508,
     "html_fingerprint": "f494945cf8bebb2597f76dc1c34a350abee8aa9b42bb418c67972169f34b5b09"
   },
   "https://www.atlantasanad.ma/apropos-atlantasanad/rse": {
     "browser_required": true,
-    "checked_at": 1795057564.7739933,
+    "checked_at": 1795142150.6346264,
     "html_fingerprint": "f494945cf8bebb2597f76dc1c34a350abee8aa9b42bb418c67972169f34b5b09"
   },
   "https://www.atria.com/en/investors/financial-information/annual-reports/": {
     "browser_required": true,
-    "checked_at": 1795059749.906248,
+    "checked_at": 1795144757.5699854,
     "html_fingerprint": "9f9db0e38ba226ca1c49ec310afb9e20e74dee98d04731c670a497e1f8bda1c9"
   },
   "https://www.auraminerals.com/en/who-are-we/#governanca-corporativa": {
     "browser_required": true,
-    "checked_at": 1795058207.1178014,
-    "html_fingerprint": "69402c1830502b70e7f974603430f59d21d3660a2ddcf18bec822c05f74d8d38"
+    "checked_at": 1795142689.23663,
+    "html_fingerprint": "2b0c3e2bc60874c576d0246c3dc5939496fbe6fe416dbdbe1eee421731ba8e75"
   },
   "https://www.avon-technologiesplc.com/about-us/governance/our-policies/": {
     "browser_required": true,
-    "checked_at": 1795056547.0958376,
+    "checked_at": 1795141082.3087342,
     "html_fingerprint": ""
   },
   "https://www.avon-technologiesplc.com/csr/people/": {
     "browser_required": true,
-    "checked_at": 1795055633.9119663,
-    "html_fingerprint": "f51ef1903b73e8994a298029c369f441da900b8277e534952d7c1b20143f69af"
+    "checked_at": 1795140176.9094949,
+    "html_fingerprint": "ef9588597b2fc68e19977cf459314cf1fdb5bc8dff69a6fa0cd22a00d74d79e8"
   },
   "https://www.avon-technologiesplc.com/investors/governance/policies/": {
     "browser_required": true,
@@ -1241,72 +1291,72 @@
   },
   "https://www.avon-technologiesplc.com/investors/results-reports-and-presentations/": {
     "browser_required": true,
-    "checked_at": 1795055918.6894746,
-    "html_fingerprint": "17865f7fe990d226da08774039172ae30f6547e24ab45d2bb0c24ae7560fb5fd"
+    "checked_at": 1795140702.1369674,
+    "html_fingerprint": "ba49d997f14c0c1803ac2e0b0c27cb18bf654dda17cea72d6fddf00219a6cdf3"
   },
   "https://www.bailliegifford.com/en/uk/individual-investors/about-us/responsible-investment/?tab=documents": {
     "browser_required": true,
-    "checked_at": 1795058331.6665628,
-    "html_fingerprint": "e88697f6283b905144a52058e9286c5e7428e1625362eefe84daa3e0e1a7a138"
+    "checked_at": 1795142818.1554685,
+    "html_fingerprint": "cb41ff3a7b661152b0f1e72a6930e7dfd13567ef5dc8001c9a02015cb856d3a2"
   },
   "https://www.bajajconsumercare.com/investor.php": {
     "browser_required": true,
-    "checked_at": 1795058521.029441,
-    "html_fingerprint": "0d82c93ad608cdc92204b2eff4209630e4ca10f75adaea256fcb01cc17f0be65"
+    "checked_at": 1795142801.97123,
+    "html_fingerprint": "7ecc595570894e326d87c9fe24b068dc87c43bb301da4a4af9f11141ded0584c"
   },
   "https://www.bankmillennium.pl/en/about-the-bank/corporate-bodies-and-governance": {
     "browser_required": true,
-    "checked_at": 1795059277.3099794,
-    "html_fingerprint": "ed745520343ebcff78a68b7dec0694e0b325be1fd5e0acbe559b6779f7af8a9b"
+    "checked_at": 1795144028.8168263,
+    "html_fingerprint": "e1fab5b124191943d94421f0b268ff804739fdd0c515230d273ce04e03c27b8b"
   },
   "https://www.bankneocommerce.co.id/en/company-information/financial-report#Annual%20Report": {
     "browser_required": true,
-    "checked_at": 1795057461.3586144,
-    "html_fingerprint": "f2432ee6fe29c01000e756deaed7851392eeb7af4d1250675989690f86e55908"
+    "checked_at": 1795142040.3823318,
+    "html_fingerprint": "fef75cb408f0ce1e23e424d856e6b71ea3e9e2c952a79f76f288f70c04bc86c3"
   },
   "https://www.bankneocommerce.co.id/en/company-information/investor-relation#Dividend%20Information": {
     "browser_required": true,
-    "checked_at": 1795054880.6125894,
-    "html_fingerprint": "eae141921766352e899c14cbab4891146fc56d53a27691656b5f701316c72c39"
+    "checked_at": 1795139411.7374215,
+    "html_fingerprint": "9730c4a76af4ceb631c34f0d23609c30e2671fc2b17683403bd695ffc4032379"
   },
   "https://www.bathurst.co.nz/investors-news/financial-reports/": {
     "browser_required": true,
-    "checked_at": 1795058550.437619,
+    "checked_at": 1795143492.8557465,
     "html_fingerprint": "882be5f9e45db7e9fca8849b4bee626bab69b6ce7a1f6186679e12b82652662e"
   },
   "https://www.betamek.com.my/page-4/": {
     "browser_required": true,
-    "checked_at": 1795058841.0485227,
+    "checked_at": 1795143783.1179965,
     "html_fingerprint": "51baa807b7be41e219061da5c64a5c3d02585823d0b99dfd5253358d6f71be77"
   },
   "https://www.binapuri.com.my:443/public/investor-annual-reports.aspx.html": {
     "browser_required": true,
-    "checked_at": 1795056462.0884964,
+    "checked_at": 1795141172.8055542,
     "html_fingerprint": ""
   },
   "https://www.birchcliffenergy.com/investors/reports-and-filings": {
     "browser_required": true,
-    "checked_at": 1795058644.4986115,
+    "checked_at": 1795143585.4141276,
     "html_fingerprint": "05e224e3abe116f3bfeced96a2bb9c736b10205c2e4374d12d4413c415ce76b1"
   },
   "https://www.birlasoft.com/company/investors/policies-reports-filings#shareholding-pattern": {
     "browser_required": true,
-    "checked_at": 1795054252.9245484,
-    "html_fingerprint": "8423837efa69ab2eedb57d7d4038accd225c27d345a50faf6b90d8af0be7471a"
+    "checked_at": 1795138701.192605,
+    "html_fingerprint": "3d11dd8d913f0a592a5bc60bf7177be008da09508f890d2c65ae9490bb8133ae"
   },
   "https://www.bluedart.com/about-bluedart": {
     "browser_required": true,
-    "checked_at": 1795060170.2660632,
-    "html_fingerprint": "9f0a5ca63b8b568697039e7811e8bf648c1c5bae10d412ff797ee1a5b36a2074"
+    "checked_at": 1795145088.0807364,
+    "html_fingerprint": "5d69e9edd825accaeb371ad18fd6874a94efb2f79e0e9a44d1fa28dd472ed00b"
   },
   "https://www.bluedart.com/financials": {
     "browser_required": true,
-    "checked_at": 1795058789.1242306,
-    "html_fingerprint": "0674064e41fc9147c6333bc0060e4336954f16ff33aae11f4e3f5c55a04a9ea3"
+    "checked_at": 1795143747.987776,
+    "html_fingerprint": "5a066f69301343b9a935c3f00c38cc754227bac7378952202f63b645cae34c27"
   },
   "https://www.boohooplc.com/investors/constitutional-documents.htm": {
     "browser_required": true,
-    "checked_at": 1794216553.3653522,
+    "checked_at": 1795141158.635793,
     "html_fingerprint": ""
   },
   "https://www.boohooplc.com/our-people.htm": {
@@ -1321,297 +1371,297 @@
   },
   "https://www.brightcomgroup.com/investors/corporate-governance-report/": {
     "browser_required": true,
-    "checked_at": 1795054373.413362,
-    "html_fingerprint": ""
+    "checked_at": 1795138760.9996397,
+    "html_fingerprint": "3078d2ebeb65517703018498ac4d0473854d53f08bbac447e320de7e003ac11b"
   },
   "https://www.brightcomgroup.com/investors/policies/": {
     "browser_required": true,
-    "checked_at": 1795055851.655984,
-    "html_fingerprint": "da0de08095527ed6671d95d2a138c666a8ee2b0ae1f4d9efae01e9c270d54166"
+    "checked_at": 1795140642.1087909,
+    "html_fingerprint": ""
   },
   "https://www.brinker.com/sustainability": {
     "browser_required": true,
-    "checked_at": 1795055493.3254411,
+    "checked_at": 1795140034.5957162,
     "html_fingerprint": "ce1471cad119cae917b3a5c8c3a512a69c2f6cbdc8453b75f838fec1535a526f"
   },
   "https://www.bumiarmada.com/about-us/corporate-governance/": {
     "browser_required": true,
-    "checked_at": 1795055842.3155708,
-    "html_fingerprint": "575f2b0e17cd355ec9fbada21000cf4fad8e77de15a84da19e2adefbe83d9422"
+    "checked_at": 1795140615.2305317,
+    "html_fingerprint": "69f2c63df8832e3ff7de723f8405cb5ff940896cb706149b5937eafafaa5e343"
   },
   "https://www.bumiresources.com/en/governance#supportingdocument": {
     "browser_required": true,
-    "checked_at": 1795059821.6370196,
+    "checked_at": 1795144826.187379,
     "html_fingerprint": "cf6174a8464a9e1cc9ad3764bc02c66ae5b2332251be3c628925751bcba439a7"
   },
   "https://www.bumiresources.com/en/sustainability/reports": {
     "browser_required": true,
-    "checked_at": 1795058759.1167927,
+    "checked_at": 1795143717.9682152,
     "html_fingerprint": "1e7c0dff64053eba7be150d573c7c7f11da1df25740b7f0c61fe287eed35d2b2"
   },
   "https://www.byggma.com/investor/financial-reports-and-presentations/#header_2026": {
     "browser_required": true,
-    "checked_at": 1795055943.69814,
+    "checked_at": 1795140732.1502993,
     "html_fingerprint": "f0af495bdf0260d15776301aad341900cac62f09aa7c496069348f83a1420c9f"
   },
   "https://www.cadeler.com/investor#interim-annual-reports": {
     "browser_required": true,
-    "checked_at": 1795054315.6291347,
+    "checked_at": 1795138763.978737,
     "html_fingerprint": "d486678e3c917ebba5af38668c8807127e1a344584f04c28978376cd2214be62"
   },
   "https://www.calidagroup.com/en/investors/#corporate-governance": {
     "browser_required": true,
-    "checked_at": 1795056558.8940568,
-    "html_fingerprint": "5e25805d446022a49dddc6735e19c1f58211e5589fcf108f9a41bf8263338fdb"
+    "checked_at": 1795141103.3299227,
+    "html_fingerprint": "2fcfddb74eac263155036e3a3f0cf943acaba80bdc93d77ca46ffbee0b9d7db7"
   },
   "https://www.camparigroup.com/en/page/group/governance": {
     "browser_required": true,
-    "checked_at": 1795055443.1679337,
+    "checked_at": 1795139754.5693548,
     "html_fingerprint": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d"
   },
   "https://www.camparigroup.com/en/page/investors": {
     "browser_required": true,
-    "checked_at": 1795057024.7646172,
-    "html_fingerprint": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d"
+    "checked_at": 1795141969.1018622,
+    "html_fingerprint": "ddbe61c3004e409a822718df1ccaf33fa96679242d410dfee4f4f99b27ed94f1"
   },
   "https://www.camparigroup.com/en/page/sustainability/our-people": {
     "browser_required": true,
-    "checked_at": 1795058173.7340677,
-    "html_fingerprint": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d"
+    "checked_at": 1795142659.196917,
+    "html_fingerprint": "99136677457885a6d62875f5c0d514c308451c7f68ee4b14c44b4bb7b3279bea"
   },
   "https://www.camparigroup.com/en/page/sustainability/responsible-practices": {
     "browser_required": true,
-    "checked_at": 1795058519.6047153,
+    "checked_at": 1795142800.4296494,
     "html_fingerprint": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d"
   },
   "https://www.capitala.com/publications_downloads.html": {
     "browser_required": true,
-    "checked_at": 1795054504.037132,
+    "checked_at": 1795138918.4993062,
     "html_fingerprint": ""
   },
   "https://www.capitala.com/sustainability_economic.html": {
     "browser_required": true,
-    "checked_at": 1795059240.4361289,
+    "checked_at": 1795143990.9477763,
     "html_fingerprint": ""
   },
   "https://www.capitala.com/sustainability_environmental.html": {
     "browser_required": true,
-    "checked_at": 1795056995.7739844,
+    "checked_at": 1795141919.3165786,
     "html_fingerprint": ""
   },
   "https://www.capitalpower.com/investors/financial-reporting/": {
     "browser_required": true,
-    "checked_at": 1795054939.6597898,
+    "checked_at": 1795139469.7159703,
     "html_fingerprint": "5442724f79bd17e495fe00479aafde592dc863132cb7f4592060c667ec9486eb"
   },
   "https://www.capitalpower.com/sustainability/sustainability-reports/#reports": {
     "browser_required": true,
-    "checked_at": 1795054471.2654715,
+    "checked_at": 1795138873.9676895,
     "html_fingerprint": "5442724f79bd17e495fe00479aafde592dc863132cb7f4592060c667ec9486eb"
   },
   "https://www.cervomed.com/about/": {
     "browser_required": true,
-    "checked_at": 1795060266.6277733,
-    "html_fingerprint": "b604c50d46ff285f421d3f21ebae0bf57ab81a00cc23db29bccdd4ce2e7ef4f9"
+    "checked_at": 1795145183.4226193,
+    "html_fingerprint": "bf34d72a8c98e2dc026a1d346881afaa665f2ef417bf700610aa44e057433328"
   },
   "https://www.cervomed.com/board-of-directors/": {
     "browser_required": true,
-    "checked_at": 1795060257.6193902,
-    "html_fingerprint": "34f65fa4dba2d3033c2abfdc296d5d957f88b8fd2aa7cd7449f6efef8d11f48c"
+    "checked_at": 1795145374.0616179,
+    "html_fingerprint": "21d4287104cfe35760833ff7a81cbd9224066041fb8b6dd3c422c790fbbd039c"
   },
   "https://www.cervomed.com/leadership-team/": {
     "browser_required": true,
-    "checked_at": 1795054532.8930104,
-    "html_fingerprint": "3bc4f8a13b117dfb4a886373964656c787b6ae8524e39d4c58c20a247f689aac"
+    "checked_at": 1795138974.2162218,
+    "html_fingerprint": "42225a058a63c270a40b8e868b6701298cbe84a7e67c07c3e399fcd7a025ca40"
   },
   "https://www.cervomed.com/scientific-advisory-board/": {
     "browser_required": true,
-    "checked_at": 1795054530.716339,
-    "html_fingerprint": "c971ab764f2f9abca20783f71c3d3e5f49e0be9981bad4617227c1bc09efaa98"
+    "checked_at": 1795138953.3667097,
+    "html_fingerprint": "b8738971269aef74646aee5f335bb4973179854f647a2019574f67be6b9105d9"
   },
   "https://www.ceva-ip.com/investor-relations/#corporate-governance": {
     "browser_required": true,
-    "checked_at": 1795055664.7353828,
-    "html_fingerprint": "14faa31872cfd7946c218e517510dcc8bfa186ed485ee4b246f4dac03c6f81d5"
+    "checked_at": 1795140206.9212494,
+    "html_fingerprint": "b1822ea292d4c4e62e0a22ac81016f1efd3a950f8dfa64b1bebd11cd95448fdb"
   },
   "https://www.chemed.com/company/documents-charters": {
-    "browser_required": false,
-    "checked_at": 1794972320.8426986,
-    "html_fingerprint": "76850682dae987ffb15b2888d429ac579117b7f08e183ff0d502c7f510105067"
+    "browser_required": true,
+    "checked_at": 1795141205.079323,
+    "html_fingerprint": ""
   },
   "https://www.chemed.com/investor-relations/financial-reports": {
-    "browser_required": false,
-    "checked_at": 1794972835.1795695,
-    "html_fingerprint": "78ed7e0af786924a50090e08614ac53c5633f7d90e001cd1fa2dd5981ba52387"
+    "browser_required": true,
+    "checked_at": 1795142436.5402176,
+    "html_fingerprint": ""
   },
   "https://www.christianberner.com/en/about-us/sustainability/": {
     "browser_required": true,
-    "checked_at": 1795060109.6461182,
-    "html_fingerprint": "f8fd3d8c20f3e3b378fbaec326cdf4ade737a75bd22e5c98131408a00236cb22"
+    "checked_at": 1795145025.193489,
+    "html_fingerprint": "43f29e60983482965471697cfe1ee4bc8a4b9172f0f9adcba543d2763d36bc66"
   },
   "https://www.cibeg.com/en/investor-relations/ir-library/annual-reports": {
     "browser_required": true,
-    "checked_at": 1795055394.4627693,
+    "checked_at": 1795139691.465505,
     "html_fingerprint": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d"
   },
   "https://www.cibeg.com/en/investor-relations/ir-library/investor-toolkit": {
     "browser_required": true,
-    "checked_at": 1795059877.4983432,
+    "checked_at": 1795144751.8153777,
     "html_fingerprint": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d"
   },
   "https://www.clearwaterpaper.com/sustainability/our-approach/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795059875.3392558,
+    "checked_at": 1795144749.4342299,
     "html_fingerprint": ""
   },
   "https://www.clearwaterpaper.com/sustainability/our-performance/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795057721.4866662,
+    "checked_at": 1795142404.0152526,
     "html_fingerprint": ""
   },
   "https://www.convatecgroup.com/about-us/governance/documents-and-disclosures/": {
     "browser_required": true,
-    "checked_at": 1795057803.947289,
-    "html_fingerprint": "9e029a2a0fd9843c7a9a830b8d45a3d32bc65673d05e90e3f81886616d8babb3"
+    "checked_at": 1795142507.2764769,
+    "html_fingerprint": ""
   },
   "https://www.convatecgroup.com/sustainability/our-frameworks-and-targets/": {
     "browser_required": true,
-    "checked_at": 1795054359.4967031,
-    "html_fingerprint": "4a8197fa36aa04fe4e6b17d42c740a5d7cc19e410a0600d37eb3a1daa568e679"
+    "checked_at": 1795138769.7263768,
+    "html_fingerprint": "09b1e63bfd0d51e5611314c873e7abed22b9426d41608a2139a72757015d3fdd"
   },
   "https://www.crayon.com/investor-relations/reports-and-presentations/": {
     "browser_required": true,
-    "checked_at": 1795060111.5454433,
+    "checked_at": 1795145027.3235078,
     "html_fingerprint": ""
   },
   "https://www.dcmshriram.com/csr-budget": {
     "browser_required": true,
-    "checked_at": 1795058851.1795368,
+    "checked_at": 1795143808.0090716,
     "html_fingerprint": "76cbdc46f9d39de6e5568ad06076213a25d3c5a7b33f5ac4abfb99aa1705b816"
   },
   "https://www.dnex.com.my/sustainability?topic=social": {
     "browser_required": true,
-    "checked_at": 1795056485.003243,
-    "html_fingerprint": "a96f654f75b92ab19189fcb2f3f9dc48e0416659cbff4d9b657e426736fe9fc5"
+    "checked_at": 1795141020.5674756,
+    "html_fingerprint": "db40353cc656e5bb5657bcc23c3f50f52f0bae788638791857c216536823e8b0"
   },
   "https://www.dnex.com.my/whistleblowing-policy": {
     "browser_required": true,
-    "checked_at": 1795060200.2766013,
-    "html_fingerprint": "8ee50868d53a5c672bf7946b89a1a35df0f95dfd382697f1d2dc135e2dc65117"
+    "checked_at": 1795145118.0914857,
+    "html_fingerprint": "88521429023a594fba36411140d6e9121f876ba845609cf2d9dc7bebefc31d6f"
   },
   "https://www.dolby.com:443/about/corporate/sis": {
     "browser_required": true,
-    "checked_at": 1795054914.311456,
-    "html_fingerprint": "708958b772de6a8a1a5cc4c6b7891aa5732ed784fdd8cdfddd3db9605dce9810"
+    "checked_at": 1795139471.7461662,
+    "html_fingerprint": "2af692814c8130c1a6674acb7db7d5afb349b176417555359b1f9197a1605fea"
   },
   "https://www.eaglehighplantations.com/en/investor/rups": {
     "browser_required": true,
-    "checked_at": 1795056490.030389,
-    "html_fingerprint": "0fa5319b5b1e6270c7ac79452ade4271d2bc4a7b8bc8766484d1d663ea198547"
+    "checked_at": 1795141191.473679,
+    "html_fingerprint": "e7ac30f7f4f6efaa7c4125165b8edc3a2ab5607a53a3ab7f37e14ce09dd7c498"
   },
   "https://www.elk-desa.com.my/corporate_governance_report.html": {
     "browser_required": true,
-    "checked_at": 1795055600.2894282,
+    "checked_at": 1795140138.5790658,
     "html_fingerprint": ""
   },
   "https://www.enerjisainvestorrelations.com/en/sustainability/corporate-stakeholder-engagement": {
     "browser_required": true,
-    "checked_at": 1795057433.1573184,
+    "checked_at": 1795142011.6096966,
     "html_fingerprint": "b9b32d12b84adb73eb01651d3c127bff1d9c8073fad9d11a0cf4ff281568fcbe"
   },
   "https://www.estheticsgroup.com/annual-report/": {
     "browser_required": true,
-    "checked_at": 1795054298.0018442,
-    "html_fingerprint": "74cc9316957da4e469136cb75602c6bdc5d9deddccbf02432e0a3649bf9bfaec"
+    "checked_at": 1795138746.4159138,
+    "html_fingerprint": "b7b98ac62612785872b46a166eb510cbffef6f63c5dfb2409e6a3d683318c7dc"
   },
   "https://www.evgo.com/company/sustainability/": {
     "browser_required": true,
-    "checked_at": 1795054367.638936,
+    "checked_at": 1795138756.2936213,
     "html_fingerprint": ""
   },
   "https://www.evolus.com/privacy-policy/": {
     "browser_required": true,
-    "checked_at": 1795059398.3050745,
-    "html_fingerprint": "d7ae15a76058f840d83248c386f612c732dccada5f6b75130569d2bba6116772"
+    "checked_at": 1795144152.678203,
+    "html_fingerprint": "65b6eed83f9f915af40511f490f0031914f33ef4b7f8a3852c9055ccb732d87a"
   },
   "https://www.ezzsteel.com/about-ezz-steel/sustainability": {
     "browser_required": false,
-    "checked_at": 1795059855.3228393,
-    "html_fingerprint": "57697b9d8fccf5ea5295c4380504fb44f4ab6ca69d2c519faab7ae975b7e14ce"
+    "checked_at": 1795144731.4446423,
+    "html_fingerprint": "c1299827dcf204127540524791c283558a7b6cde586869a2d1db880e607adf92"
   },
   "https://www.fihb.my/#/annual-report-info": {
     "browser_required": true,
-    "checked_at": 1795059847.1923459,
-    "html_fingerprint": "9836e04c17e8c3dda928b1941ec72016fdbca5e3f621f9b23782d0e358a7faee"
+    "checked_at": 1795144861.1194265,
+    "html_fingerprint": "1b62e0ca9fb75b99356cd48bd2b312cd8273dd0a2fe5428bbaaccaf4f123960f"
   },
   "https://www.fihb.my/#/financial": {
     "browser_required": true,
-    "checked_at": 1795054406.7125344,
-    "html_fingerprint": "9836e04c17e8c3dda928b1941ec72016fdbca5e3f621f9b23782d0e358a7faee"
+    "checked_at": 1795138811.3126304,
+    "html_fingerprint": "1b62e0ca9fb75b99356cd48bd2b312cd8273dd0a2fe5428bbaaccaf4f123960f"
   },
   "https://www.fmgloballogistics.com/investor/corporate_governance.html": {
     "browser_required": true,
-    "checked_at": 1795056498.3171365,
+    "checked_at": 1795141198.5503936,
     "html_fingerprint": "039abd9b9e7f952d757603c4cfff96e2d9020f9088bb2c04f503482807109a1c"
   },
   "https://www.foresight.group/news-insights/news/2024/policy-paper-the-carbon-credit-price-and-national-tree-planting-impact-of-woodland-carbon-code-admittance-to-the-uk-ets/": {
     "browser_required": true,
-    "checked_at": 1795054357.7546544,
-    "html_fingerprint": "9f17b30d3eec17c9ebaacb78d47423145231b6621d5fac60befc2eb0c33e708d"
+    "checked_at": 1795138803.1044044,
+    "html_fingerprint": "8357f2557cd01cc30899d75288dce1bb3b917b295ba204327ac17a7675d54bd7"
   },
   "https://www.frosta-ag.com/en/service/publications/": {
     "browser_required": true,
-    "checked_at": 1795058301.650489,
-    "html_fingerprint": "b18f579e61967aa7dada2e53a59f8b2973342120a873910ad1d690f47016807f"
+    "checked_at": 1795142788.1397135,
+    "html_fingerprint": "c5aaab372b99b792e39942371a9da8230c5443876a629e073f27c507a45d17b2"
   },
   "https://www.fsk-ees.ru/eng/investors/company_reports/": {
     "browser_required": true,
-    "checked_at": 1795054420.439519,
+    "checked_at": 1795138824.3099737,
     "html_fingerprint": ""
   },
   "https://www.fticonsulting.com/about/corporate-citizenship": {
     "browser_required": true,
-    "checked_at": 1795058560.6733117,
-    "html_fingerprint": "85095759029bfb4a270fbb0917907d61a94f938138b5c5f2d51540f5596c3372"
+    "checked_at": 1795142834.696891,
+    "html_fingerprint": "8068186877814a67e96d3d83cda6ac2a685a1d8c088480e16c7fd33ae8c63bc4"
   },
   "https://www.gam.com/en/policies-and-disclosures#legal%20and%20regulatory%20disclosures": {
     "browser_required": true,
-    "checked_at": 1795056528.3293755,
-    "html_fingerprint": "e77144065ace066cf394889d602eccacc4b9b3e350d0662982715d9a387b6295"
+    "checked_at": 1795141235.0977626,
+    "html_fingerprint": "1d6de29eb2c4a8f0d1cba86194196d5281c20c4984f6b0a5021c5b582aba4371"
   },
   "https://www.gam.com/en/policies-and-disclosures#sfdr": {
     "browser_required": true,
-    "checked_at": 1795059725.1654449,
-    "html_fingerprint": "3e17bea1e3c2ce039cdc3480432e8d266d7fcb46c1398e17c530b7dd2fb983c6"
+    "checked_at": 1795144755.2637131,
+    "html_fingerprint": "87739955db288065bd5896e455bc3e0b25d60e24fad2e97f5c4859fea9461d8c"
   },
   "https://www.gedeonrichter.com/en/sustainability/ethics-and-compliance": {
     "browser_required": false,
-    "checked_at": 1795057704.160545,
-    "html_fingerprint": "28002fdde6799ca0451e2167a594db164ad20b649d3d9ebe175c62b949e373b5"
+    "checked_at": 1795142235.6628854,
+    "html_fingerprint": "1b484ebad459ebc03ff44ee057fa434268b7f8270c65aa8e667ea7ab9f406bc4"
   },
   "https://www.gentex.com/about/sustainability/": {
     "browser_required": true,
-    "checked_at": 1795054365.88027,
-    "html_fingerprint": "e1fff901410ee66915acdd6ced419094b17728751873aa9474799dcadc90a15e"
+    "checked_at": 1795138754.7698722,
+    "html_fingerprint": "28aa5c5d834725b8ba3fcbd68d17c3542efcb1e5f319ea7ca89d2509b2c821cf"
   },
   "https://www.gentingplantations.com/": {
     "browser_required": true,
-    "checked_at": 1795054439.9872663,
+    "checked_at": 1795138848.7979867,
     "html_fingerprint": "c2b49ab64d9ecf8a00b886475ca1dc8f94fed29a9da1d9972339657332789382"
   },
   "https://www.gentingplantations.com/corporate_profile/": {
     "browser_required": true,
-    "checked_at": 1795054400.7690136,
+    "checked_at": 1795138789.0202136,
     "html_fingerprint": "f57cfa0184af305c16b7413519fdc4acf6fb5b207d6b50ebb5b63f9b1b0636a4"
   },
   "https://www.gentingplantations.com/sustainability/sustainability-policy/": {
     "browser_required": true,
-    "checked_at": 1795057728.46372,
+    "checked_at": 1795142425.6778073,
     "html_fingerprint": "192d78d84dc881b104dbf972de4cbe35a9ae5a1db305ac0f6aba950733e936db"
   },
   "https://www.gentingplantations.com/sustainability/sustainability-reports/": {
     "browser_required": true,
-    "checked_at": 1795058746.3659918,
+    "checked_at": 1795143688.1761484,
     "html_fingerprint": "d200aad6b324ea579891334cea9ea2c8f1963439fa31ecd0f4161667854b49de"
   },
   "https://www.gerresheimer.com/en/company/investor-relations/corporate-governance/rules-of-procedure": {
@@ -1621,8 +1671,8 @@
   },
   "https://www.gfl.co.in/": {
     "browser_required": true,
-    "checked_at": 1795054399.6611574,
-    "html_fingerprint": "b6132bc44db6e541979e5854391aebeafde13ce1e8cddd266027c6262c050e65"
+    "checked_at": 1795138624.61516,
+    "html_fingerprint": "3887d61fd69c37766006461e94710f7ed4094e761c0ca007972568ccf7b8e94a"
   },
   "https://www.gfl.co.in/Annual_Secretarial_Compliance_Report.php": {
     "browser_required": false,
@@ -1631,63 +1681,63 @@
   },
   "https://www.goodyear.co.in/investor-relations/2023": {
     "browser_required": true,
-    "checked_at": 1795060246.559169,
-    "html_fingerprint": "a4535f0aa4abfc4d4f71ac854ac7bdf7985326cdf730b1c175fb115fa9c8c32b"
+    "checked_at": 1795145365.2004995,
+    "html_fingerprint": "f13a8ea332a6e258d4782fecb5c83632971e3c35646b03d78652785bcffa7d13"
   },
   "https://www.goodyear.co.in/investor-relations/2024": {
     "browser_required": true,
-    "checked_at": 1795060260.2949924,
-    "html_fingerprint": "c456544acc841fc5d5dd4e6b15a63658a4a8baa047bd94a220655ccf34f1ebfd"
+    "checked_at": 1795145153.566129,
+    "html_fingerprint": "a00ed185210c22747b505c94a3ab77a432d0e0d61bd224e20b5a799ed4d315cc"
   },
   "https://www.goodyear.co.in/investor-relations/2025": {
     "browser_required": true,
-    "checked_at": 1795059976.5107605,
-    "html_fingerprint": "542a5dc2182645eb724cca4520b18561ee77cebb2cd68804cb931a3432a4c225"
+    "checked_at": 1795144850.8674943,
+    "html_fingerprint": "ee90ae77dbfb1363b7138e179802de349d03cb3dfaf18e472eec78b5b269f4eb"
   },
   "https://www.graftech.com/investors/default.aspx#governance": {
     "browser_required": true,
-    "checked_at": 1795054499.0298855,
+    "checked_at": 1795138723.7358723,
     "html_fingerprint": ""
   },
   "https://www.graftech.com/sustainability/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795058172.9886515,
-    "html_fingerprint": ""
+    "checked_at": 1795142631.4851472,
+    "html_fingerprint": "80ac3cbe116f3a64d6a2af228a1105e5a0bf2193451b4c4746a13f4db09dd8bc"
   },
   "https://www.gruppo.acea.it/en/governance/internal-dealing": {
     "browser_required": true,
-    "checked_at": 1795058819.1421597,
-    "html_fingerprint": "30636c29cc2a61f0ad79fb3adc3a7572daa5c52929cb2d843aa4809243e49407"
+    "checked_at": 1795143762.8722,
+    "html_fingerprint": "666643c0e1256f42efd3ce7a15d69d985acd32d6673de38a16d71f9182db3a67"
   },
   "https://www.gsfclimited.com/#1685093324744": {
     "browser_required": true,
-    "checked_at": 1795054413.7344742,
-    "html_fingerprint": "917c0eae50bdced4fd555e91d7c027772564569d986c0c12d28df568000a2a01"
+    "checked_at": 1795138807.844116,
+    "html_fingerprint": "ebfc9ff2ed4ab507563524940d9a313e9cf0194459cc67b4be615e65c48e19c4"
   },
   "https://www.gudanggaramtbk.com/en/investor/#keuangan": {
     "browser_required": true,
-    "checked_at": 1795059300.4749875,
-    "html_fingerprint": "aa8130679fec8786374237208302ab0017b5deab4cb24c0520328adfa7025fda"
+    "checked_at": 1795144049.5092072,
+    "html_fingerprint": "7c8b456e43812fc9d8e4e87f48a986e03acfce0a85a6968418ac1480aa0ff7a8"
   },
   "https://www.hdb-egy.com/IR/en/board-and-shareholders-actions/": {
     "browser_required": true,
-    "checked_at": 1795060227.6080756,
-    "html_fingerprint": ""
+    "checked_at": 1795145344.048029,
+    "html_fingerprint": "74c623017ce97edb9cd2cc5c56c1dc1549b8292475121744af42498e81d78878"
   },
   "https://www.heitech.com.my/about/antibribery": {
     "browser_required": true,
-    "checked_at": 1795054499.4531054,
+    "checked_at": 1795138946.0866246,
     "html_fingerprint": ""
   },
   "https://www.heritagecommercecorp.com/presentations/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795054444.549293,
+    "checked_at": 1795138863.991985,
     "html_fingerprint": ""
   },
   "https://www.hikma.com/who-we-are/policy-positions/#:~:text=Hikma%20is%20committed%20to%20engaging": {
     "browser_required": true,
-    "checked_at": 1795059336.2214477,
-    "html_fingerprint": "71a433c0d144e81277f391577000319f454dde29a389fc0f20c441ce4a501262"
+    "checked_at": 1795144085.0621262,
+    "html_fingerprint": "5b5bcffe967d18240c79d1b3b7fb78baa583d94f2ed5163b025515bff1d68bf2"
   },
   "https://www.hindustancopper.com/HindiPage/CSR": {
     "browser_required": false,
@@ -1696,207 +1746,217 @@
   },
   "https://www.hindustanfoodslimited.com/annual-returns.php": {
     "browser_required": true,
-    "checked_at": 1795058564.0366015,
-    "html_fingerprint": "94672afff97e095c97a0adbdadcdfa8efa25924f24d841a65fac220187bb670c"
+    "checked_at": 1795142842.363386,
+    "html_fingerprint": "2944c45b867408e68fde229198fc06abe591e6a397dd19fe1f8ee7c5d610dbe5"
+  },
+  "https://www.hindustanfoodslimited.com/financial-results.php": {
+    "browser_required": true,
+    "checked_at": 1795138759.0079842,
+    "html_fingerprint": "82c9c4c8f4ebe5f28ecd4d42acf13565a9481413fcf04fc50bf9b01f839eb47b"
+  },
+  "https://www.hoenle.de/investoren/hauptversammlung": {
+    "browser_required": true,
+    "checked_at": 1795138841.3286455,
+    "html_fingerprint": ""
   },
   "https://www.hornbach-holding.de/en/investor-relations/reports-presentations/": {
     "browser_required": true,
-    "checked_at": 1795054529.478534,
+    "checked_at": 1795138976.108635,
     "html_fingerprint": "689f22628a154ecc88d40df59b62697dfbe1178f2817b6f12bae92d45cc69a39"
   },
   "https://www.hppholdings.com/index.php/investor-relations/investor-centre-reports/annual-report": {
     "browser_required": true,
-    "checked_at": 1795058563.1750467,
-    "html_fingerprint": "b3b42f08baf67e3ba264ca72e363d217d0969fd6ebcb9a276369bacc710485ea"
+    "checked_at": 1795142841.632078,
+    "html_fingerprint": "285a61763c52acc8efdaf31910ddbcc57541a8bdfc2cee684c220317271f7ce1"
   },
   "https://www.ilb.com.my/investor-relations/ir-annual-reports/": {
     "browser_required": true,
-    "checked_at": 1795054471.7126384,
+    "checked_at": 1795138703.2173412,
     "html_fingerprint": ""
   },
   "https://www.iluka.com/about-iluka/governance": {
     "browser_required": true,
-    "checked_at": 1795057764.1868289,
+    "checked_at": 1795142295.684342,
     "html_fingerprint": ""
   },
   "https://www.indigrid.co.in/sustainability/governance/#.": {
     "browser_required": true,
-    "checked_at": 1795055523.3345711,
-    "html_fingerprint": "96d365f78a98b3dfaaac43dff99b46d42393fe0a4317b6a40e50be550a803b7a"
+    "checked_at": 1795140064.6087787,
+    "html_fingerprint": "ae829c56dbe0c1ae6e7ddd424397e911f690056afa57630cbf10ea62ab17b342"
   },
   "https://www.innity.com/board-charter#diversity": {
     "browser_required": true,
-    "checked_at": 1795057782.029344,
-    "html_fingerprint": "8721da080b1025e5eda2608e9fa91a8fc6244854b6a95eb165d6435b78b1b99c"
+    "checked_at": 1795142317.325792,
+    "html_fingerprint": "2c5a6f42de416c4c287585e5c0f933d50a3d3a881d0b403f4887f76cef82e5e7"
   },
   "https://www.integer.net/company/corporate-citizenship/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795057844.4527178,
+    "checked_at": 1795142369.0105472,
     "html_fingerprint": ""
   },
   "https://www.international-petroleum.com/sustainability#environment": {
     "browser_required": true,
-    "checked_at": 1795059719.8945572,
+    "checked_at": 1795144725.2531185,
     "html_fingerprint": "f63a44e1844a81e3e539eef1807558fdae199c3264a39364496f4713b57a67ed"
   },
   "https://www.intlseas.com/core-principles/ESG-Report/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795055440.7828348,
+    "checked_at": 1795139746.5717137,
     "html_fingerprint": ""
   },
   "https://www.intlseas.com/investor-relations/documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795057018.601678,
-    "html_fingerprint": ""
+    "checked_at": 1795141939.0782447,
+    "html_fingerprint": "c95825f54eb8a9a7f65efdbe70589ad0e3392584144dbfeeacde5519dd122f25"
   },
   "https://www.irtliving.com/privacy-notice": {
     "browser_required": true,
-    "checked_at": 1795058369.4995272,
+    "checked_at": 1795142855.2165005,
     "html_fingerprint": "241f792254a0f38aef00603ffc58642bb6a01ca77a086bcc465c6918ee4700b1"
   },
   "https://www.irtliving.com/vendor-code-of-conduct": {
     "browser_required": true,
-    "checked_at": 1795058594.5505812,
+    "checked_at": 1795142872.8428018,
     "html_fingerprint": "22dea4ae09aa64187d157fcaf4ab98b3016865180d96be56447ada21f77b7eef"
   },
   "https://www.jains.com/Solar/Renewable%20energy.htm": {
     "browser_required": true,
-    "checked_at": 1795054504.9952097,
+    "checked_at": 1795138928.4420652,
     "html_fingerprint": "1ce78e581e178f5d2493d999173730877e80cf5067b65c14374badba636e06c8"
   },
   "https://www.jains.com/irrigation/drip%20irrigation%20system.htm": {
     "browser_required": true,
-    "checked_at": 1795054409.5675468,
+    "checked_at": 1795138839.0578096,
     "html_fingerprint": "fd0da2886bfb73474b0d6dab25b6834167cff397fd28c3cacc399622df004c25"
   },
   "https://www.jindal.com/msl/annual-reports.html": {
     "browser_required": true,
-    "checked_at": 1795058854.8504555,
+    "checked_at": 1795143803.1692786,
     "html_fingerprint": ""
   },
   "https://www.jindal.com/msl/corporate-governance-report.html": {
     "browser_required": true,
-    "checked_at": 1795058614.4887183,
+    "checked_at": 1795143557.498906,
     "html_fingerprint": ""
   },
   "https://www.jindal.com/msl/governance-documents-and-policies.html": {
     "browser_required": true,
-    "checked_at": 1795059339.6171257,
+    "checked_at": 1795144093.000984,
     "html_fingerprint": ""
   },
   "https://www.jindalstainless.com/investors/": {
     "browser_required": true,
-    "checked_at": 1795054910.624201,
-    "html_fingerprint": "d4722ccc06352634d9d610ac08f0c4068be6de9d63f401678670ee2abd58654c"
+    "checked_at": 1795139441.7635512,
+    "html_fingerprint": "0b279f75094be4f452485aaf23be1cf1a7227c7eafcd076cef19e5d90279f163"
   },
   "https://www.jollibee.com.ph/investors/fiscal-reports/annual-reports/": {
     "browser_required": true,
-    "checked_at": 1795054389.5133364,
+    "checked_at": 1795138799.7415586,
     "html_fingerprint": "7e1bed39ec8d1e17b24e53dcd7fa88201ffc2750da2b2a34e892aac4580574cf"
   },
   "https://www.jubilantingrevia.com/products/biocompost": {
     "browser_required": true,
-    "checked_at": 1795059990.6065578,
-    "html_fingerprint": "c1814cf74a72bf321be79f0d68a5434abf8cdb63a7909a0da7658faa712aad2f"
+    "checked_at": 1795144862.1872697,
+    "html_fingerprint": "428e315779cf5619831b5292ca619cf21246f75de482d980cf13d32b066296fd"
   },
   "https://www.karolinskadevelopment.com/en/egm-2026": {
     "browser_required": true,
-    "checked_at": 1795057055.360373,
+    "checked_at": 1795141990.9611435,
     "html_fingerprint": ""
   },
   "https://www.karolinskadevelopment.com/en/node/303": {
     "browser_required": true,
-    "checked_at": 1795056529.0635571,
+    "checked_at": 1795141233.9113839,
     "html_fingerprint": ""
   },
   "https://www.kps.com.my/terms-of-reference-of-the-nomination-and-remuneration-committee": {
     "browser_required": true,
-    "checked_at": 1795055525.6771047,
-    "html_fingerprint": "18c2d7562dea590f75ef284498b71749ad7f1f5d582f40a33aa235cb11a1f2ca"
+    "checked_at": 1795140066.9344032,
+    "html_fingerprint": "dc8e9d1def58210abc06f51d9f61db4acd8ca4554a1d5fc5b3b89e0162a9c7ba"
   },
   "https://www.kps.com.my/whistleblower-policy-inner": {
     "browser_required": true,
-    "checked_at": 1795055581.8287632,
-    "html_fingerprint": "4b22afd5c7e87568d91f74c53d9d9926b7ee5e7c0377a563f844c4236844be6a"
+    "checked_at": 1795140110.0596516,
+    "html_fingerprint": "f7a56f7bbf09909cf8cb2de64cd3c48e73b5dac4398caf94c579e676fa28282c"
   },
   "https://www.laxmi.com/investors/financials": {
     "browser_required": true,
-    "checked_at": 1795055598.3540635,
+    "checked_at": 1795140136.4810882,
     "html_fingerprint": "a9242b3f6f96093e82449ad0146c485f19fb1d465fc3ce8be70b2230a772d329"
   },
   "https://www.leonfuat.com.my/corporate-governance.php": {
     "browser_required": true,
-    "checked_at": 1795054495.9770038,
-    "html_fingerprint": "42e8b03be956069eeb1110ec503834a91e5a43f031e31871d855b998d3663256"
+    "checked_at": 1795138942.3941236,
+    "html_fingerprint": "356aa965bc6b6053188541ec7a8e8cc88e0ec4e91368b32c376af4a07fa56e94"
   },
   "https://www.ligand.com/investors/governance": {
     "browser_required": true,
-    "checked_at": 1795058778.1308684,
+    "checked_at": 1795143719.7968004,
     "html_fingerprint": ""
   },
   "https://www.ligand.com/investors/governance/governance-docs": {
     "browser_required": true,
-    "checked_at": 1795054418.3210664,
+    "checked_at": 1795138822.189265,
     "html_fingerprint": ""
   },
   "https://www.lindex-group.com/en/sustainability/sustainability-at-lindex/": {
     "browser_required": true,
-    "checked_at": 1795055488.5547533,
+    "checked_at": 1795140025.2378967,
     "html_fingerprint": ""
   },
   "https://www.manappuram.com/investors/notice-to-shareholders": {
     "browser_required": true,
-    "checked_at": 1795059841.673311,
-    "html_fingerprint": "1cadb1e4cb021b1b48e2e0faa1c7ecee415441c52894195e80a18e0d6cd629d7"
+    "checked_at": 1795144845.3103848,
+    "html_fingerprint": "bc9698b8fa9aa4b7c6ea3f458aa3e87fb322e11231684e4fa4963e4eb7f73af1"
   },
   "https://www.manulife.com.my/en/individual/about-us/investor-relations.html": {
     "browser_required": true,
-    "checked_at": 1795060231.4224157,
+    "checked_at": 1795145148.1083837,
     "html_fingerprint": "93a88cfd69a6c4bf58ade37a7935bb0c4915a759848e91a531d599efb77ef5e6"
   },
   "https://www.martinrea.com/sustainability/#Governance": {
     "browser_required": true,
-    "checked_at": 1795058505.0296237,
-    "html_fingerprint": "a4e07b328bf5f468df5533e84ace30f8875a600fb6e5b8c54ec740e3c16c58d1"
+    "checked_at": 1795143430.6407473,
+    "html_fingerprint": "7fa6b8b9e8fba1fe10f2439ab0374bbf22960fb2a3b6f9f5ed40f1a675b1b718"
   },
   "https://www.masteel.com.my/anti-corruption/": {
     "browser_required": true,
-    "checked_at": 1795055359.624964,
-    "html_fingerprint": "0225b6414215166849f40247592295fde5407c2c9d3531250db1c1e6c28238d2"
+    "checked_at": 1795139654.0160296,
+    "html_fingerprint": "87f6a77d1144a27d7028461bbed4b6b23d106da644501dcdb3802f9c019b1ee5"
   },
   "https://www.masteel.com.my/group-policies/": {
     "browser_required": true,
-    "checked_at": 1795055391.6334856,
-    "html_fingerprint": "47c70e6b49dfeb04ebab9b7ded56220b40d6b089e9665795092aa0d6eb28ea2d"
+    "checked_at": 1795139688.1963832,
+    "html_fingerprint": "b6f43a39210b267cff2ad77fbfd1e195e2fb5cadd9ea1081a2d5bc7bcf809dd2"
   },
   "https://www.masteel.com.my/masteel-sustainability/": {
-    "browser_required": true,
-    "checked_at": 1795055840.7147055,
-    "html_fingerprint": "54ece337bd2c4b40fadfcd51f2cd6fa697c41ab5e6540634b934b478745dd40f"
+    "browser_required": false,
+    "checked_at": 1795140613.0000947,
+    "html_fingerprint": "c8dd3f8254120369ac9d0a5a50b8ea176c6e68b2bb3d2bd2cde4ea1e43d3d582"
   },
   "https://www.maxindia.com/financialreports": {
     "browser_required": true,
-    "checked_at": 1795055391.695603,
+    "checked_at": 1795139715.3204324,
     "html_fingerprint": "3e1c384c78856ee816f26476b011d8e7b2a1c37e2dfd253e92e76511ad3b0e92"
   },
   "https://www.maytronics.com/corporate/investors/financial-reports2023.html": {
     "browser_required": true,
-    "checked_at": 1795055421.9751909,
-    "html_fingerprint": "c57fca0d0282806cd8783eda3e2b27ad19936d8a957f6ce5bc7606833ba2a7df"
+    "checked_at": 1795139721.4777951,
+    "html_fingerprint": "8cee43f28614bc32ccbd731799610cd845ca25707592907dc2f4a692aec1758f"
   },
   "https://www.melroseplc.net/sustainability/data-reports-and-policies/": {
     "browser_required": true,
-    "checked_at": 1795058488.6320722,
+    "checked_at": 1795143432.7388585,
     "html_fingerprint": ""
   },
   "https://www.mestron.com.my/investor-relations/corporate-governance": {
     "browser_required": true,
-    "checked_at": 1795056528.1456974,
-    "html_fingerprint": "184db5ff1c7b19782f1c45d5b36251ff8fffc7c334bec3551e297514f073a086"
+    "checked_at": 1795141072.5697649,
+    "html_fingerprint": "495ae1dee79eb3d58013e2ec0b97baef218bd75552f66ae9bd5774b6053b70aa"
   },
   "https://www.mestron.com.my/investor-relations/ir-overview": {
     "browser_required": true,
-    "checked_at": 1795059892.0549328,
+    "checked_at": 1795144768.8883934,
     "html_fingerprint": "5b1918528d8ea7e08855c6315bf61807b4b76c8b0a3c3ce28ba60e03346de195"
   },
   "https://www.metrodata.co.id/rapat-umum-pemegang-saham-id": {
@@ -1906,13 +1966,13 @@
   },
   "https://www.mhc.com.my/investor-relations/#corporate": {
     "browser_required": false,
-    "checked_at": 1795056509.602439,
-    "html_fingerprint": "fb617a18e99006f975c00c74f6475cc216d7fd284af13f532f79ffb690fdf62d"
+    "checked_at": 1795141044.4298222,
+    "html_fingerprint": "d95d38ea69eac6d76dfbbbc20d0501e0e5ec2c73d92f11e52caabd11b508d598"
   },
   "https://www.mhc.com.my/investor-relations/#report": {
     "browser_required": false,
-    "checked_at": 1795057483.8417048,
-    "html_fingerprint": "f71a2af34fc5a88d63d998f1d5ec1214ca62dde1d9b6bb0d4216d8beb29375d7"
+    "checked_at": 1795142065.6765609,
+    "html_fingerprint": "f0b52f0a5b09bac1df9e2ad58af7aeae7aade32b15908f02abb33758e87f29fb"
   },
   "https://www.mlabs.com/corporate-governance": {
     "browser_required": false,
@@ -1921,68 +1981,73 @@
   },
   "https://www.mmsv.com.my/index.php/corporate-governance": {
     "browser_required": true,
-    "checked_at": 1795058590.7567258,
-    "html_fingerprint": "c57ebe62b7a24409c959129595197141311fbcf21f93e121153521c6c13ce051"
+    "checked_at": 1795142869.149839,
+    "html_fingerprint": "d7b0bcf2eadc271e8b77e6686d468493d837df7d3a20d7d2e236d8c7fa5d4eb2"
   },
   "https://www.mrcb.com.my/corporate-profile/about-us.html": {
     "browser_required": true,
-    "checked_at": 1795057734.171585,
-    "html_fingerprint": "a0e4f49ab06e14ec3cbb22e106db4160940792b1446de00b48cc6a824d60a581"
+    "checked_at": 1795142265.6732924,
+    "html_fingerprint": "eb3fa49d61480b75f7c390ea8955add3c50a9482222f8b44e9da5cbcae3a83b4"
   },
   "https://www.mscdirect.com/customer-service/human-rights": {
     "browser_required": true,
-    "checked_at": 1795055866.2896998,
-    "html_fingerprint": "5c64106a35a4405576bebbe4ea4359c4bac133b92b7ef0fabb0e943168ba7ede"
+    "checked_at": 1795140646.680596,
+    "html_fingerprint": "ff3f3d1220b2b1eb3c98f0e22f3b36d275fe5c9e5135561c2ec035802ddb7d78"
   },
   "https://www.mullen-group.com/governance-compliance/": {
     "browser_required": true,
-    "checked_at": 1795060199.4839325,
-    "html_fingerprint": "d7dffcd6e06ffa21ff336ff53ed1d30419feb574d3d5691cf4f29f25ec6e33c0"
+    "checked_at": 1795145092.1131966,
+    "html_fingerprint": "7239573fe81f78f9a7336ae7a9c026c30e1154e4b3a9a7dff6835ada2ddcf59d"
   },
   "https://www.mvv.de/en/investors/company-profile/corporate-governance": {
     "browser_required": true,
-    "checked_at": 1795058551.0440762,
-    "html_fingerprint": "55688a8161a5bb003597491483fe3fd1274e7dd46bb15035256585275d02112f"
+    "checked_at": 1795142831.9867675,
+    "html_fingerprint": "9cbdc5bb1d28c5c2dda2e02982e4fd33dd90b45e06e499e1313f2291660a597b"
+  },
+  "https://www.mvv.de/en/investors/publications": {
+    "browser_required": true,
+    "checked_at": 1795138933.3779998,
+    "html_fingerprint": "65e7264d33d56947733f0cbdf3f84f9b8e2e148c4b09aef087393c18013bfdfe"
   },
   "https://www.mycronsteel.com/reports.php": {
     "browser_required": true,
-    "checked_at": 1795060136.2387934,
-    "html_fingerprint": ""
+    "checked_at": 1795145058.0705342,
+    "html_fingerprint": "e473bf401aee80a7b3db758a9d12ac2771777dcd5fbf1709eb3d51bdf28a6fe8"
   },
   "https://www.mymesra.com.my/about-us/overview": {
     "browser_required": true,
-    "checked_at": 1795056437.6336784,
+    "checked_at": 1795141151.6696923,
     "html_fingerprint": ""
   },
   "https://www.mymesra.com.my/integrated-report-2026/index.html": {
     "browser_required": true,
-    "checked_at": 1795054485.0302153,
+    "checked_at": 1795138725.8393586,
     "html_fingerprint": ""
   },
   "https://www.neurobopharma.com/corporate-governance/highlights": {
     "browser_required": true,
-    "checked_at": 1795058588.6583655,
-    "html_fingerprint": ""
+    "checked_at": 1795142865.9735327,
+    "html_fingerprint": "5d4792d1edee2021c8137a5c5ef062194e5df35b548ee1a2922a2f6aba6ff6b8"
   },
   "https://www.niholdingsinc.com/governance#governance-documents": {
-    "browser_required": true,
-    "checked_at": 1795054472.3494122,
-    "html_fingerprint": ""
+    "browser_required": false,
+    "checked_at": 1795138703.960456,
+    "html_fingerprint": "f4a60a4d33652ff198f494c5deaf25e6190eb27edd67373998066a697b1d347e"
   },
   "https://www.nlb.si/annual-reports-on-corporate-social-responsibility": {
     "browser_required": true,
-    "checked_at": 1795055611.8393414,
-    "html_fingerprint": "c272004871fa8d3fc66a42161ba395091ca872e84e670a246646f3ae994caf89"
+    "checked_at": 1795140140.0743024,
+    "html_fingerprint": "891675ddbb455fa52eb217048b2aae26104c62e647f4c17a76089114c214d64f"
   },
   "https://www.nlb.si/financial-reports": {
     "browser_required": true,
-    "checked_at": 1795058203.750592,
-    "html_fingerprint": "1f8e29beb12379bc3fb7f00ecc6db2bd7316db599469299cb7e42e8064a7af5d"
+    "checked_at": 1795142666.1608303,
+    "html_fingerprint": "6f5b0bf8efeca1a2aca716a45c82c0e2debbf823dca6ba5c3684e6a5ae043302"
   },
   "https://www.norwegian.com/en/about/company/investor-relations/annual-general/": {
-    "browser_required": true,
-    "checked_at": 1795058631.7896502,
-    "html_fingerprint": ""
+    "browser_required": false,
+    "checked_at": 1795143560.8954618,
+    "html_fingerprint": "4c0ac745cd179d5a2caebeb1bf9ebf260418de8eb06284701dbeaa98f841a1ce"
   },
   "https://www.nuclearelectrica.ro/ir/rules-and-regulations/?lang=en": {
     "browser_required": true,
@@ -1991,17 +2056,17 @@
   },
   "https://www.o-i.com/news/glass-answers-world-environment-days-call-for-solutions-to-plastic-pollution/": {
     "browser_required": true,
-    "checked_at": 1795059949.369165,
-    "html_fingerprint": "4153f9c56ac91ac31525bef98dfdf3c751f35cf8b3aa67f0650517e70180d02a"
+    "checked_at": 1795144820.9044042,
+    "html_fingerprint": "3bf6eef282a5846312f4c6b8a84c703b4990c7de14ee366abedb5adf35b9dfa4"
   },
   "https://www.ofgbancorp.com/esg/governance-documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795055626.9725354,
+    "checked_at": 1795140166.6472065,
     "html_fingerprint": ""
   },
   "https://www.optimax2u.com/egm.html": {
     "browser_required": true,
-    "checked_at": 1795058240.1517582,
+    "checked_at": 1795142726.2888193,
     "html_fingerprint": "c454d224352a525fd3bc8bf2fadabe88ef39629bc02a75443b4c6547417c1697"
   },
   "https://www.orange-ir.pl/csr-in-orange/csr-reports/": {
@@ -2011,52 +2076,52 @@
   },
   "https://www.orientalkopi.asia/corporate-governance/": {
     "browser_required": true,
-    "checked_at": 1795057870.9736404,
-    "html_fingerprint": "331dd5c21f27abdffe1b4e3a42c0134c0be880b0a752a6f0aa846f6cc8a66ea5"
+    "checked_at": 1795142383.6608024,
+    "html_fingerprint": "681eefdd775911835bc86b2f3e4324103458e3d1900c7fd6e2463ce2c63aaf22"
   },
   "https://www.orientelectric.com/investors/other-disclosures#share-holder": {
-    "browser_required": false,
-    "checked_at": 1795054409.9710455,
-    "html_fingerprint": "7b45e0685628287ed6df36b8654d70c9c6586a3df3eadb1f5315cafc321b7050"
+    "browser_required": true,
+    "checked_at": 1795138847.2090137,
+    "html_fingerprint": "eb0d07a37c8a9f22828f76ffb4bb87e3bde73a31c20898e71a214f4d73136982"
   },
   "https://www.paninfinancial.co.id/en/tata-kelola/pedoman-kerja-komite-dan-sekretaris-perusahaan/": {
     "browser_required": true,
-    "checked_at": 1795059306.1978877,
+    "checked_at": 1795144055.0503576,
     "html_fingerprint": "888debf483071e879aabb8218a8d0a5af11d5dbcc1b88044eb5b811af437a91c"
   },
   "https://www.pegasusheights.com/announcement/": {
     "browser_required": true,
-    "checked_at": 1795054282.940745,
-    "html_fingerprint": "fe3d76cf9c7f300109114d09d827af4c9befd5d3fd0b2406d8b1ffbc5cdafc60"
+    "checked_at": 1795138730.2373521,
+    "html_fingerprint": "be95e22c239c8c6c4128baee60fd44d3ccb2a4a90c286e8a67c5826b41ef7862"
   },
   "https://www.petershillpartners.com/Regulatory_News.html": {
     "browser_required": true,
-    "checked_at": 1795059369.6442826,
+    "checked_at": 1795144130.281243,
     "html_fingerprint": ""
   },
   "https://www.picknpayinvestor.co.za/governance.php": {
     "browser_required": true,
-    "checked_at": 1795060197.8494594,
+    "checked_at": 1795145316.8220723,
     "html_fingerprint": "de0c001122da73f368411a3b4904c517ed798677f8623dd89458c1f7c9c1e18a"
   },
   "https://www.pnbhousing.com/about-us/": {
     "browser_required": true,
-    "checked_at": 1795060184.7389226,
+    "checked_at": 1795145298.615088,
     "html_fingerprint": ""
   },
   "https://www.pnbhousing.com/investors/financials": {
     "browser_required": true,
-    "checked_at": 1795057724.0815625,
+    "checked_at": 1795142405.2024853,
     "html_fingerprint": ""
   },
   "https://www.pollardbanknote.com/company/": {
     "browser_required": true,
-    "checked_at": 1795054370.7524846,
+    "checked_at": 1795138758.2555497,
     "html_fingerprint": ""
   },
   "https://www.pollardbanknote.com/company/corporate-responsibility/": {
     "browser_required": true,
-    "checked_at": 1795055846.3628063,
+    "checked_at": 1795140623.7402196,
     "html_fingerprint": ""
   },
   "https://www.popular.com/en/privacy/": {
@@ -2066,62 +2131,62 @@
   },
   "https://www.procredit-holding.com/investor-relations/reports-and-publications/financial-reports/": {
     "browser_required": true,
-    "checked_at": 1795057715.777261,
-    "html_fingerprint": "4321a5a8ab2b1f3e40d16e5b806e36ef8ac2b0e359bc2ca2af7557bd699aaf0f"
+    "checked_at": 1795142250.701355,
+    "html_fingerprint": "4e357ccfc13944e2d732979b752941607bdd00259360a6d6bfcbd1fa5a2b3dca"
   },
   "https://www.propelglobal.com.my/annual-reports/": {
     "browser_required": true,
-    "checked_at": 1795057463.697761,
+    "checked_at": 1795142041.9812481,
     "html_fingerprint": "d5439fa180b798979dc89ba25b2338dd5c49bcc2a89e855360e9e61c2a04910a"
   },
   "https://www.pwf.com.my/page/investor-relation/announcement.aspx": {
     "browser_required": true,
-    "checked_at": 1795054407.9121454,
-    "html_fingerprint": "8aadf4f899e356c467edcb52df2d7356687aef6193e06cfe0321fb411def4b53"
+    "checked_at": 1795138818.7886338,
+    "html_fingerprint": "a75ca1c3f3afd658709470dd565f3e1b9de3a27a664945061091c850212ae373"
   },
   "https://www.pwf.com.my/page/investor-relation/financial-reports.aspx": {
     "browser_required": true,
-    "checked_at": 1795057530.1974947,
+    "checked_at": 1795142112.527498,
     "html_fingerprint": "14bedd46d965c147a14a4afe1099cadf8f4deabb23e24a3bbb281016b04eb1d5"
   },
   "https://www.quebecor.com/en/-/changements-au-sein-du-conseil-d-administration-de-qu-c3-a9becor-inc.-et-de-qu-c3-a9becor-m-c3-a9dia-inc.#:~:text=and%20Quebecor%20Media%20Inc.%2C%20is": {
     "browser_required": true,
-    "checked_at": 1795057840.9601147,
-    "html_fingerprint": "db6dc6cae37b0161475a9b9305297543634d7d580ecc5ebdb353fb69787f75bf"
+    "checked_at": 1795142353.6443825,
+    "html_fingerprint": "e420154fcdaeae613b2177ba14db1405077870cd6de46bd63b92f6a9d7c17f16"
   },
   "https://www.quebecor.com/en/investors/financial-documentation/quebecor-quarterly-documentation": {
     "browser_required": true,
-    "checked_at": 1795057814.0500875,
+    "checked_at": 1795142348.9072704,
     "html_fingerprint": "44c72b7c1ae77e6bc99f74a66d7e2907aab776ac32128851b0d6563dff065786"
   },
   "https://www.rainbowhospitals.in/": {
     "browser_required": true,
-    "checked_at": 1795060214.5283866,
-    "html_fingerprint": "1266805a5882d24812648d9a024e7a7b5132b9fd5f5810fcda5a369a92ecc6af"
+    "checked_at": 1795145335.1697004,
+    "html_fingerprint": "461b2c736110e480dc1cb99ee780b28c67c9b79a9f3510dcc528869ef396f9c6"
   },
   "https://www.raute.com/investors/reports-and-publications/presentations-and-publications/": {
     "browser_required": true,
-    "checked_at": 1795054501.6896474,
-    "html_fingerprint": "3e555b0ce2f628207014c0a98282342e83a98a868cd03c75964167f1e487f705"
+    "checked_at": 1795138924.0765038,
+    "html_fingerprint": "fbc773df00c1983106a42f1f853b666ba85a16ad8a8451f169543f5098a16bd2"
   },
   "https://www.rcfltd.com/invester/advance/corporate-governance/corporate-governance-report-31032021": {
     "browser_required": true,
-    "checked_at": 1795055359.9865022,
+    "checked_at": 1795139684.0272274,
     "html_fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
   "https://www.ricardo.com/en/who-we-are/governance/policies": {
     "browser_required": true,
-    "checked_at": 1795055881.6662183,
-    "html_fingerprint": "c1045b91928e6b24077e92f6f96406a9924b6f76f439b4b8daaec73951c4163e"
+    "checked_at": 1795140672.124141,
+    "html_fingerprint": "7fe7427595ff888b5299176e94e33c45d0c3b0953bb1d28da37e5f6db1b43811"
   },
   "https://www.rockwool.com/group/about-us/sustainability/environment/": {
     "browser_required": true,
-    "checked_at": 1795060110.2448802,
+    "checked_at": 1795145027.742775,
     "html_fingerprint": "bcadc91109bc74b14cf42d0de175df01102caff5a1dd0fea01a405b91e439993"
   },
   "https://www.rockwool.com/group/about-us/sustainability/sustainability-spotlight-2024/": {
     "browser_required": true,
-    "checked_at": 1795059885.3348718,
+    "checked_at": 1795144761.959654,
     "html_fingerprint": "302fda688ed11afd85f97ff8bff7fb0fd82f7612011ae5ad955ea2a8b0351566"
   },
   "https://www.schroders.com/en/global/individual/corporate-transparency/reporting/annual-report-and-accounts-2026/": {
@@ -2131,18 +2196,18 @@
   },
   "https://www.schroders.com/en/global/individual/impact-investing/#3": {
     "browser_required": true,
-    "checked_at": 1795056559.1313012,
-    "html_fingerprint": "4dd1eb070d95361eca74fe78e1655d87f067fffb1fa166082b9e7a2a048bad06"
+    "checked_at": 1795141265.1174161,
+    "html_fingerprint": "0395c5bd3c04a0ffd8a58d51cb6e960ef45e61dece2fb738cb9653ed241481ed"
   },
   "https://www.seacoastbanking.com/corporate-governance/corporate-governance/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795054404.043626,
-    "html_fingerprint": "d16611c7a2483363208be471456fc67732b9d6aedb8b7483ad3edaf1905c26ba"
+    "checked_at": 1795138809.0567224,
+    "html_fingerprint": ""
   },
   "https://www.seacoastbanking.com/financials-regulatory-filings/annual-reports-and-proxy/default.aspx": {
     "browser_required": true,
-    "checked_at": 1795059844.9210563,
-    "html_fingerprint": "3970d03c01fbe5f5b7635a8ce39d83a8848be267e0dcf2aae9d89a042da13be3"
+    "checked_at": 1795144859.0033228,
+    "html_fingerprint": ""
   },
   "https://www.senijayacorp.com/pages/pages_id/32158/": {
     "browser_required": true,
@@ -2156,82 +2221,87 @@
   },
   "https://www.shaftesburycapital.com/en/about-us/corporate-governance/how-we-behave.html#tabbedcontentitem_0": {
     "browser_required": true,
-    "checked_at": 1795054403.4316897,
+    "checked_at": 1795138791.010771,
     "html_fingerprint": "dd9c78f205712d16688f0dc8140b69dba4a676d95dac4e75c6af9b16b541317e"
   },
   "https://www.shaftesburycapital.com/en/about-us/corporate-governance/how-we-behave.html#tabbedcontentitem_2": {
     "browser_required": true,
-    "checked_at": 1795060196.2609718,
+    "checked_at": 1795145089.4096844,
     "html_fingerprint": "dd9c78f205712d16688f0dc8140b69dba4a676d95dac4e75c6af9b16b541317e"
   },
   "https://www.shaftesburycapital.com/en/investors/results-reports-presentations.category1.year2026.html": {
     "browser_required": true,
-    "checked_at": 1795058392.2895947,
-    "html_fingerprint": "95bc8c568a8c1776ace6fd54ef50ca9d2b6b19ddf88ecf7d06846edcc58055a0"
+    "checked_at": 1795142864.491421,
+    "html_fingerprint": "1b1f111763cb04e170d2517db1ccd6ced5461c298e0b7dd377e350198dcc8381"
   },
   "https://www.shyammetalics.com/about-us/": {
     "browser_required": true,
-    "checked_at": 1795060167.8398008,
+    "checked_at": 1795145286.806936,
     "html_fingerprint": "9f726e78d0190cee768d4ed352ef0e5606e9d6974c2866b50cdaaa7e4afccd64"
   },
   "https://www.shyammetalics.com/investors/financials/": {
     "browser_required": true,
-    "checked_at": 1795058177.0810974,
+    "checked_at": 1795142636.131883,
     "html_fingerprint": "9f726e78d0190cee768d4ed352ef0e5606e9d6974c2866b50cdaaa7e4afccd64"
   },
   "https://www.silabs.com/about-us/environmental-social-governance": {
     "browser_required": true,
-    "checked_at": 1795056997.4706194,
+    "checked_at": 1795141921.1831846,
     "html_fingerprint": ""
   },
   "https://www.siyaram.com/investor-relations/communications.php": {
     "browser_required": true,
-    "checked_at": 1795057493.7170525,
-    "html_fingerprint": "4e9a61e7fed2f634af51a8f0ffb5d2686925211056a66e7d0c643543c6fc713a"
+    "checked_at": 1795142071.9914052,
+    "html_fingerprint": "d08bb2d78b181b488294312fd2c9e5746a8649b4ad71b6fb58f0f334d7409c22"
   },
   "https://www.siyaram.com/investor-relations/corporate-governance.php": {
     "browser_required": true,
-    "checked_at": 1795055555.6870842,
-    "html_fingerprint": "2073c012aa32b1a3fe02843f929817e7dc8c1300ffc36e065274b9d9a7992af8"
+    "checked_at": 1795140096.9550204,
+    "html_fingerprint": "e2ce11fac5b51fab9154a4a55e802e0ff494768f32859e07f0880604463a10b5"
   },
   "https://www.skyworksinc.com/About/": {
     "browser_required": true,
-    "checked_at": 1795055543.3011513,
-    "html_fingerprint": "83ea7de9337c0db20f869c55ca22fe57e1f9a2dd09dc8e15aedf1bdff77eb9f4"
+    "checked_at": 1795140071.9748056,
+    "html_fingerprint": "d2efa49c48fec81a642cfae1ad758132b1952ac8b9a6d9c6aacfee667282f5c3"
   },
   "https://www.skyworksinc.com/Sustainability": {
     "browser_required": true,
-    "checked_at": 1795054222.020138,
-    "html_fingerprint": "f94eb14522a323e4ec2eae34dc981f0dc461a192f8e41224865c52b6daa378ee"
+    "checked_at": 1795138674.3589346,
+    "html_fingerprint": "72b8eeb985a14232a0034334be74fa6df4733d6c56183b37616557ca67a30132"
   },
   "https://www.sovcomflot.ru/en/investors/Results_and_Publications/annualreport/": {
     "browser_required": true,
-    "checked_at": 1795054296.6271186,
+    "checked_at": 1795138745.0023553,
     "html_fingerprint": ""
   },
   "https://www.sterlingandwilsonre.com/investor-relations": {
     "browser_required": true,
-    "checked_at": 1795059791.615774,
-    "html_fingerprint": "1f56417a57e60609b92ff02c67cdac36ff62cf01e3021e8c31033cc8d217c04c"
+    "checked_at": 1795144796.178999,
+    "html_fingerprint": ""
   },
   "https://www.stillfront.com/en/investors/reports-and-documents/?y=2026": {
     "browser_required": true,
-    "checked_at": 1795059399.7131026,
-    "html_fingerprint": "7c7d55c8ca3e8324e86cba2fd2e8ef44acaef54d84a7557c25617d0203e32520"
+    "checked_at": 1795144156.854722,
+    "html_fingerprint": "23be058c0e5cde108009f420e67346ec2d45225cb9864695c4a85d059d7d69fb"
   },
   "https://www.sunteckindia.com/investor-relations#financial": {
     "browser_required": true,
-    "checked_at": 1795059307.3265877,
-    "html_fingerprint": "c9873121eb95e58bc7556fb9e7b83b04b1795298076abf79bed644ec823704ef"
+    "checked_at": 1795144058.826307,
+    "html_fingerprint": "2b5a5f4f83fe971fd3637ef955d4b048eea9b555740de91f65f1573c3d3eec2f"
   },
   "https://www.sycalberhad.com/download/": {
     "browser_required": true,
-    "checked_at": 1795054294.125605,
-    "html_fingerprint": "fb09d68f8431cbc57dc09e04aed8b53f942d32b38491a8196d2bd7dc4d61afa5"
+    "checked_at": 1795138742.2969398,
+    "html_fingerprint": "0f30e2c37ba0c9395d354f0ce16838c0c416775a535c13d5cc5f759211d5aaf8"
   },
   "https://www.tatrabanka.sk/en/about-bank/economic-results/annual-reports/": {
     "browser_required": true,
-    "checked_at": 1795058566.7652273,
+    "checked_at": 1795142845.9321885,
+    "html_fingerprint": ""
+  },
+  "https://www.technotrans.com/sustainability/overview": {
+    "browser_required": true,
+    "checked_at": 1795144997.7324522,
     "html_fingerprint": ""
   },
   "https://www.telekom.si/en/about-us/company/compliance": {
@@ -2241,18 +2311,18 @@
   },
   "https://www.theaccesscorporation.com/investor-relations/annual-reports/": {
     "browser_required": true,
-    "checked_at": 1795056997.529091,
+    "checked_at": 1795141920.9331667,
     "html_fingerprint": ""
   },
   "https://www.theaccesscorporation.com/investor-relations/corporate-disclosure/": {
     "browser_required": true,
-    "checked_at": 1795054496.1589532,
+    "checked_at": 1795138942.5410419,
     "html_fingerprint": ""
   },
   "https://www.themission.co.uk/investors/regulatory-news/": {
     "browser_required": true,
-    "checked_at": 1795055470.254391,
-    "html_fingerprint": "a5f6c1911af9b1fe684a74dbcee00923d8af28a45c0c3657db372216132f82aa"
+    "checked_at": 1795139777.3493006,
+    "html_fingerprint": "1c9c824512139c6ef8c92bc5bd1a3cec5a1af66c770d27bfc253db07c5ad253c"
   },
   "https://www.thesimplygoodfoodscompany.com/corporate-governance/governance-overview": {
     "browser_required": false,
@@ -2261,67 +2331,72 @@
   },
   "https://www.touchstoneexploration.com/investors/": {
     "browser_required": true,
-    "checked_at": 1795058791.1620646,
+    "checked_at": 1795143732.8605545,
     "html_fingerprint": "f0ee328273a377a380cc0d9de7b2d08903c8f132e774373751ec95b76b4111ca"
+  },
+  "https://www.treehousefoods.com/esg/reports-and-disclosures/default.aspx": {
+    "browser_required": true,
+    "checked_at": 1795138902.4554794,
+    "html_fingerprint": ""
   },
   "https://www.treehousefoods.com/investors/governance/governance-documents/default.aspx": {
     "browser_required": true,
-    "checked_at": 1794975235.0464644,
+    "checked_at": 1795144087.2573688,
     "html_fingerprint": ""
   },
   "https://www.trivenigroup.com/corporate-governance": {
     "browser_required": true,
-    "checked_at": 1795055579.8166952,
-    "html_fingerprint": "5858c6e97f4db30f0edbb44c8deb11bf5aaa962d8e46080b88d794d4eb6d897a"
+    "checked_at": 1795140106.4638937,
+    "html_fingerprint": "952333039e5211b01479f38bb483705b5407198b42f49216391bb4e6db627e4d"
   },
   "https://www.trivenigroup.com/investors?p=investor-kit": {
     "browser_required": true,
-    "checked_at": 1795059331.6515872,
-    "html_fingerprint": ""
+    "checked_at": 1795144100.2710438,
+    "html_fingerprint": "7ce6f7f5337f17626fd068504e814df19b358c8e2562735cd8cf55c482f2c79a"
   },
   "https://www.troax.com/about-troax/sustainability/": {
     "browser_required": true,
-    "checked_at": 1795054371.8416312,
-    "html_fingerprint": "916b7049c9497381de7f75049ba03d0fb7951cb7a5fcbd98e80e62a922f0e82c"
+    "checked_at": 1795138759.6652575,
+    "html_fingerprint": "83f1431747b5a1855266e350de59cbd479437349a0f6be1912b1ad9216e06163"
   },
   "https://www.tscan.com/about/advisory-board/": {
     "browser_required": true,
-    "checked_at": 1795054954.5857027,
+    "checked_at": 1795139516.1339948,
     "html_fingerprint": ""
   },
   "https://www.tscan.com/about/board-of-directors/#": {
     "browser_required": true,
-    "checked_at": 1795055456.213752,
+    "checked_at": 1795139767.690962,
     "html_fingerprint": ""
   },
   "https://www.tscan.com/about/management/": {
     "browser_required": true,
-    "checked_at": 1795055666.5807834,
+    "checked_at": 1795140206.4626877,
     "html_fingerprint": ""
   },
   "https://www.tscan.com/about/our-company/": {
     "browser_required": true,
-    "checked_at": 1795055920.2692337,
+    "checked_at": 1795140733.1302452,
     "html_fingerprint": ""
   },
   "https://www.tscan.com/about/partners/": {
     "browser_required": true,
-    "checked_at": 1795056548.2069986,
+    "checked_at": 1795141082.4994972,
     "html_fingerprint": ""
   },
   "https://www.tuneprotect.com/privacy-policy": {
     "browser_required": true,
-    "checked_at": 1795054454.2022488,
-    "html_fingerprint": ""
+    "checked_at": 1795138865.6765807,
+    "html_fingerprint": "db286c5f712ad2967a21ae98986573c83d61285c3d62a80c67234a66987603f7"
   },
   "https://www.turkcell.com.tr/en/aboutus/investor-relations/corporate-governance/general-assembly-information": {
     "browser_required": true,
-    "checked_at": 1795057078.9637952,
+    "checked_at": 1795141996.6100132,
     "html_fingerprint": ""
   },
   "https://www.twentyfouram.com/document-library": {
     "browser_required": true,
-    "checked_at": 1795057432.8860583,
+    "checked_at": 1795142011.9679508,
     "html_fingerprint": ""
   },
   "https://www.uli.com.my/about-u-li/governance/": {
@@ -2341,52 +2416,52 @@
   },
   "https://www.vaibhavglobal.com/code-policies/policies-and-programme": {
     "browser_required": true,
-    "checked_at": 1795058591.5599632,
+    "checked_at": 1795142869.9644449,
     "html_fingerprint": ""
   },
   "https://www.vaibhavglobal.com/corporate-governance-report": {
     "browser_required": true,
-    "checked_at": 1795059227.246765,
+    "checked_at": 1795143984.337597,
     "html_fingerprint": ""
   },
   "https://www.vaibhavglobal.com/investor_presentation": {
     "browser_required": true,
-    "checked_at": 1795054486.8562138,
+    "checked_at": 1795138903.3631668,
     "html_fingerprint": ""
   },
   "https://www.vgpparks.eu/investors/reports/": {
     "browser_required": true,
-    "checked_at": 1795054482.6360197,
-    "html_fingerprint": "5d8e7aa3902b05e455a08305def981766b841bfd034df5d2e0e64fb271b8cce8"
+    "checked_at": 1795138723.445602,
+    "html_fingerprint": ""
   },
   "https://www.vpbank.com.vn/en/quan-he-nha-dau-tu#BankManagement": {
     "browser_required": true,
-    "checked_at": 1795055865.0302143,
-    "html_fingerprint": "d2e0bb43475d7c2ac5a054f431840b970ad5be7b3e2b0b95f516c61fa7f71745"
+    "checked_at": 1795140641.207174,
+    "html_fingerprint": "2427d8fb50a5d73740c191b2dece8262f6155fcb4341fee895c0af45ea3b2076"
   },
   "https://www.vub.sk/en/ludia/financne-ukazovatele/vyrocne-spravy.html": {
     "browser_required": false,
-    "checked_at": 1795056515.7069023,
-    "html_fingerprint": "d54a2f3f8d65e24daac21012cb0bf45a5305ba362032649af8985f2825153f0e"
+    "checked_at": 1795141050.775683,
+    "html_fingerprint": "54fd22d1b4dca47334d97b1d309e3489178c8207e9d1083b7ec6bf86d54ed391"
   },
   "https://www.winstargroup.com.my/investor-relations/egm-2025.html": {
-    "browser_required": true,
-    "checked_at": 1795058363.9449975,
-    "html_fingerprint": "5887a6807bff85f458edbfaa8d93aa958db9954ef9b215ec2166dc72ee1e12dd"
+    "browser_required": false,
+    "checked_at": 1795142834.471259,
+    "html_fingerprint": "78e2371c0d1a49e45686e54ecf2d21e0c097f455ad8b9695d49c5d96112ead76"
   },
   "https://www.winstargroup.com.my/investor-relations/governance.html": {
-    "browser_required": true,
-    "checked_at": 1795057805.7075148,
-    "html_fingerprint": "9812c333972728700f85b1def2fe4d0433f7d6ecf7eaf10805a139e4ddc9f401"
+    "browser_required": false,
+    "checked_at": 1795142511.00298,
+    "html_fingerprint": "2617fcca5ba45447827b2f57c9d190aac6063e93217691f179d719fc087758b0"
   },
   "https://www.zimvie.com/corporate-compliance#anti-bribery-anti-corruption": {
     "browser_required": true,
-    "checked_at": 1795054480.7117968,
-    "html_fingerprint": "beec8580d5fa96069ee22045edb3e956071456f8e324765c9d6c72efe7e359c3"
+    "checked_at": 1795138896.8425398,
+    "html_fingerprint": "addd1cdba4bb817335292608f4bdfba53806deb8c149a8527ef35e44be8eedf9"
   },
   "https://www.zimvie.com/corporate-compliance#code-of-conduct": {
     "browser_required": true,
-    "checked_at": 1795054382.9606392,
-    "html_fingerprint": "beec8580d5fa96069ee22045edb3e956071456f8e324765c9d6c72efe7e359c3"
+    "checked_at": 1795138830.2709424,
+    "html_fingerprint": "addd1cdba4bb817335292608f4bdfba53806deb8c149a8527ef35e44be8eedf9"
   }
 }

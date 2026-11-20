@@ -64,3 +64,4 @@ run_number,date,run_mode,url_file,total_urls_processed,total_documents_captured,
 545,2026-11-09 10:20:02,full,p4_p5_total,4944,114301,117,9672,863,963,206,true,p4_p5/output_p4_p5.csv,,p4_p5/capture_issues_p4_p5.csv
 546,2026-11-18 04:25:54,full,p4_p5_total,4944,112946,484,12133,899,858,232,true,p4_p5/output_p4_p5.csv,,p4_p5/capture_issues_p4_p5.csv
 547,2026-11-19 03:43:19,full,p4_p5_total,4944,116595,138,12348,842,830,229,true,p4_p5/output_p4_p5.csv,,p4_p5/capture_issues_p4_p5.csv
+548,2026-11-20 03:20:07,full,p4_p5_total,4944,121372,142,13921,847,850,225,true,p4_p5/output_p4_p5.csv,,p4_p5/capture_issues_p4_p5.csv
