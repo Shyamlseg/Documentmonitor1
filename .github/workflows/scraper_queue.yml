@@ -1,0 +1,268 @@
+name: Scraper shared queue (reusable)
+
+# Called by run_p1.yml, run_p2_p3.yml and run_p4_p5_parallel.yml.
+# plan   -> splits the group's link file into small chunks
+# work   -> N workers keep taking the next free chunk until none are left
+# merge  -> publishes the finished chunks (once) and lists any that did not finish
+
+on:
+  workflow_call:
+    inputs:
+      group:
+        description: p1, p2_p3 or p4_p5
+        required: true
+        type: string
+      run_mode:
+        description: full or seed
+        required: false
+        type: string
+        default: "full"
+      workers:
+        description: Parallel workers (1-20)
+        required: false
+        type: string
+        default: "15"
+      chunk_size:
+        description: Links per chunk
+        required: false
+        type: string
+        default: "25"
+      require_all_chunks:
+        description: "true = publish nothing unless every chunk finished"
+        required: false
+        type: string
+        default: "false"
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    name: Plan ${{ inputs.group }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    outputs:
+      workers: ${{ steps.plan.outputs.workers }}
+      total: ${{ steps.plan.outputs.total }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Split the link file into chunks
+        id: plan
+        env:
+          GROUP: ${{ inputs.group }}
+          RUN_MODE: ${{ inputs.run_mode }}
+          CHUNK_SIZE: ${{ inputs.chunk_size }}
+          WORKERS: ${{ inputs.workers }}
+        run: python batches.py plan --group "$GROUP" --size "$CHUNK_SIZE" --workers "$WORKERS"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.group }}-batch-plan
+          path: batch_plan/
+          if-no-files-found: error
+          retention-days: 7
+
+  work:
+    name: Worker ${{ matrix.worker }}
+    needs: plan
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    # contents: write is only used to create the small "claim" branches that stop two
+    # workers taking the same chunk. The cleanup job deletes them.
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        worker: ${{ fromJSON(needs.plan.outputs.workers) }}
+    env:
+      RUN_MODE: ${{ inputs.run_mode }}
+      ENABLE_DIFF_DECISION_LOGS: "true"
+      ENABLE_BROWSER_FALLBACK: "true"
+      ENABLE_RAW_LINKS: "false"
+      SLEEP_SECONDS: "0.5"
+      RETRY_FAILED_URLS: "true"
+      RETRY_SLEEP_SECONDS: "20"
+      HTTP_WORKERS: "8"
+      PDF_METADATA_WORKERS: "4"
+      BROWSER_WORKERS: "2"
+      BROWSER_SOURCE_SECONDS: "30"
+      PYTHONUNBUFFERED: "1"
+      ENABLE_PDF_METADATA_DIFF_FILTER: "true"
+      PDF_METADATA_RECENCY_DAYS: "60"
+      PDF_METADATA_MAX_BYTES: "104857600"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.group }}-batch-plan
+          path: batch_plan
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium
+      - name: Check Python syntax
+        run: python -m py_compile scrape.py monitor_io.py browser_pool.py batches.py
+      - name: Take chunks from the shared queue until it is empty
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GROUP: ${{ inputs.group }}
+          WORKER: ${{ matrix.worker }}
+          TOTAL: ${{ needs.plan.outputs.total }}
+          RUN_KEY: ${{ inputs.group }}-${{ github.run_id }}-${{ github.run_attempt }}
+          CLAIM_DEADLINE_MIN: "280"
+          CHUNK_TIMEOUT_MIN: "60"
+        shell: bash
+        run: |
+          set -uo pipefail
+          mkdir -p chunk_work chunk_diag
+          START=$(date +%s)
+          DONE=0
+          FAILED=0
+          for N in $(seq 1 "$TOTAL"); do
+            ID=$(printf '%04d' "$N")
+            if [ $(( $(date +%s) - START )) -ge $(( CLAIM_DEADLINE_MIN * 60 )) ]; then
+              echo "::warning::Worker $WORKER stopped taking new chunks after ${CLAIM_DEADLINE_MIN} min"
+              break
+            fi
+            # Atomic claim: creating a ref that already exists fails, so only one worker
+            # can ever win chunk N. Network errors are retried.
+            CLAIMED=0
+            AMBIGUOUS=0
+            RESP=""
+            for ATTEMPT in 1 2 3 4 5 6; do
+              if RESP=$(gh api -X POST "repos/$GITHUB_REPOSITORY/git/refs" \
+                    -f "ref=refs/heads/claims/$RUN_KEY/$ID" -f "sha=$GITHUB_SHA" 2>&1); then
+                CLAIMED=1
+                break
+              fi
+              if echo "$RESP" | grep -qi "already exists"; then
+                if [ "$AMBIGUOUS" = "1" ]; then
+                  echo "::warning::Chunk $ID: claim state unclear after a network error; skipping it (it shows as MISSING in the chunk status)"
+                fi
+                break
+              fi
+              AMBIGUOUS=1
+              echo "::warning::Worker $WORKER claim attempt $ATTEMPT for chunk $ID failed: $RESP"
+              sleep $((ATTEMPT * 10))
+            done
+            if [ "$CLAIMED" = "0" ]; then
+              if [ "$AMBIGUOUS" = "1" ] && ! echo "$RESP" | grep -qi "already exists"; then
+                echo "::error::Worker $WORKER could not claim chunk $ID after 6 attempts; continuing with the next one"
+              fi
+              continue
+            fi
+            echo "=== Worker $WORKER claimed chunk $ID of $TOTAL ==="
+            if python batches.py run --group "$GROUP" --chunk "$ID" --timeout-min "$CHUNK_TIMEOUT_MIN"; then
+              DONE=$((DONE + 1))
+            else
+              FAILED=$((FAILED + 1))
+              echo "::warning::Chunk $ID failed on worker $WORKER; continuing with the next chunk"
+            fi
+          done
+          echo "Worker $WORKER finished: $DONE chunks completed, $FAILED failed, $(( $(date +%s) - START ))s"
+      - name: Upload finished chunks
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.group }}-worker-${{ matrix.worker }}
+          path: chunk_work/
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Upload diagnostics
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.group }}-diag-${{ matrix.worker }}
+          path: chunk_diag/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  cleanup:
+    name: Delete queue claims
+    needs: work
+    if: ${{ always() }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - name: Delete claim branches for this run
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_KEY: ${{ inputs.group }}-${{ github.run_id }}-${{ github.run_attempt }}
+        shell: bash
+        run: |
+          gh api --paginate "repos/$GITHUB_REPOSITORY/git/matching-refs/heads/claims/$RUN_KEY/" \
+            --jq '.[].ref' | while read -r ref; do
+              gh api -X DELETE "repos/$GITHUB_REPOSITORY/git/${ref}" || true
+            done
+
+  merge:
+    name: Merge and publish ${{ inputs.group }}
+    needs: [plan, work]
+    if: ${{ !cancelled() && needs.plan.result == 'success' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    env:
+      GROUP: ${{ inputs.group }}
+      RUN_MODE: ${{ inputs.run_mode }}
+      REQUIRE_ALL: ${{ inputs.require_all_chunks }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.group }}-batch-plan
+          path: batch_plan
+      - uses: actions/download-artifact@v4
+        with:
+          path: worker_outputs
+          pattern: ${{ inputs.group }}-worker-*
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Merge finished chunks into the production files
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "$REQUIRE_ALL" = "true" ]; then
+            python batches.py merge --group "$GROUP" --root worker_outputs --strict
+          else
+            python batches.py merge --group "$GROUP" --root worker_outputs
+          fi
+      - name: Find rows containing Alibaba secret-like patterns
+        run: python batches.py scan --group "$GROUP"
+      - name: Commit the production files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          PATHS=$(python batches.py paths --group "$GROUP")
+          git add -A -f -- $PATHS
+          # GitHub rejects any file over 100 MB; stop early with a clear message.
+          for f in $(git diff --cached --name-only); do
+            if [ -f "$f" ] && [ "$(stat -c%s "$f")" -gt 95000000 ]; then
+              echo "::error::$f is over 95 MB and cannot be pushed to GitHub"
+              exit 1
+            fi
+          done
+          git commit -m "Update scraped data ($GROUP)" || echo "No changes to commit"
+          pushed=false
+          for i in 1 2 3; do
+            git pull --rebase origin "$GITHUB_REF_NAME" && git push && { pushed=true; break; }
+            echo "Push/rebase failed. Retry attempt $i..."
+            git rebase --abort 2>/dev/null || true
+            sleep 10
+          done
+          "$pushed" || { echo "Failed to publish results after three attempts"; exit 1; }
