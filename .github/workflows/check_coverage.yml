@@ -1,0 +1,35 @@
+name: Check link coverage
+
+# Read-only. Compares every link in your link files with output.csv, known_documents.csv,
+# url_status.csv and the issues files, and writes source_coverage.csv.
+# Open the run's Summary page for the table, and download source_coverage.csv from Artifacts.
+
+on:
+  workflow_dispatch:
+    inputs:
+      groups:
+        description: "Groups to check, comma separated (p1,p2_p3,p4_p5)"
+        required: true
+        default: "p1,p2_p3"
+
+permissions:
+  contents: read
+
+jobs:
+  coverage:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Build the coverage report
+        env:
+          GROUPS_TO_CHECK: ${{ inputs.groups }}
+        run: python source_coverage.py --groups "$GROUPS_TO_CHECK" --out source_coverage.csv
+      - uses: actions/upload-artifact@v4
+        with:
+          name: source-coverage
+          path: source_coverage.csv
+          retention-days: 14
