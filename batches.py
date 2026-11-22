@@ -12,8 +12,9 @@ import signal
 import subprocess
 import sys
 import time
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlparse
 
 csv.field_size_limit(2 ** 31 - 1)
 
@@ -114,6 +115,11 @@ def run_id():
     return os.environ.get('GITHUB_RUN_ID', 'local')
 
 
+def expected_run_id():
+    """The run whose plan we are reading. A recovery run sets SOURCE_RUN_ID to the earlier run."""
+    return os.environ.get('SOURCE_RUN_ID', '').strip() or run_id()
+
+
 def github_output(**values):
     target = os.environ.get('GITHUB_OUTPUT')
     if target:
@@ -131,7 +137,7 @@ def step_summary(text):
 
 def load_manifest(group):
     manifest = json.loads(MANIFEST.read_text())
-    if manifest['run_id'] != run_id():
+    if manifest['run_id'] != expected_run_id():
         raise SystemExit('Batch plan belongs to another workflow run')
     if manifest['group'] != group:
         raise SystemExit(f"Batch plan is for group {manifest['group']}, not {group}")
@@ -139,6 +145,10 @@ def load_manifest(group):
 
 
 # ---------------------------------------------------------------- plan
+def RUN_MODE():
+    return os.environ.get('RUN_MODE', 'full').strip().lower()
+
+
 def load_sources(group):
     path = Path(GROUPS[group]['source'])
     if not path.exists():
@@ -200,10 +210,6 @@ def plan(group, size, workers):
     github_output(workers=json.dumps(list(range(1, workers + 1))), total=count, sources=total)
     print(f'{GROUPS[group]["label"]}: {total} links in {count} chunks of about {math.ceil(total / count)}, '
           f'{workers} workers')
-
-
-def RUN_MODE():
-    return os.environ.get('RUN_MODE', 'full').strip().lower()
 
 
 # ---------------------------------------------------------------- run one chunk
@@ -437,20 +443,20 @@ def merge(group, root, strict):
     previous = max((to_int(r.get('run_number')) for r in summary_rows), default=0)
     new = chunk_rows('summary')
     if new:
-        def total(field):
+        def total_of(field):
             return sum(to_int(r.get(field)) for r in new)
         summary_rows.append({
             'run_number': str(previous + 1),
             'date': max((r.get('date', '') for r in new), default=''),
             'run_mode': next((r['run_mode'] for r in new if r.get('run_mode')), ''),
             'url_file': f'{group}_total',
-            'total_urls_processed': total('total_urls_processed'),
-            'total_documents_captured': total('total_documents_captured'),
-            'new_diff_records': total('new_diff_records'),
-            'issue_count': total('issue_count'),
-            'success_zero_docs_count': total('success_zero_docs_count'),
-            'fetch_failed_status_count': total('fetch_failed_status_count'),
-            'fetch_error_count': total('fetch_error_count'),
+            'total_urls_processed': total_of('total_urls_processed'),
+            'total_documents_captured': total_of('total_documents_captured'),
+            'new_diff_records': total_of('new_diff_records'),
+            'issue_count': total_of('issue_count'),
+            'success_zero_docs_count': total_of('success_zero_docs_count'),
+            'fetch_failed_status_count': total_of('fetch_failed_status_count'),
+            'fetch_error_count': total_of('fetch_error_count'),
             'browser_fallback_enabled': 'true' if any(
                 str(r.get('browser_fallback_enabled', '')).strip().lower() == 'true' for r in new) else 'false',
             'output_file': cfg['output'], 'raw_file': '', 'issues_file': cfg['issues']})
@@ -477,15 +483,18 @@ def merge(group, root, strict):
     print(f'Summary rows added: {1 if new else 0}')
 
 
-# ---------------------------------------------------------------- scan / paths
-SECRET_PATTERNS = [
+# ---------------------------------------------------------------- secret scan
+# Alibaba credentials: always stop the run.
+ALIBABA_PATTERNS = [
     ('Alibaba AccessKey ID', re.compile(r'LTAI[0-9A-Za-z]{12,}')),
     ('Alibaba OSSAccessKeyId parameter', re.compile(r'(?i)OSSAccessKeyId=')),
     ('Alibaba AccessKeyId parameter', re.compile(r'(?i)AccessKeyId=')),
     ('Alibaba AccessKeySecret parameter', re.compile(r'(?i)AccessKeySecret=')),
     ('Alibaba Security Token parameter', re.compile(r'(?i)(x-oss-security-token|security-token)=')),
-    ('Signed URL Signature parameter', re.compile(r'(?i)Signature=')),
 ]
+# Any signed link (Google, AWS, ...): stops the run unless the link is proven expired.
+SIGNATURE_LABEL = 'Signed URL Signature parameter'
+SIGNATURE_PATTERN = re.compile(r'(?i)Signature=')
 
 
 def redact(text):
@@ -495,35 +504,73 @@ def redact(text):
                   r'security-token)=([^,&\s]+)', r'\1=[REDACTED]', text)
 
 
+def signed_url_expired(value, now=None):
+    """True only when the link carries a start time AND a lifetime and both have passed.
+
+    Understands Google (X-Goog-Date, X-Goog-Expires) and AWS (X-Amz-Date, X-Amz-Expires).
+    Anything else returns False, so an unknown kind of signed link still stops the run.
+    """
+    now = now or datetime.now(timezone.utc)
+    try:
+        query = parse_qs(urlparse(str(value).strip()).query)
+    except ValueError:
+        return False
+    q = {k.lower(): v[0] for k, v in query.items() if v}
+    for prefix in ('x-goog-', 'x-amz-'):
+        date, lifetime = q.get(prefix + 'date'), q.get(prefix + 'expires')
+        if date and lifetime:
+            try:
+                start = datetime.strptime(date, '%Y%m%dT%H%M%SZ').replace(tzinfo=timezone.utc)
+                return start + timedelta(seconds=int(lifetime)) < now
+            except ValueError:
+                return False
+    return False
+
+
 def scan(group):
     cfg = GROUPS[group]
     files = [cfg['output'], cfg['known'], cfg['issues'], cfg['status'], cfg['diff']]
     if group == 'p4_p5':
         files.append('p4_p5/document_canonical_keys_p4_p5.csv')
-    found = False
+    blocked = False
+    expired_count = 0
+    expired_examples = []
     for name in files:
         path = Path(name)
         if not path.exists():
             continue
         with path.open(newline='', encoding='utf-8', errors='replace') as stream:
             for number, row in enumerate(csv.DictReader(stream), start=2):
-                text = ' | '.join(str(v) for v in row.values())
-                hits = [label for label, pattern in SECRET_PATTERNS if pattern.search(text)]
-                if not hits:
-                    continue
-                found = True
-                print('SECRET-LIKE PATTERN FOUND')
-                print(f'File: {path}')
-                print(f'Row number: {number}')
-                print(f'Matched pattern(s): {", ".join(hits)}')
-                print(f"Company/source URL: {row.get('company') or row.get('source_url') or row.get('url') or ''}")
-                print(f"Document title: {row.get('document_title') or row.get('text') or ''}")
-                if row.get('document_url') or row.get('url'):
-                    print(f"Document URL redacted: {redact(row.get('document_url') or row.get('url'))}")
-                if row.get('error_message'):
-                    print(f"Error message redacted: {redact(row['error_message'])}")
-                print('---')
-    if found:
+                values = [str(v) for v in row.values() if v is not None]
+                text = ' | '.join(values)
+                hits = [label for label, pattern in ALIBABA_PATTERNS if pattern.search(text)]
+                signed = [v for v in values if SIGNATURE_PATTERN.search(v)]
+                if any(not signed_url_expired(v) for v in signed):
+                    hits.append(SIGNATURE_LABEL)
+                if hits:
+                    blocked = True
+                    print('SECRET-LIKE PATTERN FOUND')
+                    print(f'File: {path}')
+                    print(f'Row number: {number}')
+                    print(f'Matched pattern(s): {", ".join(hits)}')
+                    print(f"Company/source URL: {row.get('company') or row.get('source_url') or row.get('url') or ''}")
+                    print(f"Document title: {row.get('document_title') or row.get('text') or ''}")
+                    if row.get('document_url') or row.get('url'):
+                        print(f"Document URL redacted: {redact(row.get('document_url') or row.get('url'))}")
+                    if row.get('error_message'):
+                        print(f"Error message redacted: {redact(row['error_message'])}")
+                    print('---')
+                elif signed:
+                    expired_count += 1
+                    if len(expired_examples) < 3:
+                        expired_examples.append(f'{path}:{number} {redact(signed[0])[:120]}')
+    if expired_count:
+        print(f'::warning::{expired_count} row(s) hold a signed link that has already expired '
+              f'(no Alibaba credentials, cannot open anything). Left in the files. '
+              f'First: {expired_examples}')
+        step_summary(f'\n**Scan:** {expired_count} row(s) contain an already-expired signed link. '
+                     'They were kept and did not block publishing.\n')
+    if blocked:
         print('One or more secret-like patterns were found. Stop before commit/push.')
         sys.exit(1)
     print('No Alibaba secret-like patterns found in generated CSV files.')
