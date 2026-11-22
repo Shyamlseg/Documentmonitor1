@@ -580,3 +580,4 @@ run_number,date,run_mode,url_file,total_urls_processed,total_documents_captured,
 579,2026-11-08 19:56:39,full,documents_p3.csv,75,3820,1,85,11,9,0,True,output_p3_work.csv,raw_links.csv,capture_issues_p3_work.csv
 580,2026-11-08 19:56:43,full,documents_p2.csv,66,1864,2,120,6,7,2,True,output_p2_work.csv,raw_links.csv,capture_issues_p2_work.csv
 581,2026-11-22 11:19:22,seed,p1_total,2998,69179,0,1225,63,38,233,true,output.csv,,capture_issues.csv
+582,2026-11-22 12:39:49,seed,p2_p3_total,3053,47614,0,683,141,118,1,true,output.csv,,capture_issues_p2_p3_latest.csv
