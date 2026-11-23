@@ -35,7 +35,9 @@ DEFER_BROWSER = False
 browser_jobs = {}
 BROWSER_PROGRESS_CALLBACK = None
 
-ENABLE_BROWSER_FALLBACK = os.environ.get("ENABLE_BROWSER_FALLBACK", "false").strip().lower() == "true"
+ENABLE_BROWSER_FALLBACK = os.environ.get("ENABLE_BROWSER_FALLBACK", "true").strip().lower() == "true"
+# Seconds (at most 30% of the remaining browser time) the custom year-dropdown phase may use per page.
+CUSTOM_DROPDOWN_SECONDS = float(os.environ.get("CUSTOM_DROPDOWN_SECONDS", "8"))
 ENABLE_RAW_LINKS = os.environ.get("ENABLE_RAW_LINKS", "false").strip().lower() == "true"
 
 # Sleep between URLs to reduce blocking
@@ -141,11 +143,47 @@ DOCUMENT_CANONICAL_FIELDNAMES = [
 ]
 output_data = []
 raw_links = []
+
+# Every PDF found on each source's page, INCLUDING PDFs that were skipped because another
+# source already listed them (output.csv lists each PDF only once). Written only by the main
+# process, only when LINK_DOCUMENTS_FILE is set; nothing else in the scraper reads it.
+link_documents = []
+LINK_DOCUMENTS_FILE = os.environ.get("LINK_DOCUMENTS_FILE", "").strip()
+
+
+def record_link_document(source_url, title, document_url):
+    if not LINK_DOCUMENTS_FILE or not source_url or not document_url:
+        return
+    link_documents.append({
+        "source_url": source_url,
+        "document_title": limit_document_title_words(title or "Unknown Title", max_words=20),
+        "document_url": document_url
+    })
+
+
+def save_link_documents():
+    if not LINK_DOCUMENTS_FILE:
+        return
+    with open(LINK_DOCUMENTS_FILE, "w", newline="", encoding="utf-8") as link_documents_file:
+        writer = csv.DictWriter(link_documents_file, fieldnames=["source_url", "document_title", "document_url"])
+        writer.writeheader()
+        writer.writerows(link_documents)
 issue_rows = []
 url_status_updates = {}
 
 # Retry queue for failed/zero-doc URLs
-retry_queue = []
+
+
+class RetryQueue(list):
+    """Retry list that remembers when each failed URL was queued."""
+
+    def append(self, item):
+        item = dict(item)
+        item["queued_at"] = time.monotonic()
+        super().append(item)
+
+
+retry_queue = RetryQueue()
 
 # Global duplicate prevention across the whole run
 global_seen_document_urls = set()
@@ -1653,6 +1691,7 @@ def extract_links_from_soup(soup, base_url, source_url, seen, label="KEPT"):
                 continue
 
             seen.add(duplicate_key)
+            record_link_document(source_url, title, full_url)
 
             if not mark_document_seen(full_url):
                 print(f"GLOBAL DUPLICATE SKIPPED → {title}")
@@ -2302,10 +2341,29 @@ def browser_click_capture(source_url, existing_keys):
             except Exception as e:
                 print(f"Native select dropdown phase error: {e}")
 
+            # -------------------------
+            # 2. Custom dropdowns
+            # -------------------------
+            # This phase used to sit inside the except block above, so it only ran after the
+            # native-select phase had crashed. It now runs for every page and frame, with its
+            # own small time budget so it cannot use up the browser time that the later steps
+            # (report pages, report cards, expanders) still need.
+            custom_budget = min(CUSTOM_DROPDOWN_SECONDS, 0.3 * max(0.0, browser_deadline - time.monotonic()))
+            custom_deadline = time.monotonic() + custom_budget
+            try:
+                custom_contexts = get_contexts_to_scan()
+            except BrowserBudgetExceeded:
+                raise
+            except Exception:
+                custom_contexts = [{"name": "main_page", "context": page, "url": page.url or source_url}]
 
-                # -------------------------
-                # 2. Custom dropdowns
-                # -------------------------
+            for ctx_item in custom_contexts:
+                if time.monotonic() > custom_deadline:
+                    break
+                ctx = ctx_item["context"]
+                ctx_name = ctx_item["name"]
+                ctx_url = ctx_item["url"]
+
                 try:
                     # First try specific dropdown-like controls.
                     dropdown_candidates = ctx.locator(
@@ -2320,6 +2378,8 @@ def browser_click_capture(source_url, existing_keys):
                     print(f"Custom dropdown/control candidates found in {ctx_name}: {dropdown_count}")
 
                     for i in range(dropdown_count):
+                        if time.monotonic() > custom_deadline:
+                            break
                         if time.monotonic() > browser_deadline:
                             raise BrowserBudgetExceeded("Browser source time budget exceeded; capture may be incomplete")
                         try:
@@ -2424,6 +2484,8 @@ def browser_click_capture(source_url, existing_keys):
                             print(f"Custom year options found after opening in {ctx_name}: {option_count}")
 
                             for j in range(option_count):
+                                if time.monotonic() > custom_deadline:
+                                    break
                                 if time.monotonic() > browser_deadline:
                                     raise BrowserBudgetExceeded("Browser source time budget exceeded; capture may be incomplete")
                                 try:
@@ -2450,6 +2512,21 @@ def browser_click_capture(source_url, existing_keys):
                                     print(f"Clicking custom dropdown year in {ctx_name}: {year_value}")
 
                                     before_url = page.url
+
+                                    # Many menus close after a selection. If this year is hidden,
+                                    # open the menu again; if it is still hidden, skip it quickly
+                                    # instead of waiting several seconds on a hidden element.
+                                    try:
+                                        if not option.is_visible():
+                                            dropdown.click(timeout=2000, force=True)
+                                            settle(page, 600)
+                                        if not option.is_visible():
+                                            print(f"Custom year option not visible, skipped: {year_value}")
+                                            continue
+                                    except BrowserBudgetExceeded:
+                                        raise
+                                    except Exception:
+                                        pass
 
                                     try:
                                         option.scroll_into_view_if_needed(timeout=3000)
@@ -3744,6 +3821,7 @@ def collect_browser_results():
             # Workers dedupe per source; another source may have published this
             # same PDF first, but this page still successfully discovered it.
             counts[url] += 1
+            record_link_document(url, result.get("document_title", ""), result["document_url"])
             if mark_document_seen(result["document_url"]):
                 output_data.append(result)
                 if ENABLE_RAW_LINKS:
@@ -3971,7 +4049,11 @@ def process_source_url(source_url, retry_attempt=False, force_browser_fallback=F
             return 0
 
         if docs_captured_for_url == 0:
-            if not retry_attempt and RETRY_FAILED_URLS:
+            # A page that loaded fine (200) but has no documents gives the same result on a retry
+            # while the browser fallback is on: the browser already looked at it (BROWSER_PENDING
+            # above), or the saved strategy says the page has not changed. Failed fetches are
+            # still retried, because those can really change.
+            if not retry_attempt and RETRY_FAILED_URLS and not ENABLE_BROWSER_FALLBACK:
                 print("Queued for retry: zero documents captured")
                 retry_queue.append({
                     "source_url": source_url,
@@ -4174,10 +4256,15 @@ if __name__ == "__main__":
                 unique_retry_items.append(retry_item)
 
         print(f"\nRetry queue found: {len(unique_retry_items)} URLs")
-        print(f"Waiting {RETRY_SLEEP_SECONDS} seconds before retry pass...")
-
-        if RETRY_SLEEP_SECONDS > 0:
-            time.sleep(RETRY_SLEEP_SECONDS)
+        # Wait RETRY_SLEEP_SECONDS after the LAST failure, but do not wait again for time
+        # that has already passed while the rest of the first pass was running.
+        last_failure_at = max(item.get("queued_at", 0.0) for item in unique_retry_items)
+        retry_wait = RETRY_SLEEP_SECONDS - (time.monotonic() - last_failure_at)
+        if retry_wait > 0:
+            print(f"Waiting {retry_wait:.1f} seconds before retry pass (RETRY_SLEEP_SECONDS={RETRY_SLEEP_SECONDS:g}, counted from the last failure)...")
+            time.sleep(retry_wait)
+        else:
+            print(f"No wait needed: more than {RETRY_SLEEP_SECONDS:g} seconds have passed since the last failure; starting retry pass...")
 
         for retry_item, retry_response in prefetched(unique_retry_items, fetch_url, workers=int(os.environ.get("HTTP_WORKERS", "8"))):
             retry_url = retry_item["source_url"]
@@ -4224,6 +4311,20 @@ if __name__ == "__main__":
             if normalize_url_key(row.get("company", "")) in known_source_urls_before_run
             and normalize_url_key(row.get("document_url", "")) not in known_document_urls_before_run
             and normalize_url_key(row.get("document_url", "")) not in existing_diff_urls]
+        if not ENABLE_PDF_METADATA_DIFF_FILTER:
+            # Filter switched off: every unseen document of a known source goes to the diff,
+            # and no PDF metadata is requested.
+            for row in candidates:
+                url = row["document_url"]
+                key = normalize_url_key(url)
+                if key not in existing_diff_urls:
+                    new_records.append({"date": current_date, "company": row["company"],
+                        "document_title": limit_document_title_words(row.get("document_title", "Unknown Title"), 20),
+                        "document_url": url})
+                    existing_diff_urls.add(key)
+                log_diff_decision(row.get("document_title", ""), url, row["company"],
+                                  "ADDED", "metadata_filter_disabled", "pdf_modified_date=not_checked")
+            candidates = []
         # Only unseen candidates require metadata requests, with bounded concurrency.
         with ThreadPoolExecutor(max_workers=int(os.environ.get("PDF_METADATA_WORKERS", "4"))) as pool:
             list(pool.map(get_pdf_metadata_date, dict.fromkeys(row["document_url"] for row in candidates)))
@@ -4321,6 +4422,7 @@ if __name__ == "__main__":
 
     # APPEND known_documents.csv for seed/full runs
     append_known_documents()
+    save_link_documents()
     if RUN_MODE in ["full", "seed"]:
         save_url_status_file()
         Path(SOURCE_STRATEGY_FILE).write_text(json.dumps(source_strategies, indent=2, sort_keys=True))
@@ -4407,7 +4509,10 @@ if __name__ == "__main__":
 
     print("\nSCRAPER COMPLETE")
     print(f"Mode={RUN_MODE} sources={total_urls_processed} captured={len(output_data)} new_diff={len(new_records)} issues={len(issue_rows)}")
-    print(f"PDF filter=internal /ModDate only; window={PDF_METADATA_RECENCY_DAYS} days; missing dates excluded and retryable")
+    if ENABLE_PDF_METADATA_DIFF_FILTER:
+        print(f"PDF filter=internal /ModDate only; window={PDF_METADATA_RECENCY_DAYS} days; missing dates excluded and retryable")
+    else:
+        print("PDF filter=DISABLED (ENABLE_PDF_METADATA_DIFF_FILTER=false); every new document of a known source goes to the diff")
     print(f"Browser fallback={ENABLE_BROWSER_FALLBACK}; source strategies={SOURCE_STRATEGY_FILE}")
     print(f"Output={OUTPUT_FILE}; diff={DIFF_FILE}; issues={ISSUES_FILE}; summary={RUN_SUMMARY_FILE}")
     print(f"Elapsed seconds={time.monotonic() - run_started:.2f}")
