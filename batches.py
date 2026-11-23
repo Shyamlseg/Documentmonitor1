@@ -35,6 +35,7 @@ SUMMARY_FIELDS = ['run_number', 'date', 'run_mode', 'url_file', 'total_urls_proc
                   'success_zero_docs_count', 'fetch_failed_status_count', 'fetch_error_count',
                   'browser_fallback_enabled', 'output_file', 'raw_file', 'issues_file']
 CHUNK_STATUS_FIELDS = ['chunk', 'status', 'sources', 'first_source', 'reason']
+LINK_DOC_FIELDS = ['source_url', 'document_title', 'document_url', 'listed_here', 'credited_to']
 
 # P1 and P2/P3 share the production files in the repository root (as before);
 # P4/P5 keeps its own files in p4_p5/.
@@ -52,6 +53,8 @@ GROUPS = {
 for _key, _cfg in GROUPS.items():
     _cfg['strategy'] = f"source_strategies_{Path(_cfg['source']).stem}.json"
     _cfg['chunk_status'] = f'chunk_status/{_key}_chunk_status.csv'
+    _cfg['linkdocs'] = (f'p4_p5/link_documents_{_key}.csv' if _key == 'p4_p5'
+                        else f'link_documents_{_key}.csv')
 
 
 # ---------------------------------------------------------------- helpers
@@ -217,7 +220,7 @@ def chunk_paths(cid):
     d = WORK_DIR / f'chunk_{cid}'
     return d, {'output': d / 'output.csv', 'issues': d / 'issues.csv', 'diff': d / 'diff.csv',
                'known': d / 'known.csv', 'summary': d / 'summary.csv', 'status': d / 'status.csv',
-               'strategy': d / 'strategy.json'}
+               'strategy': d / 'strategy.json', 'linkdocs': d / 'link_docs.csv'}
 
 
 def copy_baseline(src, dest, fields):
@@ -269,6 +272,10 @@ def finish_chunk(cfg, entry, p):
     if not fields:
         raise ValueError('output file is missing or empty')
     json.loads(p['strategy'].read_text())
+    # The link documents file is optional: it only exists once scrape.py has the link documents change.
+    if not p['linkdocs'].exists():
+        print('NOTE: scrape.py did not write link_docs.csv (scrape.py needs the link documents update)',
+              flush=True)
 
 
 def fail_chunk(d, cid, reason):
@@ -308,6 +315,7 @@ def run_chunk(group, cid, timeout_min):
                    ISSUES_FILE=str(p['issues']), DIFF_FILE=str(p['diff']),
                    KNOWN_DOCUMENTS_FILE=str(p['known']), RUN_SUMMARY_FILE=str(p['summary']),
                    URL_STATUS_FILE=str(p['status']), SOURCE_STRATEGY_FILE=str(p['strategy']),
+                   LINK_DOCUMENTS_FILE=str(p['linkdocs']),
                    RAW_FILE=str(diag / 'raw_links.csv'),
                    BROWSER_TIMINGS_FILE=str(diag / 'browser_timings.jsonl'))
         code, reason = run_scraper(env, timeout_min)
@@ -366,6 +374,58 @@ def collect_chunks(manifest, root):
     return completed, rows
 
 
+def current_link_keys(group):
+    """Links that are still in a link file of any group that shares this group's output file."""
+    keys = set()
+    for cfg in GROUPS.values():
+        if cfg['output'] != GROUPS[group]['output'] or not Path(cfg['source']).exists():
+            continue
+        _, rows = read_csv(cfg['source'])
+        for row in rows:
+            url = parse_source(row.get('source_url'))[0]
+            if url:
+                keys.add(normalize_url_key(url))
+    return keys
+
+
+def merge_link_documents(cfg, completed, manifest, output_rows):
+    """Rewrite the link documents file: fresh rows for refreshed links, old rows for the rest."""
+    refreshed, fresh = set(), []
+    for cid, d in completed.items():
+        path = d / 'link_docs.csv'
+        if not path.exists():
+            continue
+        for s in manifest['chunks'][cid]['sources']:
+            refreshed.add(normalize_url_key(s['url']))
+        fresh.extend(read_csv(path)[1])
+    if not refreshed:
+        print('Link documents: scrape.py did not write link_docs.csv, so the file was left as it is. '
+              'Update scrape.py first.')
+        return None
+    kept = [r for r in read_csv(cfg['linkdocs'])[1]
+            if normalize_url_key(r.get('source_url', '')) not in refreshed]
+    owner = {normalize_url_key(r.get('document_url', '')): r.get('company', '') for r in output_rows}
+    rows, seen = [], set()
+    for r in fresh + kept:
+        source, doc = r.get('source_url', ''), r.get('document_url', '')
+        key = (normalize_url_key(source), normalize_url_key(doc))
+        if not source or not doc or key in seen:
+            continue
+        seen.add(key)
+        credited = owner.get(normalize_url_key(doc), '')
+        rows.append({'source_url': source, 'document_title': r.get('document_title', ''),
+                     'document_url': doc,
+                     'listed_here': 'yes' if normalize_url_key(credited) == normalize_url_key(source) else 'no',
+                     'credited_to': credited})
+    rows.sort(key=lambda r: r['source_url'])
+    write_csv(cfg['linkdocs'], LINK_DOC_FIELDS, rows)
+    linked = {normalize_url_key(r['source_url']) for r in rows}
+    duplicates = sum(1 for r in rows if r['listed_here'] == 'no')
+    print(f'Link documents: {len(rows)} rows for {len(linked)} links '
+          f'({duplicates} rows are PDFs credited to another link)')
+    return len(rows)
+
+
 def merge(group, root, strict):
     cfg = GROUPS[group]
     manifest = load_manifest(group)
@@ -400,10 +460,18 @@ def merge(group, root, strict):
             rows.extend(read_csv(completed[cid] / f'{name}.csv')[1])
         return rows
 
-    # output: replace only the rows of sources that finished
+    # output: replace only the rows of sources that finished.
+    # Rows of links that are no longer in any link file are stale and go last, so they can
+    # never block a current link from taking a PDF (this is what makes removing a link safe).
     _, existing = read_csv(cfg['output'])
-    kept = [r for r in existing if normalize_url_key(r.get('company', '')) not in done_keys]
-    output_rows = dedupe_rows(kept + chunk_rows('output'), 'document_url')
+    current = current_link_keys(group)
+    kept_current, kept_stale = [], []
+    for r in existing:
+        key = normalize_url_key(r.get('company', ''))
+        if key in done_keys:
+            continue
+        (kept_current if (not current or key in current) else kept_stale).append(r)
+    output_rows = dedupe_rows(kept_current + chunk_rows('output') + kept_stale, 'document_url')
     write_csv(cfg['output'], OUTPUT_FIELDS, output_rows)
 
     # known documents and diff: production history plus new rows
@@ -411,6 +479,9 @@ def merge(group, root, strict):
     write_csv(cfg['known'], KNOWN_FIELDS, known_rows)
     diff_rows = dedupe_rows(read_csv(cfg['diff'])[1] + chunk_rows('diff'), 'document_url')
     write_csv(cfg['diff'], DIFF_FIELDS, diff_rows)
+
+    # every PDF found on every link's page (including PDFs credited to another link)
+    merge_link_documents(cfg, completed, manifest, output_rows)
 
     # issues: latest run only
     issue_rows = chunk_rows('issues')
@@ -426,14 +497,14 @@ def merge(group, root, strict):
         if not url:
             continue
         key = normalize_url_key(url)
-        current = status_by_key.get(key, {f: '' for f in URL_STATUS_FIELDS})
-        current.update(url=url, latest_status_code=row.get('latest_status_code', ''),
-                       latest_issue=row.get('latest_issue', ''),
-                       url_file=row.get('url_file', current.get('url_file', '')))
+        current_row = status_by_key.get(key, {f: '' for f in URL_STATUS_FIELDS})
+        current_row.update(url=url, latest_status_code=row.get('latest_status_code', ''),
+                           latest_issue=row.get('latest_issue', ''),
+                           url_file=row.get('url_file', current_row.get('url_file', '')))
         if row.get('last_working_date'):
-            current['last_working_date'] = row['last_working_date']
-            current['last_working_docs_count'] = row.get('last_working_docs_count', '')
-        status_by_key[key] = current
+            current_row['last_working_date'] = row['last_working_date']
+            current_row['last_working_docs_count'] = row.get('last_working_docs_count', '')
+        status_by_key[key] = current_row
     status_list = sorted(status_by_key.values(), key=lambda r: (
         r.get('latest_status_code', ''), r.get('url_file', ''), r.get('url', '')))
     write_csv(cfg['status'], URL_STATUS_FIELDS, status_list)
@@ -529,7 +600,7 @@ def signed_url_expired(value, now=None):
 
 def scan(group):
     cfg = GROUPS[group]
-    files = [cfg['output'], cfg['known'], cfg['issues'], cfg['status'], cfg['diff']]
+    files = [cfg['output'], cfg['known'], cfg['issues'], cfg['status'], cfg['diff'], cfg['linkdocs']]
     if group == 'p4_p5':
         files.append('p4_p5/document_canonical_keys_p4_p5.csv')
     blocked = False
@@ -579,7 +650,7 @@ def scan(group):
 def publish_paths(group):
     cfg = GROUPS[group]
     names = [cfg[k] for k in ('output', 'known', 'diff', 'status', 'summary', 'issues',
-                              'strategy', 'chunk_status')]
+                              'strategy', 'chunk_status', 'linkdocs')]
     print('\n'.join(n for n in names if Path(n).exists()))
 
 
