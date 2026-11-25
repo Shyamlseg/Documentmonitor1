@@ -65,6 +65,8 @@ jobs:
           python-version: "3.11"
       - name: Merge the saved chunks into the production files
         run: python batches.py merge --group "$GROUP" --root worker_outputs
+      - name: Remove signed-link credentials before the secret scan
+        run: python redact_signed_links.py
       - name: Find rows containing Alibaba secret-like patterns
         run: python batches.py scan --group "$GROUP"
       - name: Commit the production files
