@@ -591,3 +591,4 @@ run_number,date,run_mode,url_file,total_urls_processed,total_documents_captured,
 590,2026-11-25 07:53:55,full,p2_p3_total,2419,38013,4,745,144,99,0,true,output.csv,,capture_issues_p2_p3_latest.csv
 591,2026-11-26 00:05:33,full,p1_total,2331,52133,27,963,75,77,0,true,output.csv,,capture_issues.csv
 592,2026-11-26 00:57:57,full,p2_p3_total,2419,41236,15,865,139,148,0,true,output.csv,,capture_issues_p2_p3_latest.csv
+593,2026-11-26 03:06:40,full,p1_total,2281,65105,3,2424,30,28,21,true,output.csv,,capture_issues.csv

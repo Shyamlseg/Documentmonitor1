@@ -16,7 +16,7 @@ chunk,status,sources,first_source,reason
 0015,COMPLETED,24,https://genelenergy.com/,
 0016,COMPLETED,25,https://deleum.com/sustainability/embracing-good-governance,
 0017,COMPLETED,25,https://www.polimex-mostostal.pl/en/reports?page=1,
-0018,COMPLETED,25,https://www.polimex-mostostal.pl/reports/current-reports?page=4,
+0018,FAILED,25,https://www.polimex-mostostal.pl/reports/current-reports?page=4,RuntimeError: scrape.py stopped after 60 minutes (chunk time limit)
 0019,COMPLETED,25,https://polimex-mostostal.pl/whistleblowing-anonymous,
 0020,COMPLETED,24,https://polimex-mostostal.pl/reports?page=4,
 0021,COMPLETED,25,https://polimex-mostostal.pl/en/report/fulfilment-conditions-precedent-and-deployment-funds-under-loan-agreement,
@@ -61,7 +61,7 @@ chunk,status,sources,first_source,reason
 0060,COMPLETED,24,https://itmg.co.id/investor/company-information/financial-statements?page=2,
 0061,COMPLETED,25,https://www.kei-ind.com/investor-relations/annual-reports/,
 0062,COMPLETED,25,https://www.vedantalimited.com/eng/esg-governance.php,
-0063,COMPLETED,25,https://www.advantageog.com/1404,
+0063,FAILED,25,https://www.advantageog.com/1404,RuntimeError: scrape.py stopped after 60 minutes (chunk time limit)
 0064,COMPLETED,25,https://www.advantageog.com/3335,
 0065,COMPLETED,24,https://www.ligand.com/privacy/,
 0066,COMPLETED,25,https://www.energyres.com.au/investors/asx-announcements/page/2,
