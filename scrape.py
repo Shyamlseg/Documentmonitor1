@@ -38,6 +38,14 @@ BROWSER_PROGRESS_CALLBACK = None
 ENABLE_BROWSER_FALLBACK = os.environ.get("ENABLE_BROWSER_FALLBACK", "true").strip().lower() == "true"
 # Seconds (at most 30% of the remaining browser time) the custom year-dropdown phase may use per page.
 CUSTOM_DROPDOWN_SECONDS = float(os.environ.get("CUSTOM_DROPDOWN_SECONDS", "8"))
+# Learning pass: open in the browser ONCE every source that has no saved strategy yet, then remember in
+# source_strategies whether that page really needs the browser (hidden year dropdown, load more, JavaScript).
+# Sources already learned are not opened again. OFF by default.
+BROWSER_PROBE_UNKNOWN = os.environ.get("BROWSER_PROBE_UNKNOWN", "false").strip().lower() == "true"
+# 0 = never repeat. Otherwise re-learn a source when its saved strategy is older than this many days
+# (minimum 8, because a "browser not required" verdict is trusted for 7 days anyway).
+_reprobe_days = float(os.environ.get("BROWSER_REPROBE_DAYS", "0") or 0)
+BROWSER_REPROBE_DAYS = max(8.0, _reprobe_days) if _reprobe_days > 0 else 0.0
 ENABLE_RAW_LINKS = os.environ.get("ENABLE_RAW_LINKS", "false").strip().lower() == "true"
 
 # Sleep between URLs to reduce blocking
@@ -1566,6 +1574,17 @@ def should_use_browser_fallback(source_url, force_browser_fallback=False):
     return True
 
 
+def needs_browser_probe(source_url):
+    """True when the learning pass should open this source in the browser: it has no saved strategy yet,
+    or (when BROWSER_REPROBE_DAYS is set) the saved one is too old."""
+    if not (BROWSER_PROBE_UNKNOWN and ENABLE_BROWSER_FALLBACK):
+        return False
+    strategy = source_strategies.get(source_url)
+    if not strategy:
+        return True
+    if BROWSER_REPROBE_DAYS > 0 and time.time() - strategy.get("checked_at", 0) > BROWSER_REPROBE_DAYS * 86400:
+        return True
+    return False
 def source_url_has_hash(source_url):
     return "#" in source_url
 
@@ -4029,7 +4048,7 @@ def process_source_url(source_url, retry_attempt=False, force_browser_fallback=F
         if needs_report_card_fallback:
             print("Report-card page detected. Browser fallback may be needed for card-based documents.")
 
-        if (docs_captured_for_url == 0 or needs_hash_fallback or needs_report_card_fallback or force_browser_fallback or source_strategies.get(source_url, {}).get("browser_required", False)) and should_use_browser_fallback(source_url, force_browser_fallback):
+        if (docs_captured_for_url == 0 or needs_hash_fallback or needs_report_card_fallback or force_browser_fallback or source_strategies.get(source_url, {}).get("browser_required", False) or needs_browser_probe(source_url)) and should_use_browser_fallback(source_url, force_browser_fallback):
             fallback_docs = browser_click_fallback(source_url, seen)
 
             for doc in fallback_docs:
