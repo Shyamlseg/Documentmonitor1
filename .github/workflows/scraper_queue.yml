@@ -81,6 +81,11 @@ jobs:
       RUN_MODE: ${{ inputs.run_mode }}
       ENABLE_DIFF_DECISION_LOGS: "true"
       ENABLE_BROWSER_FALLBACK: "true"
+      # Learning pass: open every source that has no saved verdict in the browser once, and remember
+      # whether it needs the browser (hidden year dropdowns, load more, JavaScript lists).
+      BROWSER_PROBE_UNKNOWN: "true"
+      # Optional: uncomment to re-learn verdicts older than this many days (minimum 8).
+      # BROWSER_REPROBE_DAYS: "30"
       ENABLE_RAW_LINKS: "false"
       SLEEP_SECONDS: "0.5"
       RETRY_FAILED_URLS: "true"
@@ -240,6 +245,8 @@ jobs:
           else
             python batches.py merge --group "$GROUP" --root worker_outputs
           fi
+      - name: Remove signed-link credentials before the secret scan
+        run: python redact_signed_links.py
       - name: Find rows containing Alibaba secret-like patterns
         run: python batches.py scan --group "$GROUP"
       - name: Commit the production files
