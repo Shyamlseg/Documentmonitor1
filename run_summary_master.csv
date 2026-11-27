@@ -593,3 +593,4 @@ run_number,date,run_mode,url_file,total_urls_processed,total_documents_captured,
 592,2026-11-26 00:57:57,full,p2_p3_total,2419,41236,15,865,139,148,0,true,output.csv,,capture_issues_p2_p3_latest.csv
 593,2026-11-26 03:06:40,full,p1_total,2281,65105,3,2424,30,28,21,true,output.csv,,capture_issues.csv
 594,2026-11-26 04:31:47,full,p2_p3_total,2418,51295,24,2399,113,99,0,true,output.csv,,capture_issues_p2_p3_latest.csv
+595,2026-11-27 00:42:40,full,p1_total,2306,56456,29,2675,83,62,15,true,output.csv,,capture_issues.csv

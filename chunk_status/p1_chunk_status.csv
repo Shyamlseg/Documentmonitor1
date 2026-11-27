@@ -61,7 +61,7 @@ chunk,status,sources,first_source,reason
 0060,COMPLETED,24,https://itmg.co.id/investor/company-information/financial-statements?page=2,
 0061,COMPLETED,25,https://www.kei-ind.com/investor-relations/annual-reports/,
 0062,COMPLETED,25,https://www.vedantalimited.com/eng/esg-governance.php,
-0063,FAILED,25,https://www.advantageog.com/1404,RuntimeError: scrape.py stopped after 60 minutes (chunk time limit)
+0063,COMPLETED,25,https://www.advantageog.com/1404,
 0064,COMPLETED,25,https://www.advantageog.com/3335,
 0065,COMPLETED,24,https://www.ligand.com/privacy/,
 0066,COMPLETED,25,https://www.energyres.com.au/investors/asx-announcements/page/2,
