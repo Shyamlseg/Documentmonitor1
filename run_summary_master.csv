@@ -595,3 +595,4 @@ run_number,date,run_mode,url_file,total_urls_processed,total_documents_captured,
 594,2026-11-26 04:31:47,full,p2_p3_total,2418,51295,24,2399,113,99,0,true,output.csv,,capture_issues_p2_p3_latest.csv
 595,2026-11-27 00:42:40,full,p1_total,2306,56456,29,2675,83,62,15,true,output.csv,,capture_issues.csv
 596,2026-11-27 01:39:42,full,p2_p3_total,2418,38670,4,2755,295,145,0,true,output.csv,,capture_issues_p2_p3_latest.csv
+597,2026-11-28 00:25:26,full,p1_total,2306,68541,53,2509,29,24,15,true,output.csv,,capture_issues.csv
